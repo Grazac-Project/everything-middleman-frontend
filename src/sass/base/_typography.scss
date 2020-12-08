@@ -1,0 +1,85 @@
+.bg-text {
+  color: $color-white;
+  font-family: $font-family-primary;
+  font-size: 2.875rem;
+  font-style: normal;
+  line-height: 70px;
+  font-weight: 600;
+
+  @include respond(phone) {
+    line-height: 50px;
+  }
+}
+
+.sm-text {
+  font-weight: normal;
+  line-height: 33px;
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+
+  @include respond(phone) {
+    line-height: 20px;
+  }
+
+  &-white {
+    color: $color-white;
+  }
+
+  &-light {
+    color: $color-light-1;
+  }
+
+  &-dark {
+    color: #183b56;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-dark-purple;
+  letter-spacing: 0.17rem;
+  font-family: $font-family-primary;
+  font-style: normal;
+
+  @include respond(phone) {
+    line-height: 11px;
+  }
+}
+
+.subtitle {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 600;
+  color: $color-secondary;
+
+  &-big {
+    font-size: 2.125rem;
+    line-height: 51px;
+
+    @include respond(phone) {
+      line-height: 40px;
+    }
+  }
+
+  &-small {
+    line-height: 30px;
+    font-size: 1.125rem;
+
+    @include respond(phone) {
+      line-height: 20px;
+    }
+  }
+
+  &-xbig {
+    font-size: 2.8125rem;
+    line-height: 60px;
+
+    @include respond(phone) {
+      line-height: 45px;
+    }
+  }
+}

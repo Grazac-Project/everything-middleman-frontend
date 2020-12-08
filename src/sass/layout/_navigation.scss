@@ -1,0 +1,36 @@
+.navigation {
+  font-family: $font-family-primary;
+  position: relative;
+
+  &-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+  }
+
+  &-item {
+    font-size: 1rem;
+    font-weight: 400;
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+    &:last-child {
+      font-weight: 600;
+      border-bottom: 1px solid white;
+    }
+
+    &:last-child > a {
+      font-weight: 800;
+      color: $color-white;
+    }
+  }
+
+  &-link {
+    &:visited,
+    &:link {
+      text-decoration: none;
+      color: $color-light-2;
+    }
+  }
+}

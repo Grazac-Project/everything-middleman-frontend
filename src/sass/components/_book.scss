@@ -1,0 +1,36 @@
+.book {
+  width: 100%;
+  &-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 7rem;
+    border-bottom: 1px solid rgba(115, 135, 150, 0.5);
+    @include respond(phone) {
+      flex-direction: column;
+      align-self: center;
+    }
+  }
+  &-subtitle {
+  // flex-basis: 70%;//
+    margin-right: auto;
+    // text-align: center;
+    @include respond(phone) {
+      flex-basis: 100%;
+      margin-right: 0;
+      margin-bottom: 4rem;
+      text-align: center;
+      flex-grow: 1;
+    }
+  }
+  &-buttons {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond(phone) {
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+
+}
