@@ -24,7 +24,6 @@
     }
 
     &-statement {
-      // flex-grow: 1;
       &:first-child {
         flex-shrink: 2;
         @media (max-width: 800px) {
@@ -84,9 +83,6 @@
         flex-direction: column;
       }
     }
-    // & > * {
-    //   width: 100%;
-    // }
 
     &-list {
       &-1 {
@@ -156,7 +152,6 @@
   }
 
   &-team {
-    // text-align: center;
     width: 100%;
 
     &-container {
