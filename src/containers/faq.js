@@ -5,7 +5,7 @@ import Subtitle from "../components/subtitle";
 import Title from "../components/title";
 import { useState } from "react";
 
-const SayHi = () => {
+const Faq = () => {
   const [faqs, setFaqs] = useState([
     {
       id: 1,
@@ -64,14 +64,14 @@ const SayHi = () => {
           <div className="mb-sm">
             <TextHeader>We are here to help you</TextHeader>
           </div>
-          <div className="sayhi-header-container">
-            <img src={Mask} className="sayhi-header-mask" alt="mask" />
+          <div className="Faq-header-container">
+            <img src={Mask} className="Faq-header-mask" alt="mask" />
             <input
               type="text"
               placeholder="Ask a quesiton"
-              className="sayhi-header-input"
+              className="Faq-header-input"
             />
-            <button type="submit" className="sayhi-header-button">
+            <button type="submit" className="Faq-header-button">
               Search
             </button>
           </div>
@@ -79,32 +79,32 @@ const SayHi = () => {
             *We are collecting your search keywords to improve out FAQ
           </Text>
         </div>
-        <div className="sayhi-main mt-bg">
-          <section className="sayhi-main-category">
+        <div className="Faq-main mt-bg">
+          <section className="Faq-main-category">
             <div className="container">
               <div>
-                <Subtitle extraStyle="sayhi-main-category-subtitle ">
+                <Subtitle extraStyle="Faq-main-category-subtitle ">
                   Or choose a category to quickly find the help you need
                 </Subtitle>
-                <div className="sayhi-main-category-plans mt-md">
-                  <div className="sayhi-main-category-plan">
-                    <div className="sayhi-main-category-box mb-sm"></div>
+                <div className="Faq-main-category-plans mt-md">
+                  <div className="Faq-main-category-plan">
+                    <div className="Faq-main-category-box mb-sm"></div>
                     <Subtitle extraStyle="mb-sm">Getting Started</Subtitle>
-                    <Text extraStyle="sayhi-main-category-text">
+                    <Text extraStyle="Faq-main-category-text">
                       All you need from A to Z getting started are available
                     </Text>
                   </div>
-                  <div className="sayhi-main-category-plan">
-                    <div className="sayhi-main-category-box mb-sm"></div>
+                  <div className="Faq-main-category-plan">
+                    <div className="Faq-main-category-box mb-sm"></div>
                     <Subtitle extraStyle="mb-sm">Pricing Plans</Subtitle>
-                    <Text extraStyle="sayhi-main-category-text">
+                    <Text extraStyle="Faq-main-category-text">
                       All you need from A to Z getting started are available
                     </Text>
                   </div>
-                  <div className="sayhi-main-category-plan">
-                    <div className="sayhi-main-category-box mb-sm"></div>
+                  <div className="Faq-main-category-plan">
+                    <div className="Faq-main-category-box mb-sm"></div>
                     <Subtitle extraStyle="mb-sm">Sales Questions</Subtitle>
-                    <Text extraStyle="sayhi-main-category-text">
+                    <Text extraStyle="Faq-main-category-text">
                       All you need from A to Z getting started are available
                     </Text>
                   </div>
@@ -112,31 +112,31 @@ const SayHi = () => {
               </div>
             </div>
           </section>
-          <section className="sayhi-main-faq mt-bg">
-            <div className="sayhi-main-faq-container">
+          <section className="Faq-main-faq mt-bg">
+            <div className="Faq-main-faq-container">
               <Title extraStyle="mb-xsm">FAQ</Title>
-              <Subtitle size="subtitle-big" extraStyle="mb-xsm">
+              <Subtitle size="subtitle-big" extraStyle="mb-xsm ta">
                 Frequently Asked Questions
               </Subtitle>
               <Text extraStyle="mb-xsm ta" color="sm-text-light">
                 We bring the results while helping you achieve cost and time
                 savings wityhout taking on rish or management overhead
               </Text>
-              <div className="sayhi-main-faq-box mt-md">
+              <div className="Faq-main-faq-box mt-md">
                 {faqs.map((quest) => (
-                  <div className="sayhi-main-faq-box-container" key={quest.id}>
-                    <div className="sayhi-main-faq-question">
+                  <div className="Faq-main-faq-box-container" key={quest.id}>
+                    <div className="Faq-main-faq-question">
                       <Subtitle>{quest.question}</Subtitle>
                       {quest.open ? (
                         <p
-                          className="sayhi-main-faq-toggle"
+                          className="Faq-main-faq-toggle"
                           onClick={() => toggleFAQ(quest.id)}
                         >
                           -
                         </p>
                       ) : (
                         <p
-                          className="sayhi-main-faq-toggle"
+                          className="Faq-main-faq-toggle"
                           onClick={() => toggleFAQ(quest.id)}
                         >
                           +
@@ -145,7 +145,7 @@ const SayHi = () => {
                     </div>
                     <div
                       className={[
-                        "sayhi-main-faq-answer",
+                        "Faq-main-faq-answer",
                         quest.open ? "show" : "",
                       ].join(" ")}
                     >
@@ -156,9 +156,9 @@ const SayHi = () => {
               </div>
             </div>
           </section>
-          <section className="sayhi-main-question mt-bg">
+          <section className="Faq-main-question mt-bg">
             <div className="container">
-              <div className="sayhi-main-question-container">
+              <div className="Faq-main-question-container">
                 <Subtitle size="subtitle-big" extraStyle="ta">
                   Still have a question?
                 </Subtitle>
@@ -166,16 +166,16 @@ const SayHi = () => {
                   We bring the results while helping you achieve cost and time
                   savings wityhout taking on rish or management overhead
                 </Text>
-                <div className="sayhi-main-question-helplines mt-bg">
-                  <div className="sayhi-main-question-helpline">
-                    <div className="sayhi-main-question-img mb-sm"></div>
+                <div className="Faq-main-question-helplines mt-bg">
+                  <div className="Faq-main-question-helpline">
+                    <div className="Faq-main-question-img mb-sm"></div>
                     <Title>+1 (646) 786 - 5060</Title>
                     <Text color="sm-text-light" extraStyle="ta mt-xsm">
                       We are always happy to help
                     </Text>
                   </div>
-                  <div className="sayhi-main-question-helpline">
-                    <div className="sayhi-main-question-img mb-sm"></div>
+                  <div className="Faq-main-question-helpline">
+                    <div className="Faq-main-question-img mb-sm"></div>
                     <Title extraStyle="h">support@helpcenter.com</Title>
                     <Text color="sm-text-light" extraStyle="ta mt-xsm">
                       Alternative way to get answer faster
@@ -191,4 +191,4 @@ const SayHi = () => {
   );
 };
 
-export default SayHi;
+export default Faq;

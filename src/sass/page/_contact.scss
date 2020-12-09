@@ -15,6 +15,9 @@
       &-container {
         display: flex;
         justify-content: space-between;
+        @media (max-width: 550px) {
+          flex-direction: column;
+        }
       }
 
       &-box {
@@ -29,6 +32,12 @@
         padding: 1rem;
         &:not(:last-child) {
           margin-right: 2rem;
+        }
+
+        @media (max-width: 550px) {
+          width: 50%;
+          margin: 2rem auto !important;
+          border: none;
         }
       }
 
@@ -45,7 +54,6 @@
         color: $color-primary !important;
         border: 1px solid $color-primary !important;
         align-self: center !important;
-        align-self: flex-end;
         flex-shrink: 0;
       }
     }

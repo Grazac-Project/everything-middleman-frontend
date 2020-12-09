@@ -1,18 +1,11 @@
-import { Route, Switch } from "react-router-dom";
-// import Contact from "./containers/contact";
+import { Redirect, Route, Switch } from "react-router-dom";
 import Home from "./containers/home";
-// import About from "./containers/about";
 import Layout from "./hoc/layout";
-// import SayHi from "./containers/sayhi";
 import { lazy, Suspense } from "react";
-
-// const Blog = lazy(() => {
-//   return import("./containers/Blog/Blog");
-// });
-
-// const Register = lazy(() => {
-//   return import("./containers/Auth/Register/Register");
-// });
+import AOS from "aos";
+import "aos/dist/aos.css";
+// ..
+AOS.init();
 
 const About = lazy(() => {
   return import("./containers/about");
@@ -37,6 +30,9 @@ function App() {
             <Route path="/sayHi" component={Contact} />
             <Route path="/about" component={About} />
             <Route path="/faq" component={Faq} />
+            <Route path="*">
+              <Redirect to="/" />
+            </Route>
           </Switch>
         </Layout>
       </Suspense>

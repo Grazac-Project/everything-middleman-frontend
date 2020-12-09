@@ -3,11 +3,17 @@
   font-family: $font-family-primary;
   width: 100%;
   padding: 2rem 0 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
   &-container {
-    width: 93%;
+    width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
+    position: relative;
   }
   &-logo {
     width: 200px;
@@ -16,5 +22,16 @@
 
   &-img {
     width: 100%;
+  }
+
+  &-toggle {
+    display: none;
+    @include respond(phone) {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 9999;
+    }
   }
 }

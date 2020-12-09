@@ -4,22 +4,28 @@ import TextHeader from "../components/textHeader";
 import Title from "../components/title";
 import Kamala from "../assets/kamala.png";
 import brand from "../assets/brand.png";
+import Button from "../components/button";
 const About = () => {
   return (
     <div className="about">
       <div className="about-container">
         <div className="backgroundColor mb-bg">
           <div className="container">
-            <div className="mb-sm">
-              <TextHeader>Our Story</TextHeader>
+            <div className="about-header-container">
+              <div className="mb-sm">
+                <TextHeader>Our Story</TextHeader>
+              </div>
+              <Text color="sm-text-white contact-header-text">
+                Everything Middleman is an agile consulting company that focuses
+                on creating successful growth experiences for small, medium and
+                large companies across Africa. Through creativity, innovation
+                and excellence, we will deliver transformative outcomes for our
+                clients.
+              </Text>
+              <Button color="button-white" extraStyle="mt-md">
+                Read Our Story <span className="button-span">&rarr;</span>
+              </Button>
             </div>
-            <Text color="sm-text-white contact-header-text">
-              Everything Middleman is an agile consulting company that focuses
-              on creating successful growth experiences for small, medium and
-              large companies across Africa. Through creativity, innovation and
-              excellence, we will deliver transformative outcomes for our
-              clients.
-            </Text>
           </div>
         </div>
         <section className="about-statements mt-bg">
@@ -59,21 +65,25 @@ const About = () => {
           </div>
         </section>
         <section className="about-gallery mb-bg mt-bg">
-          <figure className="about-gallery-list-1">
-            <img src={Kamala} alt="kamala" className="about-gallery-img" />
-          </figure>
-          <figure className="about-gallery-list-2">
-            <img src={Kamala} alt="kamala" className="about-gallery-img" />
-          </figure>
-          <figure className="about-gallery-list-3">
-            <img src={Kamala} alt="kamala" className="about-gallery-img" />
-          </figure>
-          <figure className="about-gallery-list-4">
-            <img src={Kamala} alt="kamala" className="about-gallery-img" />
-          </figure>
-          <figure className="about-gallery-list-5">
-            <img src={Kamala} alt="kamala" className="about-gallery-img" />
-          </figure>
+          <div className="container">
+            <div className="about-gallery-container">
+              <figure className="about-gallery-list-1">
+                <img src={Kamala} alt="kamala" className="about-gallery-img" />
+              </figure>
+              <figure className="about-gallery-list-2">
+                <img src={Kamala} alt="kamala" className="about-gallery-img" />
+              </figure>
+              <figure className="about-gallery-list-3">
+                <img src={Kamala} alt="kamala" className="about-gallery-img" />
+              </figure>
+              <figure className="about-gallery-list-4">
+                <img src={Kamala} alt="kamala" className="about-gallery-img" />
+              </figure>
+              <figure className="about-gallery-list-5">
+                <img src={Kamala} alt="kamala" className="about-gallery-img" />
+              </figure>
+            </div>
+          </div>
         </section>
         <section className="about-values mb-bg">
           <div className="about-values-container">

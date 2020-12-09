@@ -8,30 +8,27 @@
     width: 100%;
     display: flex;
     background-color: $color-primary;
-    padding: 20px 30px 100px 30px;
+    padding: 20px 30px 120px 30px;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
 
     @include respond(phone) {
-      border-bottom-left-radius: 0%;
-      border-bottom-right-radius: 0%;
-      padding-bottom: 50px;
+      border-bottom-left-radius: 30%;
+      border-bottom-right-radius: 30%;
+      padding-bottom: 70px;
     }
 
     &-container {
       display: flex;
-
-      @include respond(phone) {
-      }
     }
 
     &-content {
       flex-basis: 80%;
+      max-width: 60%;
       @include respond(phone) {
-        flex-basis: 100%;
-        text-align: center;
+        min-width: 251px;
       }
     }
 
@@ -53,12 +50,21 @@
 
       &-container {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 10vh);
+        justify-content: space-around;
         column-gap: 20px;
 
         @include respond(phone) {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
           row-gap: 50px;
+        }
+      }
+
+      &-list{
+        &-4, &-5{
+          @include respond(phone){
+            display: none;
+          }
         }
       }
 
@@ -157,7 +163,7 @@
       &-container {
         display: flex;
         @include respond(phone) {
-          flex-direction: column-reverse;
+          // flex-direction: column-reverse;
         }
       }
 
@@ -165,10 +171,10 @@
         flex-basis: 70%;
 
         @include respond(phone) {
-          margin-top: 10rem;
           display: flex;
           flex-direction: column;
           align-items: center;
+          flex-basis: 100%;
         }
       }
       &-subtitle {
@@ -215,7 +221,7 @@
         align-self: flex-end;
         position: relative;
         @include respond(phone) {
-          align-self: center;
+        display: none;
         }
       }
 

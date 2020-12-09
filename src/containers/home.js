@@ -18,7 +18,7 @@ const Home = () => {
       <div className="home-container">
         <div className="home-header mb-bg">
           <div className="container">
-            <div className="home-header-container container">
+            <div className="home-header-container">
               <div className="home-header-content">
                 <TextHeader>Creating incredible growth experiences</TextHeader>
                 <Text color="sm-text-white" extraStyle="mt-xsm mb-sm">
@@ -39,14 +39,14 @@ const Home = () => {
           <section className="home-main-partners mb-bg">
             <div className="container">
               <div className="home-main-partners-container">
-                <div className="home-main-partners-list">
+                <div className="home-main-partners-list-1">
                   <img
                     src={Behance}
                     alt="behance"
                     className="home-main-partners-img"
                   />
                 </div>
-                <div className="home-main-partners-list">
+                <div className="home-main-partners-list-2">
                   {" "}
                   <img
                     src={Android}
@@ -54,7 +54,7 @@ const Home = () => {
                     className="home-main-partners-img"
                   />
                 </div>
-                <div className="home-main-partners-list">
+                <div className="home-main-partners-list-3">
                   {" "}
                   <img
                     src={Brandfold}
@@ -62,7 +62,7 @@ const Home = () => {
                     className="home-main-partners-img"
                   />
                 </div>
-                <div className="home-main-partners-list">
+                <div className="home-main-partners-list-4">
                   {" "}
                   <img
                     src={Behance}
@@ -70,7 +70,7 @@ const Home = () => {
                     className="home-main-partners-img"
                   />
                 </div>
-                <div className="home-main-partners-list">
+                <div className="home-main-partners-list-5">
                   {" "}
                   <img
                     src={Android}
@@ -78,7 +78,7 @@ const Home = () => {
                     className="home-main-partners-img"
                   />
                 </div>
-                <div className="home-main-partners-list">
+                <div className="home-main-partners-list-6">
                   {" "}
                   <img
                     src={Brandfold}

@@ -1,0 +1,66 @@
+.sidebar {
+  transition: width 3s ease-in-out;
+  background-color: white;
+  width: 65%;
+  max-width: 300px;
+  position: fixed;
+  top: 72px;
+  right: 0;
+  z-index: 999;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  @media (min-width: 700px) {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  @media (max-width: 348px){
+        width: 100%;
+  }
+
+  &-nav {
+    padding: 4rem;
+    width: 100%;
+    margin: auto;
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    list-style: none;
+  }
+
+  &-item {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    // text-align: right;
+    &-say {
+      background-color: $color-primary;
+      grid-column: 1 / -1;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      & > a {
+        color: $color-white !important;
+      }
+    }
+  }
+
+  &-link {
+    &:visited,
+    &:link {
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+}
+
+.tar {
+  text-align: right;
+}

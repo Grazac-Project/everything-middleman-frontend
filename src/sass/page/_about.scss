@@ -4,7 +4,12 @@
   &-container {
     position: relative;
   }
-
+  &-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
   &-statements {
     width: 100%;
     font-family: $font-family-primary;
@@ -14,6 +19,7 @@
 
       @media (max-width: 800px) {
         flex-direction: column;
+        text-align: center;
       }
     }
 
@@ -57,21 +63,30 @@
   }
 
   &-gallery {
-    display: grid;
-    grid-template-areas:
-      "... one one one two  two  three three"
-      "... one one one two  two three three "
-      "... one one one five five five  ..."
-      "four four four four five five five ..."
-      "four four four four five five five ...";
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(5, 10vw);
+    width: 100%;
+    position: relative;
 
-    column-gap: 10px;
-    row-gap: 10px;
-    & > * {
-      width: 100%;
+    &-container {
+      display: grid;
+      grid-template-areas:
+        "... one one one two  two  three three"
+        "... one one one two  two three three "
+        "... one one one five five five  ..."
+        "four four four four five five five ..."
+        "four four four four five five five ...";
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(5, 10vw);
+
+      column-gap: 10px;
+      row-gap: 10px;
+      @media screen and (max-width: 450px) {
+        display: flex;
+        flex-direction: column;
+      }
     }
+    // & > * {
+    //   width: 100%;
+    // }
 
     &-list {
       &-1 {
@@ -101,6 +116,7 @@
       display: block;
     }
   }
+
   &-values {
     width: 100%;
 
@@ -120,6 +136,9 @@
     &-images {
       display: flex;
       justify-content: space-around;
+      @media screen and (max-width: 450px) {
+        display: none;
+      }
     }
 
     &-box {
@@ -151,6 +170,11 @@
       grid-template-rows: repeat(3, auto);
       column-gap: 10px;
       row-gap: 10px;
+
+      @media screen and (max-width: 450px) {
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     &-box {

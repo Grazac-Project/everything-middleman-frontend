@@ -2,12 +2,13 @@
   cursor: pointer;
   padding: 0.8rem 3rem;
   border-radius: 30px;
-display: block;
+  // display: block;
+  text-decoration: none;
   border: none;
   font-size: 1.125rem;
   line-height: 27px;
   font-weight: 500;
-  align-self: flex-start;
+  // align-self: flex-start;
   transition: all 0.3s;
 
   &-white {

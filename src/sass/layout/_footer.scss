@@ -2,15 +2,11 @@
   width: 100%;
   background-color: $color-white;
   &-container {
-    width: 80%;
-    // display: flex;
-    // justify-content: space-between;
-    // flex-wrap: wrap;
     display: grid;
     grid-template-columns: 400px repeat(4, 1fr);
 
-    @include respond(tab-land){
-       grid-template-columns:  repeat(4, 1fr);
+    @include respond(tab-land) {
+      grid-template-columns: repeat(4, 1fr);
     }
 
     @media (max-width: 600px) {
@@ -38,21 +34,17 @@
   }
   &-text {
     width: 100%;
-   @include respond(tab-land){
-     text-align: center;
-   }
+    @include respond(tab-land) {
+      text-align: center;
+    }
   }
   &-socials {
     width: 40%;
     display: flex;
     justify-content: space-between;
-    @include respond(tab-land){
-      width: 20%;
-    }
+  
   }
 
-  &-section-2 {
-  }
 
   &-links {
     & p {

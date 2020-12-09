@@ -2,6 +2,10 @@
   font-family: $font-family-primary;
   position: relative;
 
+  @include respond(phone) {
+    display: none;
+  }
+
   &-list {
     padding: 0;
     margin: 0;
@@ -21,7 +25,7 @@
     }
 
     &:last-child > a {
-      font-weight: 800;
+      font-weight: 600;
       color: $color-white;
     }
   }

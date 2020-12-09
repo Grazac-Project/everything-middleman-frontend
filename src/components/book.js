@@ -1,5 +1,6 @@
-import Button from "./button";
+import Button, { WhatsApp } from "./button";
 import Subtitle from "./subtitle";
+// import {WhatsApp} from "./button"
 
 const Book = () => {
   return (
@@ -10,7 +11,8 @@ const Book = () => {
             Ready to Make Your Moment Memorable ?
           </Subtitle>
           <div className="book-buttons">
-            <Button color="button-purple mr-sm book-button">Book Now</Button>
+            <WhatsApp color="button-purple mr-sm book-button" />
+
             <Button color="button-white book-button">Learn More</Button>
           </div>
         </div>
