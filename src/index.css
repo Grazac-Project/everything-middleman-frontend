@@ -50,7 +50,7 @@ html {
 .main {
   position: relative;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 55px;
 }
 
 .bg-text {
@@ -440,6 +440,7 @@ html {
 }
 @media (max-width: 43.75em) {
   .header-toggle {
+    align-self: center;
     display: block;
     position: absolute;
     right: 0;
@@ -558,7 +559,7 @@ html {
 }
 @media (max-width: 43.75em) {
   .container {
-    width: 85%;
+    width: 90%;
   }
 }
 
@@ -633,6 +634,7 @@ html {
 
 .home {
   width: 100%;
+  font-size: 1rem;
 }
 .home-container {
   width: 100%;
@@ -641,7 +643,7 @@ html {
 .home-header {
   width: 100%;
   background-color: #4b004b;
-  padding: 35px 30px 100px 30px;
+  padding: 2.2rem 1.8rem 6.35rem 1.8rem;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 50%;
@@ -656,6 +658,7 @@ html {
 }
 .home-header-container {
   display: flex;
+  width: 100%;
 }
 .home-header-content {
   flex-basis: 80%;
@@ -663,7 +666,8 @@ html {
 }
 @media (max-width: 43.75em) {
   .home-header-content {
-    min-width: 251px;
+    flex-basis: 100%;
+    max-width: 100%;
   }
 }
 .home-header-svg {
@@ -772,7 +776,7 @@ html {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home-main-services-list {
     grid-template-columns: repeat(1, 100%);
   }
@@ -788,6 +792,11 @@ html {
 .home-main-customer-container {
   width: 100%;
   position: relative;
+}
+@media (max-width: 43.75em) {
+  .home-main-customer-title {
+    text-align: center;
+  }
 }
 .home-main-customer-subtitle {
   width: 50%;
@@ -816,14 +825,30 @@ html {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 43.75em) {
+  .home-main-customer-carousel-content {
+    align-items: center;
+  }
+}
 .home-main-customer-carousel-content > *:first-child {
   margin-bottom: auto;
+}
+@media (max-width: 43.75em) {
+  .home-main-customer-carousel-content > *:first-child {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+  }
 }
 .home-main-customer-carousel-imagebox {
   flex-basis: 80%;
   max-width: 267px;
   align-self: flex-end;
   position: relative;
+}
+@media (max-width: 43.75em) {
+  .home-main-customer-carousel-imagebox {
+    display: none;
+  }
 }
 .home-main-customer-carousel-img {
   width: 100%;
@@ -832,10 +857,24 @@ html {
 }
 .home-main-customer-carousel-quotes {
   position: absolute;
-  bottom: -70px;
+  display: flex;
+  bottom: -40px;
+  left: 0;
+  width: 4rem;
+}
+.home-main-customer-carousel-quotes > img {
+  width: 100%;
 }
 .home-main-customer-dots {
   display: flex;
+}
+@media (max-width: 43.75em) {
+  .home-main-customer-dots {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3rem;
+  }
 }
 .home-main-customer-dot {
   height: 10px;

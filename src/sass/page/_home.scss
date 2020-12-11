@@ -1,5 +1,6 @@
 .home {
   width: 100%;
+  font-size: 1rem;
   &-container {
     width: 100%;
     position: relative;
@@ -7,7 +8,7 @@
   &-header {
     width: 100%;
     background-color: $color-primary;
-    padding: 35px 30px 100px 30px;
+    padding: 2.2rem 1.8rem 6.35rem 1.8rem;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 50%;
@@ -21,13 +22,15 @@
 
     &-container {
       display: flex;
+      width: 100%;
     }
 
     &-content {
       flex-basis: 80%;
       max-width: 60%;
       @include respond(phone) {
-        min-width: 251px;
+        flex-basis: 100%;
+        max-width: 100%;
       }
     }
 
@@ -145,7 +148,7 @@
         @include respond(phone) {
           grid-template-columns: repeat(2, 1fr);
         }
-        @media (max-width: 600px) {
+        @media (max-width: 500px) {
           grid-template-columns: repeat(1, 100%);
         }
         @media (max-width: 350px) {
@@ -165,6 +168,12 @@
 
       &-content {
         @include respond(phone) {
+        }
+      }
+
+      &-title{
+        @include respond(phone){
+          text-align: center;
         }
       }
       &-subtitle {
@@ -194,9 +203,16 @@
         &-content {
           display: flex;
           flex-direction: column;
+          @include respond( phone){
+            align-items: center;
+          }
 
           & > *:first-child {
             margin-bottom: auto;
+            @include respond(phone){
+              margin-bottom: 3rem;
+              font-size: 1rem;
+            }
           }
         }
 
@@ -205,6 +221,10 @@
           max-width: 267px;
           align-self: flex-end;
           position: relative;
+
+          @include respond(phone){
+            display: none;
+          }
         }
 
         &-img {
@@ -215,12 +235,25 @@
 
         &-quotes {
           position: absolute;
-          bottom: -70px
+          display: flex;
+          bottom: -40px;
+          left: 0;
+          width: 4rem;
+
+          & > img{
+            width: 100%;
+          }
         }
       }
 
       &-dots {
         display: flex;
+        @include respond(phone){
+          text-align: center;
+          width: 100%;
+          justify-content: center;
+          margin-top: 3rem;
+        }
       }
 
       &-dot {

@@ -7,7 +7,7 @@ const Sidebar = () => {
         <nav className="sidebar-nav">
           <ul className="sidebar-list">
             <li className="sidebar-item">
-              <Link to={"/"} exact className="sidebar-link">
+              <Link to={"/"} className="sidebar-link">
                 Home
               </Link>
             </li>

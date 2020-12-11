@@ -208,7 +208,7 @@ const Home = () => {
             <div className="container">
               <div className="home-main-customer-container">
                 <div className="home-main-customer-content">
-                  <Title extraStyle="mb-sm">CUSTOMER STATEMENT</Title>
+                  <Title extraStyle="mb-sm home-main-customer-title">CUSTOMER STATEMENT</Title>
                   <Subtitle
                     size="subtitle-big"
                     extraStyle="mb-sm home-main-customer-subtitle"
