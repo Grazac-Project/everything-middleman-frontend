@@ -9,7 +9,7 @@ const Layout = (props) => {
 
   const showSideBar = () => {
     setShow(!show);
-    console.log(show);
+    
   };
 
   const hideSidebar = () => {

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "../components/button";
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";
@@ -13,6 +14,60 @@ import Service from "../components/service";
 import Quote from "../assets/quote.png";
 
 const Home = () => {
+  const [step, setStep] = useState(1);
+  const [dots, setdots] = useState([
+    { id: 1, color: true },
+    { id: 2, color: false },
+    { id: 3, color: false },
+    { id: 4, color: false },
+  ]);
+  const [customer] = useState([
+    {
+      id: 1,
+      statement:
+        "Everything Middleman is an agile consulting company that focuses on creating successful growth experiences for small,medium and large companies across Africa. Through  creativity, innovation and excellence, we will deliver transformative outcomes for our clients",
+      name: "Kamala ",
+      title: "FIrst Vice President ",
+      pic: Kamala,
+    },
+    {
+      id: 2,
+      statement: "Everything Middleman is an agile consulting clients",
+      name: " HArrris",
+      title: "FIrst Vice President ",
+      pic: Kamala,
+    },
+    {
+      id: 3,
+      statement:
+        "Everything ing successful growth experiences for small,medium and large companies across Africa. Through  creativity, innovation and excellence, we will deliver transformative outcomes for our clients",
+      name: "Kala Hris",
+      title: "FIrst Vice President ",
+      pic: Kamala,
+    },
+    {
+      id: 4,
+      statement:
+        "Everything Middleman is an agile consulting ormative outcomes for our clients",
+      name: "Kamala HArrris",
+      title: "FIrst Vice President ",
+      pic: Kamala,
+    },
+  ]);
+
+  const handleClick = (index) => {
+    setdots(
+      dots.map((dots) => {
+        if (dots.id === index) {
+          dots.color = true;
+        } else {
+          dots.color = false;
+        }
+        return dots;
+      })
+    );
+    setStep(index);
+  };
   return (
     <div className="home">
       <div className="home-container">
@@ -154,51 +209,68 @@ const Home = () => {
               <div className="home-main-customer-container">
                 <div className="home-main-customer-content">
                   <Title extraStyle="mb-sm">CUSTOMER STATEMENT</Title>
-
                   <Subtitle
                     size="subtitle-big"
                     extraStyle="mb-sm home-main-customer-subtitle"
                   >
                     We’ve Worked with them, We Trust Each Other
                   </Subtitle>
-                  <Text
-                    color="sm-text-dark"
-                    extraStyle="mb-sm home-main-customer-title"
-                  >
-                    Travelya, thank you so much for a well organized trip. We
-                    had a wonderful time.Hard to believe it’s already done and
-                    past. Weather as awesom, the hotels were nice, thanks your
-                    for everything
-                  </Text>
-                  <Text color="sm-text-dark">Kamala Harris</Text>
-                  <Text color="sm-text-light mb-sm home-main-customer-position">
-                    First Woman Vice President
-                  </Text>
-                  <div className="home-main-customer-dots">
-                    <span className="home-main-customer-dot"></span>
-                    <span className="home-main-customer-dot"></span>
-                    <span className="home-main-customer-dot"></span>
-                    <span className="home-main-customer-dot"></span>
+                </div>
+                <div className="home-main-customer-carousel">
+                  <div className="home-main-customer-box">
+                    {customer
+                      .filter((key) => key.id === step)
+                      .map((item) => (
+                        <div
+                          className="home-main-customer-carousel-container animate__animated animate__fadeInRight animate__slower"
+                          key={item.id}
+                        >
+                          <div className="home-main-customer-carousel-content">
+                            <Text
+                              color="sm-text-dark"
+                              extraStyle="mb-sm home-main-customer-title"
+                            >
+                              {item.statement}
+                            </Text>
+                            <Text color="sm-text-dark">{item.name}</Text>
+                            <Text color="sm-text-light mb-sm home-main-customer-position">
+                              {item.title}
+                            </Text>
+                          </div>
+                          <div className="home-main-customer-carousel-imagebox">
+                            <img
+                              src={item.pic}
+                              alt="kamala"
+                              className="home-main-customer-carousel-img"
+                            />
+                            <div className="home-main-customer-carousel-quotes">
+                              <img
+                                src={Quote}
+                                alt="quote"
+                                className="home-main-customer-quote"
+                              />
+                              <img
+                                src={Quote}
+                                alt="quote"
+                                className="home-main-customer-quote"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      ))}
                   </div>
                 </div>
-                <div className="home-main-customer-box">
-                  <img
-                    src={Kamala}
-                    alt="kamala"
-                    className="home-main-customer-img"
-                  />
-                  <div className="home-main-customer-quotes">
-                    <img
-                      src={Quote}
-                      alt="quote"
-                      className="home-main-customer-quote"
-                    />
-                    <img
-                      src={Quote}
-                      alt="quote"
-                      className="home-main-customer-quote"
-                    />
-                  </div>
+                <div className="home-main-customer-dots">
+                  {dots.map((dot) => (
+                    <span
+                      key={dot.id}
+                      className={[
+                        "home-main-customer-dot",
+                        dot.color ? "active" : "inactive",
+                      ].join(" ")}
+                      onClick={() => handleClick(dot.id)}
+                    ></span>
+                  ))}
                 </div>
               </div>
             </div>

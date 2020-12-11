@@ -124,7 +124,7 @@
           border: 1px solid #eff2f8;
           border-radius: 10px;
           padding: 1rem 1rem 0.1rem 1rem;
-
+          cursor: pointer;
           &:not(:last-child) {
             margin-bottom: 1rem;
           }
@@ -179,8 +179,7 @@
         padding: 1rem 2rem;
         @media screen and (max-width: 450px) {
           width: 60%;
-          margin:2rem  auto;
-          
+          margin: 2rem auto;
         }
       }
 

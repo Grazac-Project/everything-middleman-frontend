@@ -12,7 +12,6 @@ const Book = () => {
           </Subtitle>
           <div className="book-buttons">
             <WhatsApp color="button-purple mr-sm book-button" />
-
             <Button color="button-white book-button">Learn More</Button>
           </div>
         </div>

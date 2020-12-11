@@ -1,6 +1,6 @@
 .button {
   cursor: pointer;
-  padding: 0.8rem 3rem;
+  padding: 1rem 3rem;
   border-radius: 30px;
   text-decoration: none;
   border: none;
@@ -36,7 +36,9 @@
   }
 
   &-span {
-    margin-left: 20px;
+    margin-left: 10px;
+    font-size: 2rem;
+    vertical-align: middle;
   }
 
   &:hover {

@@ -8,4 +8,12 @@ const LinkButton = (props) => {
   );
 };
 
+export const FooterLink = (props) => {
+  return (
+    <Link to="/about" className={["sm-text sm-text-light", props.extraStyle].join(" ")}>
+      {props.children}
+    </Link>
+  );
+};
+
 export default LinkButton;

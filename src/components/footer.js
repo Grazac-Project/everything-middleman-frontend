@@ -5,6 +5,7 @@ import LinkedIn from "../assets/linkedin.png";
 import Twitter from "../assets/twitter.png";
 import Text from "./text";
 import Subtitle from "./subtitle";
+import { FooterLink } from "./link";
 
 const Footer = () => {
   return (
@@ -50,11 +51,11 @@ const Footer = () => {
               Product
             </Subtitle>
             <div className="footer-links">
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
+              <FooterLink extraStyle="footer-link">Landing Page</FooterLink>
+              <FooterLink extraStyle="footer-link">Features</FooterLink>
+              <FooterLink extraStyle="footer-link">Documentation</FooterLink>
+              <FooterLink extraStyle="footer-link">Referral Program</FooterLink>
+              <FooterLink extraStyle="footer-link">Pricing</FooterLink>
             </div>
           </div>
           <div className="footer-section-2">
@@ -62,11 +63,11 @@ const Footer = () => {
               Product
             </Subtitle>
             <div className="footer-links">
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
+              <FooterLink extraStyle="footer-link">Landing Page</FooterLink>
+              <FooterLink extraStyle="footer-link">Features</FooterLink>
+              <FooterLink extraStyle="footer-link">Documentation</FooterLink>
+              <FooterLink extraStyle="footer-link">Referral Program</FooterLink>
+              <FooterLink extraStyle="footer-link">Pricing</FooterLink>
             </div>
           </div>
           <div className="footer-section-2">
@@ -74,11 +75,11 @@ const Footer = () => {
               Product
             </Subtitle>
             <div className="footer-links">
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
+              <FooterLink extraStyle="footer-link">Landing Page</FooterLink>
+              <FooterLink extraStyle="footer-link">Features</FooterLink>
+              <FooterLink extraStyle="footer-link">Documentation</FooterLink>
+              <FooterLink extraStyle="footer-link">Referral Program</FooterLink>
+              <FooterLink extraStyle="footer-link">Pricing</FooterLink>
             </div>
           </div>
           <div className="footer-section-2">
@@ -86,11 +87,11 @@ const Footer = () => {
               Product
             </Subtitle>
             <div className="footer-links">
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
-              <Text color="sm-text-light">Landing Page</Text>
+              <FooterLink extraStyle="footer-link">Landing Page</FooterLink>
+              <FooterLink extraStyle="footer-link">Features</FooterLink>
+              <FooterLink extraStyle="footer-link">Documentation</FooterLink>
+              <FooterLink extraStyle="footer-link">Referral Program</FooterLink>
+              <FooterLink extraStyle="footer-link">Pricing</FooterLink>
             </div>
           </div>
         </div>

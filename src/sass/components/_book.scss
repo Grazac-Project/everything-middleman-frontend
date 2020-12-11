@@ -31,7 +31,16 @@
       justify-content: space-around;
       align-items: center;
     }
+    & > a {
+      @include respond(phone) {
+        flex-basis: 30%;
+        text-align: center;
+        align-self: center;
+      }
 
-
+      @media (max-width: 385px){
+        flex-basis: 100%;
+      }
+    }
   }
 }

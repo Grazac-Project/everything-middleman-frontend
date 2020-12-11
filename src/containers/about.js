@@ -5,6 +5,7 @@ import Title from "../components/title";
 import Kamala from "../assets/kamala.png";
 import brand from "../assets/brand.png";
 import Button from "../components/button";
+
 const About = () => {
   return (
     <div className="about">
@@ -119,7 +120,7 @@ const About = () => {
             >
               Our Team
             </Subtitle>
-            <Text color="sm-text-light mb-sm  about-values-title">
+            <Text color="sm-text-light mb-sm" extraStyle="about-values-text">
               We bring the results while helping you achieve cost and time
               savings wityhout taking on rish or management overhead
             </Text>

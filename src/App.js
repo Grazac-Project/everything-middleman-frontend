@@ -2,10 +2,7 @@ import { Redirect, Route, Switch } from "react-router-dom";
 import Home from "./containers/home";
 import Layout from "./hoc/layout";
 import { lazy, Suspense } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 // ..
-AOS.init();
 
 const About = lazy(() => {
   return import("./containers/about");
