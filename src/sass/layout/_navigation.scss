@@ -2,7 +2,7 @@
   font-family: $font-family-primary;
   position: relative;
 
-  @include respond(phone) {
+  @media (max-width: 550px) {
     display: none;
   }
 

@@ -123,7 +123,7 @@
           background: #ffffff;
           border: 1px solid #eff2f8;
           border-radius: 10px;
-          padding: 1rem 1rem 0.1rem 1rem;
+          padding: 1rem 1rem 1rem 1rem;
           cursor: pointer;
           &:not(:last-child) {
             margin-bottom: 1rem;
@@ -140,7 +140,7 @@
 
       &-toggle {
         cursor: pointer;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         margin-left: 10px;
       }
       &-answer {
@@ -149,6 +149,7 @@
         transition: all 0.3s;
         height: 0;
         opacity: 0;
+        display: none;
         @media (max-width: 500px) {
           width: 100%;
         }
@@ -181,6 +182,10 @@
           width: 60%;
           margin: 2rem auto;
         }
+
+        & > h4{
+          text-align: center;
+        }
       }
 
       &-img {
@@ -195,6 +200,7 @@
 .show {
   height: auto;
   opacity: 1;
+  display: block;
 }
 
 .h {

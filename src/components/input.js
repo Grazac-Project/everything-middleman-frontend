@@ -1,14 +1,13 @@
 const Input = (props) => {
-//   let inputClasses = ["form-input"];
-//   if (
-//     (props.blur && !props.isValid) ||
-//     (!props.isValid && !props.formIsValid && props.clicked)
-//   ) {
-//     inputClasses.push("form-invalid");
-//     console.log(props.message);
-//   } else if (props.isValid && props.blur) {
-//     inputClasses.push("form-valid");
-//   }
+    let inputClasses = ["form-input"];
+    if (
+      (props.blur && !props.isValid) 
+    ) {
+      inputClasses.push("form-invalid");
+      console.log(props.message);
+    } else if (props.isValid && props.blur) {
+      inputClasses.push("form-valid");
+    }
   let inputElement;
   switch (props.elementType) {
     case "input":
@@ -16,13 +15,14 @@ const Input = (props) => {
         <input
           onBlur={props.onblur}
           id={props.label}
-        //   className={}
-          className="form-input"
+          //   className={}
+          className={inputClasses.join(" ")}
           {...props.config}
           value={props.value}
           onChange={props.onchange}
           name={props.label}
           disabled={props.disabled}
+          required
         />
       );
       break;
@@ -34,9 +34,12 @@ const Input = (props) => {
           {...props.config}
           value={props.value}
           onChange={props.onchange}
-              name={props.label}
-              cols="7" rows="4"
-          className="form-input form-textarea"
+          name={props.label}
+          cols="7"
+          rows="4"
+          className={inputClasses.join(" ")}
+          // className="form-input form-textarea"
+          required
         ></textarea>
       );
       break;
@@ -67,6 +70,7 @@ const Input = (props) => {
           onChange={props.onchange}
           name={props.label}
           className="form-input"
+          required
         />
       );
       break;

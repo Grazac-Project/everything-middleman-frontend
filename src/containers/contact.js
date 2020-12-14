@@ -1,10 +1,11 @@
 import { useState } from "react";
-import Button from "../components/button";
+import { Button } from "../components/button";
 import Input from "../components/input";
 import Subtitle from "../components/subtitle";
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import Title from "../components/title";
+import { email, fullname, number, required } from "../helpers/validation";
 
 const Contact = () => {
   const [contactForm, setContactForm] = useState({
@@ -15,7 +16,7 @@ const Contact = () => {
         type: "text",
         placeholder: "John Doe",
       },
-      //   validations: [fullname],
+      validations: [fullname],
       isValid: false,
       touched: false,
       value: "",
@@ -31,7 +32,7 @@ const Contact = () => {
         type: "email",
         placeholder: "johndoe@example.com",
       },
-      //   validations: [email],
+      validations: [email],
       value: "",
       isValid: false,
       touched: false,
@@ -43,10 +44,10 @@ const Contact = () => {
       elementType: "input",
       label: "Company Name*",
       elementConfig: {
-        type: "password",
-        placeholder: "Password",
+        type: "text",
+        placeholder: "Company's name",
       },
-      //   validations: [required, password],
+      validations: [required],
       isValid: false,
       value: "",
       touched: false,
@@ -54,22 +55,20 @@ const Contact = () => {
 
       errorMessage: "",
     },
-    country: {
-      elementType: "select",
-      label: "Country*",
+    number: {
+      elementType: "input",
+      label: "Your Phone Number",
       elementConfig: {
-        options: [
-          { value: "Nigeria", displayValue: "Nigeria" },
-          { value: "Togo", displayValue: "Togo" },
-          { value: "Mali", displayValue: "Mali" },
-          { value: "Cotonou", displayValue: "Cotonou" },
-          { value: "Ghana", displayValue: "Ghana" },
-          { value: "Malawi", displayValue: "Maawi" },
-        ],
+        type: "text",
+        placeholder: "Phone Number",
       },
-      //   validators: [required],
+      validations: [number],
+      isValid: false,
       value: "",
-      isValid: true,
+      touched: false,
+      blur: false,
+
+      errorMessage: "",
     },
     message: {
       elementType: "textarea",
@@ -81,15 +80,22 @@ const Contact = () => {
       value: "",
       isValid: false,
       touched: false,
-      //   validations: [checkLength],
+      validations: [required],
       errorMessage: "",
     },
   });
 
   const inputChangeHandler = (event, inputIdentifier) => {
+    let isValid = true;
+    // let msg = "";
+    for (let validation of contactForm[inputIdentifier].validations) {
+      isValid = validation(event.target.value).isTrue && isValid;
+      // msg = validation(event.target.value).msg;
+    }
     const updatedFormElement = {
       ...contactForm[inputIdentifier],
       value: event.target.value,
+      isValid: isValid,
     };
     const updatedContactForm = {
       ...contactForm,
@@ -97,6 +103,19 @@ const Contact = () => {
     };
 
     setContactForm(updatedContactForm);
+  };
+
+  const handleBlur = (elementID) => {
+    const updatedFormElement = {
+      ...contactForm[elementID],
+      blur: true,
+    };
+
+    const updatedForm = {
+      ...contactForm,
+      [elementID]: updatedFormElement,
+    };
+    setContactForm(updatedForm);
   };
 
   let formArray = [];
@@ -116,11 +135,11 @@ const Contact = () => {
       isValid={form.config.isValid}
       touched={form.config.touched}
       message={form.config.errorMessage}
+      blur={form.config.blur}
+      onblur={() => handleBlur(form.id)}
       //   formIsValid={formValid}
       //   clicked={clicked}
       label={form.config.label}
-      //   elementStyle={classes.inputStyle}
-      //   inputStyle={classes.inputStyle}
     />
   ));
 
@@ -134,7 +153,7 @@ const Contact = () => {
             </div>
             <Text color="sm-text-white contact-header-text">
               We bring the results while helping you achieve cost and time
-              savings wityhout taking on rish or management overhead
+              savings without taking on risk or management overhead
             </Text>
           </div>
         </div>

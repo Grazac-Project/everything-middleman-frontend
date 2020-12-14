@@ -3,9 +3,10 @@
   box-shadow: 0px 20px 20px rgba(24, 59, 86, 0.1);
   border-radius: 10px;
   transform: translate(0%, -8%);
-  padding: 2rem;
+  padding: 2rem 2rem 3rem 2rem;
   margin: auto;
-  max-width: 700px;
+  border-radius: 10px;
+  max-width: 750px;
   @include respond(phone) {
     max-width: 90%;
   }
@@ -36,7 +37,7 @@
     font-family: $font-family-primary;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     display: block;
     color: #738796;
@@ -47,9 +48,14 @@
     width: 100%;
     border: 1px solid #eff2f8;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 1rem;
     font-family: inherit;
+    font-size: 1rem;
+
+    &::-webkit-input-placeholder {
+      color: $color-light-2;
+    }
     &:focus {
       outline: none;
     }
@@ -57,5 +63,14 @@
 
   &-textarea {
     width: 100%;
+  }
+
+  &-valid {
+    border: 1px solid green;
+  }
+
+  &-invalid {
+    border: 1px solid red;
+    background-color: #fda49a;
   }
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "../components/button";
+import {LinkButton} from "../components/button";
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import LandingSvg from "../assets/landing-svg.png";
@@ -80,9 +80,9 @@ const Home = () => {
                   We bring the results while helping you achieve cost and time
                   savings wityhout taking on rish or management overhead
                 </Text>
-                <Button color="button-white">
+                <LinkButton color="button-white">
                   Learn more <span className="button-span">&rarr;</span>
-                </Button>
+                </LinkButton>
               </div>
               <div className="home-header-svg">
                 <img src={LandingSvg} alt="svg" className="home-header-img" />
@@ -156,7 +156,7 @@ const Home = () => {
                 </div>
                 <aside className="home-main-about-content">
                   <Title>ABOUT US</Title>
-                  <Subtitle size="subtitle-big" extraStyle="mb-xsm">
+                  <Subtitle size="subtitle-big" extraStyle="mb-xsm ">
                     Unveil Your Business Potential
                   </Subtitle>
                   <Text color="sm-text-light mb-sm home-main-about-text">
@@ -166,12 +166,12 @@ const Home = () => {
                     creativity, innovation and excellence, we will deliver
                     transformative outcomes for our clients
                   </Text>
-                  <Button
+                  <LinkButton
                     color="button-purple"
                     extraStyle="home-main-about-button"
                   >
                     Learn more <span className="button-span">&rarr;</span>
-                  </Button>
+                  </LinkButton>
                 </aside>
               </div>
             </div>
@@ -208,7 +208,9 @@ const Home = () => {
             <div className="container">
               <div className="home-main-customer-container">
                 <div className="home-main-customer-content">
-                  <Title extraStyle="mb-sm home-main-customer-title">CUSTOMER STATEMENT</Title>
+                  <Title extraStyle="mb-sm home-main-customer-title">
+                    CUSTOMER STATEMENT
+                  </Title>
                   <Subtitle
                     size="subtitle-big"
                     extraStyle="mb-sm home-main-customer-subtitle"

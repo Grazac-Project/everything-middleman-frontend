@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const LinkButton = (props) => {
+const Anchor = (props) => {
   return (
     <Link to="/about" className="link">
       {props.children}
@@ -16,4 +16,4 @@ export const FooterLink = (props) => {
   );
 };
 
-export default LinkButton;
+export default Anchor;

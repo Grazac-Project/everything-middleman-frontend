@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = ({ animate }) => {
   return (
-    <div className="sidebar">
+    <div className={["sidebar animate__animated", animate].join(" ")}>
       <div className="container">
         <nav className="sidebar-nav">
           <ul className="sidebar-list">

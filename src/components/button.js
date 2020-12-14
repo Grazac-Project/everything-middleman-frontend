@@ -1,17 +1,14 @@
 import { Link } from "react-router-dom";
 
-const Button = ({ color, extraStyle, children }) => {
+export const LinkButton = ({ color, extraStyle, children }) => {
   return (
-    <Link
-      to={"/about"}
-      className={["button", color, extraStyle].join(" ")}
-    >
+    <Link to={"/about"} className={["button", color, extraStyle].join(" ")}>
       {children}
     </Link>
   );
 };
 
-export const WhatsApp = ({ color, extraStyle}) => {
+export const WhatsApp = ({ color, extraStyle }) => {
   return (
     <a
       href="https://wa.me/+2349132633784"
@@ -24,4 +21,12 @@ export const WhatsApp = ({ color, extraStyle}) => {
   );
 };
 
-export default Button;
+export const Button = ({ color, extraStyle, children }) => {
+  return (
+    <button className={["button", color, extraStyle].join(" ")}>
+      {children}
+    </button>
+  );
+};
+
+// export default Button;

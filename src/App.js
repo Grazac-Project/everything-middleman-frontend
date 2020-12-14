@@ -2,7 +2,6 @@ import { Redirect, Route, Switch } from "react-router-dom";
 import Home from "./containers/home";
 import Layout from "./hoc/layout";
 import { lazy, Suspense } from "react";
-// ..
 
 const About = lazy(() => {
   return import("./containers/about");
@@ -19,8 +18,8 @@ const Faq = lazy(() => {
 function App() {
   return (
     <div className="App">
-      <Suspense fallback={<p>Loading...</p>}>
-        <Layout>
+      <Layout>
+        <Suspense fallback={<p>Loading...</p>}>
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/contact" component={Contact} />
@@ -31,8 +30,8 @@ function App() {
               <Redirect to="/" />
             </Route>
           </Switch>
-        </Layout>
-      </Suspense>
+        </Suspense>
+      </Layout>
     </div>
   );
 }

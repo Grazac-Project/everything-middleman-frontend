@@ -4,7 +4,7 @@ import TextHeader from "../components/textHeader";
 import Title from "../components/title";
 import Kamala from "../assets/kamala.png";
 import brand from "../assets/brand.png";
-import Button from "../components/button";
+import {LinkButton} from "../components/button";
 
 const About = () => {
   return (
@@ -23,9 +23,9 @@ const About = () => {
                 and excellence, we will deliver transformative outcomes for our
                 clients.
               </Text>
-              <Button color="button-white" extraStyle="mt-md">
+              <LinkButton color="button-white" extraStyle="mt-md">
                 Read Our Story <span className="button-span">&rarr;</span>
-              </Button>
+              </LinkButton>
             </div>
           </div>
         </div>

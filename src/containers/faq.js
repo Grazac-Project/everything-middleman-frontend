@@ -49,7 +49,6 @@ const Faq = () => {
       faqs.map((faq) => {
         if (faq.id === index) {
           faq.open = !faq.open;
-          console.log(faq.open)
         } else {
           faq.open = false;
         }
@@ -128,7 +127,9 @@ const Faq = () => {
                   <div
                     className="Faq-main-faq-box-container"
                     key={quest.id}
-                    onClick={() => toggleFAQ(quest.id)}
+                    // onClick={() => {
+                    //   toggleFAQ(quest.id);
+                    // }}
                   >
                     <div className="Faq-main-faq-question">
                       <Subtitle>{quest.question}</Subtitle>
@@ -136,8 +137,7 @@ const Faq = () => {
                         <p
                           className="Faq-main-faq-toggle"
                           onClick={() => {
-                            console.log(quest.id)
-                            toggleFAQ(quest.id)
+                            toggleFAQ(quest.id);
                           }}
                         >
                           -
@@ -145,7 +145,9 @@ const Faq = () => {
                       ) : (
                         <p
                           className="Faq-main-faq-toggle"
-                          onClick={() => toggleFAQ(quest.id)}
+                          onClick={() => {
+                            toggleFAQ(quest.id);
+                          }}
                         >
                           +
                         </p>

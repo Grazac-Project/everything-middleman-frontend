@@ -9,7 +9,6 @@ const Layout = (props) => {
 
   const showSideBar = () => {
     setShow(!show);
-    
   };
 
   const hideSidebar = () => {
@@ -18,7 +17,9 @@ const Layout = (props) => {
   return (
     <div className="layout">
       <Header toggle={showSideBar} />
-      {show && <Sidebar />}
+      <Sidebar
+        animate={show ? "animate__slideInRight" : "animate__slideOutRight"}
+      />
       <main onClick={hideSidebar} className="main">
         {props.children}
       </main>

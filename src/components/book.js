@@ -1,4 +1,4 @@
-import Button, { WhatsApp } from "./button";
+import { WhatsApp, LinkButton } from "./button";
 import Subtitle from "./subtitle";
 // import {WhatsApp} from "./button"
 
@@ -12,7 +12,7 @@ const Book = () => {
           </Subtitle>
           <div className="book-buttons">
             <WhatsApp color="button-purple mr-sm book-button" />
-            <Button color="button-white book-button">Learn More</Button>
+            <LinkButton color="button-white book-button">Learn More</LinkButton>
           </div>
         </div>
       </div>
