@@ -4,7 +4,6 @@ const Input = (props) => {
       (props.blur && !props.isValid) 
     ) {
       inputClasses.push("form-invalid");
-      console.log(props.message);
     } else if (props.isValid && props.blur) {
       inputClasses.push("form-valid");
     }

@@ -426,7 +426,7 @@ html {
   background-color: #4b004b;
   font-family: "Poppins", sans-serif;
   width: 100%;
-  padding: 1rem 0 1rem 0;
+  padding: 1.1rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -450,7 +450,7 @@ html {
 .header-toggle {
   display: none;
 }
-@media (max-width: 550px) {
+@media (max-width: 43.75em) {
   .header-toggle {
     align-self: center;
     display: block;
@@ -458,6 +458,7 @@ html {
     right: 0;
     top: 0;
     z-index: 9999;
+    margin-top: 8px;
   }
 }
 
@@ -465,7 +466,7 @@ html {
   font-family: "Poppins", sans-serif;
   position: relative;
 }
-@media (max-width: 550px) {
+@media (max-width: 43.75em) {
   .navigation {
     display: none;
   }
@@ -485,7 +486,7 @@ html {
 }
 .navigation-item:last-child {
   font-weight: 600;
-  border-bottom: 1px solid white;
+  text-decoration: #ffffff underline;
 }
 .navigation-item:last-child > a {
   font-weight: 600;
@@ -513,6 +514,7 @@ html {
 @media (max-width: 600px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
     text-align: center;
   }
 }
@@ -954,7 +956,6 @@ html {
 }
 @media (max-width: 550px) {
   .contact-main-support-box {
-    width: 50%;
     margin: 2rem auto !important;
     border: none;
   }
@@ -1068,9 +1069,15 @@ html {
 }
 .about-gallery-img {
   width: 100%;
+  position: relative;
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: all 0.3s;
+}
+.about-gallery-img:hover {
+  transform: scale(0.9);
+  z-index: 99;
 }
 .about-values {
   width: 100%;
@@ -1142,6 +1149,11 @@ html {
 .about-team-img {
   width: 100%;
   height: 100%;
+  position: relative;
+  transition: all 0.3s;
+}
+.about-team-img:hover {
+  transform: scale(0.9);
 }
 
 .Faq-header-container {

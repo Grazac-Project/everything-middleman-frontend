@@ -2,7 +2,7 @@
   font-family: $font-family-primary;
   position: relative;
 
-  @media (max-width: 550px) {
+  @include respond(phone) {
     display: none;
   }
 
@@ -21,7 +21,7 @@
     }
     &:last-child {
       font-weight: 600;
-      border-bottom: 1px solid white;
+      text-decoration: $color-white underline;
     }
 
     &:last-child > a {

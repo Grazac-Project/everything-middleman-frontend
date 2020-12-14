@@ -75,7 +75,7 @@ const Contact = () => {
       label: "Your Message*",
       elementConfig: {
         type: "text",
-        // placeholder: "Lets hear you out",
+        placeholder: "Lets hear you out",
       },
       value: "",
       isValid: false,
@@ -87,10 +87,8 @@ const Contact = () => {
 
   const inputChangeHandler = (event, inputIdentifier) => {
     let isValid = true;
-    // let msg = "";
     for (let validation of contactForm[inputIdentifier].validations) {
-      isValid = validation(event.target.value).isTrue && isValid;
-      // msg = validation(event.target.value).msg;
+      isValid = validation(event.target.value) && isValid;
     }
     const updatedFormElement = {
       ...contactForm[inputIdentifier],
