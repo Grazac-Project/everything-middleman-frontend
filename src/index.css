@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 html {
@@ -54,12 +55,12 @@ html {
 }
 
 .bg-text {
-  color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: 2.875rem;
   font-style: normal;
-  line-height: 70px;
   font-weight: 600;
+  color: #ffffff;
+  line-height: 70px;
 }
 @media (max-width: 43.75em) {
   .bg-text {
@@ -69,15 +70,16 @@ html {
 
 .sm-text {
   font-weight: normal;
-  line-height: 33px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 1rem;
+  line-height: 33px;
   letter-spacing: 0.03em;
 }
 @media (max-width: 43.75em) {
   .sm-text {
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 1.5rem;
   }
 }
 .sm-text-white {
@@ -93,11 +95,11 @@ html {
 .title {
   font-weight: 500;
   font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   line-height: 21px;
   color: #4c004b;
   letter-spacing: 0.17rem;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
 }
 @media (max-width: 43.75em) {
   .title {
@@ -127,6 +129,7 @@ html {
 @media (max-width: 43.75em) {
   .subtitle-small {
     line-height: 20px;
+    font-size: 2rem;
   }
 }
 .subtitle-xbig {
@@ -205,7 +208,7 @@ html {
 
 .button {
   cursor: pointer;
-  padding: 1rem 3rem;
+  padding: 1rem 3.4rem;
   border-radius: 30px;
   text-decoration: none;
   border: none;
@@ -237,9 +240,8 @@ html {
   outline: none;
 }
 .button-span {
-  margin-left: 10px;
+  margin-left: 6px;
   font-size: 2rem;
-  vertical-align: middle;
 }
 .button:hover {
   transform: translateY(-3px);
@@ -265,10 +267,10 @@ html {
   align-items: center;
   justify-content: center;
   align-self: center;
-  padding: 0.3rem;
+  padding: 3.3rem;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 .service-content {
   text-align: center;
@@ -458,7 +460,7 @@ html {
     right: 0;
     top: 0;
     z-index: 9999;
-    margin-top: 8px;
+    margin-top: 5px;
   }
 }
 
@@ -737,6 +739,11 @@ html {
 .home-main-about-box {
   flex-shrink: 0;
 }
+@media (max-width: 43.75em) {
+  .home-main-about-box {
+    margin-right: 0 !important;
+  }
+}
 .home-main-about-img {
   height: 100%;
   width: 100%;
@@ -903,6 +910,7 @@ html {
   border-radius: 50%;
   cursor: pointer;
   background: rgba(115, 135, 150, 0.5);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .home-main-customer-dot:not(:last-child) {
   margin-right: 1rem;
@@ -923,7 +931,7 @@ html {
   position: relative;
 }
 .contact-main {
-  background: rgba(250, 253, 255, 0.5);
+  background: #ffffff;
 }
 .contact-main-form {
   position: relative;
@@ -942,7 +950,7 @@ html {
 }
 .contact-main-support-box {
   background: #ffffff;
-  border: 1px solid #eff2f8;
+  border: 1px solid #babfca;
   border-radius: 10px;
   text-align: center;
   display: flex;
@@ -961,8 +969,8 @@ html {
   }
 }
 .contact-main-support-box-img {
-  width: 54px;
-  height: 54px;
+  width: 74px;
+  height: 74px;
   background-color: #4b004b;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -1226,7 +1234,7 @@ html {
 @media (max-width: 550px) {
   .Faq-main-category-plan:first-child {
     flex-basis: 40vh;
-    margin: 5rem auto 0.5rem auto;
+    margin: 0rem auto 0.5rem auto;
   }
 }
 @media (max-width: 550px) {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {LinkButton} from "../components/button";
+import { LinkButton } from "../components/button";
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import LandingSvg from "../assets/landing-svg.png";
@@ -266,6 +266,7 @@ const Home = () => {
                   {dots.map((dot) => (
                     <span
                       key={dot.id}
+                      role="button"
                       className={[
                         "home-main-customer-dot",
                         dot.color ? "active" : "inactive",

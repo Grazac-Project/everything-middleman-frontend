@@ -5,7 +5,7 @@
   }
 
   &-main {
-    background: rgba(250, 253, 255, 0.5);
+    background: $bg-color;
     &-form {
       position: relative;
     }
@@ -21,8 +21,9 @@
       }
 
       &-box {
-        background: #ffffff;
-        border: 1px solid #eff2f8;
+        $bg-color : $color-white !global;
+        background: $bg-color;
+        border: 1px solid #babfca;
         border-radius: 10px;
         text-align: center;
         display: flex;
@@ -42,8 +43,9 @@
       }
 
       &-box-img {
-        width: 54px;
-        height: 54px;
+        $size: 74px;
+        width: $size;
+        height: $size;
         background-color: $color-primary;
         border-radius: 10px;
         margin-bottom: 1rem;

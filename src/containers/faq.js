@@ -124,13 +124,7 @@ const Faq = () => {
               </Text>
               <div className="Faq-main-faq-box mt-md">
                 {faqs.map((quest) => (
-                  <div
-                    className="Faq-main-faq-box-container"
-                    key={quest.id}
-                    // onClick={() => {
-                    //   toggleFAQ(quest.id);
-                    // }}
-                  >
+                  <div className="Faq-main-faq-box-container" key={quest.id}>
                     <div className="Faq-main-faq-question">
                       <Subtitle>{quest.question}</Subtitle>
                       {quest.open ? (

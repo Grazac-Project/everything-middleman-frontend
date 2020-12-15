@@ -18,6 +18,7 @@ const Layout = (props) => {
     <div className="layout">
       <Header toggle={showSideBar} />
       <Sidebar
+        click= {hideSidebar}
         animate={show ? "animate__slideInRight" : "animate__slideOutRight"}
       />
       <main onClick={hideSidebar} className="main">

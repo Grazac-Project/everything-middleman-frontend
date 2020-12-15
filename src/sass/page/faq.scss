@@ -75,7 +75,7 @@
         &:first-child {
           @media (max-width: 550px) {
             flex-basis: 40vh;
-            margin: 5rem auto 0.5rem auto;
+            margin: 0rem auto 0.5rem auto;
           }
         }
         &:nth-child(2) {
@@ -183,7 +183,7 @@
           margin: 2rem auto;
         }
 
-        & > h4{
+        & > h4 {
           text-align: center;
         }
       }
