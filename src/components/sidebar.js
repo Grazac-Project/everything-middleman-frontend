@@ -27,9 +27,14 @@ const Sidebar = ({ animate, click }) => {
               </Link>
             </li>
             <li className="sidebar-item sidebar-item-say" onClick={click}>
-              <Link to={"/sayhi"} className="sidebar-link">
-                Say Hi
-              </Link>
+              <a
+                className="sidebar-link"
+                href="https://wa.me/+2349132633784"
+                target="_blank"
+                rel="noreferrer"
+              >
+                SayHi
+              </a>
             </li>
           </ul>
         </nav>

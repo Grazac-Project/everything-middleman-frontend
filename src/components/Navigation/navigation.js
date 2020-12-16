@@ -4,11 +4,20 @@ const Navigation = () => {
   return (
     <nav className="navigation">
       <ul className="navigation-list">
-        <NavigationItem link={"/"} exact>Home</NavigationItem>
+        <NavigationItem link={"/"} exact>
+          Home
+        </NavigationItem>
         <NavigationItem link={"/about"}>About Us</NavigationItem>
         <NavigationItem link={"/faq"}>FAQ</NavigationItem>
         <NavigationItem link={"/contact"}>Contact</NavigationItem>
-        <NavigationItem link={"/sayhi"}>Say Hi</NavigationItem>
+        <a
+          className="navigation-link navigation-link-sayhi"
+          href="https://wa.me/+2349132633784"
+          target="_blank"
+          rel="noreferrer"
+        >
+          SayHi
+        </a>
       </ul>
     </nav>
   );

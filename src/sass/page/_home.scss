@@ -11,12 +11,10 @@
     padding: 5rem 1.8rem 6.35rem 1.8rem;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
 
     @include respond(phone) {
-      border-bottom-left-radius: 30%;
-      border-bottom-right-radius: 30%;
       padding-bottom: 70px;
     }
 
@@ -93,8 +91,8 @@
 
       &-box {
         flex-shrink: 0;
-        @include respond(phone){
-          margin-right:  0 !important;
+        @include respond(phone) {
+          margin-right: 0 !important;
         }
       }
 
@@ -114,8 +112,8 @@
           align-items: center;
         }
 
-        & > h3{
-          @include respond(phone){
+        & > h3 {
+          @include respond(phone) {
             text-align: center;
           }
         }
@@ -180,8 +178,8 @@
         }
       }
 
-      &-title{
-        @include respond(phone){
+      &-title {
+        @include respond(phone) {
           text-align: center;
         }
       }
@@ -213,13 +211,13 @@
         &-content {
           display: flex;
           flex-direction: column;
-          @include respond( phone){
+          @include respond(phone) {
             align-items: center;
           }
 
           & > *:first-child {
             margin-bottom: auto;
-            @include respond(phone){
+            @include respond(phone) {
               margin-bottom: 3rem;
               font-size: 1rem;
             }
@@ -232,7 +230,7 @@
           align-self: flex-end;
           position: relative;
 
-          @include respond(phone){
+          @include respond(phone) {
             display: none;
           }
         }
@@ -251,7 +249,7 @@
           width: 4rem;
           z-index: 100000;
 
-          & > img{
+          & > img {
             width: 100%;
           }
         }
@@ -259,7 +257,7 @@
 
       &-dots {
         display: flex;
-        @include respond(phone){
+        @include respond(phone) {
           text-align: center;
           width: 100%;
           justify-content: center;
@@ -273,12 +271,11 @@
         border-radius: 50%;
         cursor: pointer;
         background: rgba(115, 135, 150, 0.5);
-                  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
         &:not(:last-child) {
           margin-right: 1rem;
         }
-
       }
     }
   }

@@ -19,15 +19,7 @@
     &:not(:last-child) {
       margin-right: 3rem;
     }
-    &:last-child {
-      font-weight: 600;
-      text-decoration: $color-white underline;
-    }
-
-    &:last-child > a {
-      font-weight: 600;
-      color: $color-white;
-    }
+  
   }
 
   &-link {
@@ -35,6 +27,12 @@
     &:link {
       text-decoration: none;
       color: $color-light-2;
+    }
+
+    &-sayhi{
+font-weight: 600;
+      text-decoration: $color-white underline !important;
+       color: $color-white !important;
     }
   }
 }

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { RiQuestionAnswerLine } from "react-icons/ri";
 import { Button } from "../components/button";
 import Input from "../components/input";
 import Subtitle from "../components/subtitle";
@@ -172,7 +174,9 @@ const Contact = () => {
             <div className="container">
               <div className="contact-main-support-container ">
                 <div className="contact-main-support-box">
-                  <div className="contact-main-support-box-img"></div>
+                  <div className="contact-main-support-box-img">
+                    <AiOutlineMail size="32px" color="#ffffff" />
+                  </div>
                   <Subtitle extraStyle="mb-sm">Email Us</Subtitle>
                   <Text color="sm-text-light mb-sm">
                     Check out helpful resources, FAQs and developer tools.
@@ -180,7 +184,9 @@ const Contact = () => {
                   <Title>hello@helpcenter.com</Title>
                 </div>
                 <div className="contact-main-support-box">
-                  <div className="contact-main-support-box-img"></div>
+                  <div className="contact-main-support-box-img">
+                    <AiOutlinePhone size="32px" color="#ffffff" />
+                  </div>
                   <Subtitle extraStyle="mb-sm">Call Us</Subtitle>
                   <Text color="sm-text-light mb-sm">
                     Check out helpful resources, FAQs and developer tools.
@@ -188,7 +194,9 @@ const Contact = () => {
                   <Title>+1 (646) 786 - 5060</Title>
                 </div>
                 <div className="contact-main-support-box">
-                  <div className="contact-main-support-box-img"></div>
+                  <div className="contact-main-support-box-img">
+                    <RiQuestionAnswerLine size="32px" color="#ffffff" />
+                  </div>
                   <Subtitle extraStyle="mb-sm">Support </Subtitle>
                   <Text color="sm-text-light mb-sm">
                     Check out helpful resources, FAQs and developer tools.

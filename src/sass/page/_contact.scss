@@ -36,19 +36,21 @@
         }
 
         @media (max-width: 550px) {
-          // width: 50%;
           margin: 2rem auto !important;
           border: none;
         }
       }
 
       &-box-img {
-        $size: 74px;
+        $size: 60px;
         width: $size;
         height: $size;
         background-color: $color-primary;
         border-radius: 10px;
         margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       &-button {
