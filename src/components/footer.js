@@ -6,6 +6,7 @@ import Twitter from "../assets/twitter.png";
 import Text from "./text";
 import Subtitle from "./subtitle";
 import { FooterLink } from "./link";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,11 +15,13 @@ const Footer = () => {
         <div className="footer-container ma">
           <div className="footer-section-1">
             <div className="footer-img-box">
-              <img
-                src={Logo}
-                alt="everythingmiddleman"
-                className="footer-img"
-              />
+              <Link to="/">
+                <img
+                  src={Logo}
+                  alt="everythingmiddleman"
+                  className="footer-img"
+                />
+              </Link>
             </div>
             <Text color="sm-text-light footer-text mt-sm">
               Build a modern and creative website with crealand

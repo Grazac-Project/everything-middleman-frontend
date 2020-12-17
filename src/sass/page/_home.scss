@@ -39,7 +39,6 @@
     }
 
     &-svg {
-      // flex-basis: 500px;
       flex-shrink: 2;
       @include respond(phone) {
         display: none;
