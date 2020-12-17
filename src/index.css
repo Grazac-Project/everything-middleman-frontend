@@ -661,12 +661,19 @@ html {
   padding: 5rem 1.8rem 6.35rem 1.8rem;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom-left-radius: 30%;
-  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 @media (max-width: 43.75em) {
   .home-header {
     padding-bottom: 70px;
+  }
+}
+@media screen and (max-width: 310px) {
+  .home-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-bottom: 2rem;
   }
 }
 .home-header-container {
@@ -684,7 +691,7 @@ html {
   }
 }
 .home-header-svg {
-  flex-basis: 500px;
+  flex-shrink: 2;
 }
 @media (max-width: 43.75em) {
   .home-header-svg {

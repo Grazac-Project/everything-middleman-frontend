@@ -170,7 +170,7 @@ const Contact = () => {
               <Button color="button-purple">Contact Sales</Button>
             </form>
           </section>
-          <section className="contact-main-support mt-bg">
+          <section className="contact-main-support mt-sm">
             <div className="container">
               <div className="contact-main-support-container ">
                 <div className="contact-main-support-box">
