@@ -2,6 +2,15 @@
   border: 1px solid #eff2f8;
   border-radius: 10px;
   padding-bottom: 1.5rem;
+
+  &:last-child{
+    @include respond(tab-port){
+        grid-column:  3 / span 1;
+    }
+    @include respond(phone){
+      grid-column: initial;
+    }
+  }
   &-container {
     width: 90%;
     padding: 1rem 0 0 0;
