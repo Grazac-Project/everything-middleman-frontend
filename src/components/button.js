@@ -21,9 +21,13 @@ export const WhatsApp = ({ color, extraStyle }) => {
   );
 };
 
-export const Button = ({ color, extraStyle, children }) => {
+export const Button = ({ color, extraStyle, children, onclick, disabled }) => {
   return (
-    <button className={["button", color, extraStyle].join(" ")}>
+    <button
+      className={["button", color, extraStyle].join(" ")}
+      onClick={onclick}
+      disabled={disabled}
+    >
       {children}
     </button>
   );

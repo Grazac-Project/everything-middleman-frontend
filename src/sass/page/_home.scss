@@ -11,9 +11,7 @@
     padding: 5rem 1.8rem 6.35rem 1.8rem;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-
+   
     @include respond(phone) {
       padding-bottom: 70px;
     }

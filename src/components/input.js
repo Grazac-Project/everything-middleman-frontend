@@ -1,6 +1,9 @@
 const Input = (props) => {
   let inputClasses = ["form-input"];
-  if (props.blur && !props.isValid) {
+  if (
+    (props.blur && !props.isValid) ||
+    (!props.isValid && !props.formIsValid && props.clicked)
+  ) {
     inputClasses.push("form-invalid");
   } else if (props.isValid && props.blur) {
     inputClasses.push("form-valid");
@@ -20,6 +23,24 @@ const Input = (props) => {
           disabled={props.disabled}
           required
         />
+      );
+      break;
+    case "select":
+      inputElement = (
+        <select
+          className={inputClasses.join(" ")}
+          value={props.value}
+          onChange={props.onchange}
+          onBlur={props.onblur}
+          id={props.label}
+          required
+        >
+          {props.config.options.map((option) => (
+            <option key={option.code} value={option.name}>
+              {option.name}
+            </option>
+          ))}
+        </select>
       );
       break;
     case "textarea":

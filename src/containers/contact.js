@@ -8,10 +8,14 @@ import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import Title from "../components/title";
 import { email, fullname, number, required } from "../helpers/validation";
+import Countries from "../constants/countries";
+import axios from "axios";
 
 const Contact = () => {
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const [contactForm, setContactForm] = useState({
-    fullName: {
+    name: {
       elementType: "input",
       label: "Your Name*",
       elementConfig: {
@@ -57,7 +61,7 @@ const Contact = () => {
 
       errorMessage: "",
     },
-    number: {
+    phone: {
       elementType: "input",
       label: "Your Phone Number",
       elementConfig: {
@@ -69,8 +73,18 @@ const Contact = () => {
       value: "",
       touched: false,
       blur: false,
-
-      errorMessage: "",
+    },
+    country: {
+      elementType: "select",
+      label: "Country",
+      elementConfig: {
+        options: Countries,
+      },
+      validations: [required],
+      isValid: false,
+      value: "",
+      touched: false,
+      blur: false,
     },
     message: {
       elementType: "textarea",
@@ -86,6 +100,8 @@ const Contact = () => {
       errorMessage: "",
     },
   });
+  const [formValid, setFormValid] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
   const inputChangeHandler = (event, inputIdentifier) => {
     let isValid = true;
@@ -102,6 +118,11 @@ const Contact = () => {
       [inputIdentifier]: updatedFormElement,
     };
 
+    let formIsValid = true;
+    for (let inputIdentifier in updatedContactForm) {
+      formIsValid = updatedContactForm[inputIdentifier].isValid && formIsValid;
+    }
+    setFormValid(formIsValid);
     setContactForm(updatedContactForm);
   };
 
@@ -116,6 +137,121 @@ const Contact = () => {
       [elementID]: updatedFormElement,
     };
     setContactForm(updatedForm);
+  };
+
+  const handleClick = (event) => {
+    event.preventDefault();
+    setClicked(true);
+    console.log(formValid);
+    console.log(clicked);
+    const contact = {};
+    for (let key in contactForm) {
+      contact[key] = contactForm[key].value;
+    }
+    console.log(contact);
+    if (!formValid) {
+      event.preventDefault();
+    } else {
+      setLoading(true);
+      axios
+        .post("https://everythingmiddleman.com/contact/create", contact)
+        .then((result) => {
+          setLoading(false);
+          setMessage(result.data.msg);
+          console.log(result.data);
+          setContactForm({
+            name: {
+              elementType: "input",
+              label: "Your Name*",
+              elementConfig: {
+                type: "text",
+                placeholder: "John Doe",
+              },
+              validations: [fullname],
+              isValid: false,
+              touched: false,
+              value: "",
+              blur: false,
+
+              errorMessage: "",
+            },
+
+            email: {
+              elementType: "input",
+              label: "Email Address*",
+              elementConfig: {
+                type: "email",
+                placeholder: "johndoe@example.com",
+              },
+              validations: [email],
+              value: "",
+              isValid: false,
+              touched: false,
+              blur: false,
+              errorMessage: "",
+            },
+
+            company: {
+              elementType: "input",
+              label: "Company Name*",
+              elementConfig: {
+                type: "text",
+                placeholder: "Company's name",
+              },
+              validations: [required],
+              isValid: false,
+              value: "",
+              touched: false,
+              blur: false,
+
+              errorMessage: "",
+            },
+            phone: {
+              elementType: "input",
+              label: "Your Phone Number",
+              elementConfig: {
+                type: "text",
+                placeholder: "Phone Number",
+              },
+              validations: [number],
+              isValid: false,
+              value: "",
+              touched: false,
+              blur: false,
+            },
+            country: {
+              elementType: "select",
+              label: "Country",
+              elementConfig: {
+                options: Countries,
+              },
+              validations: [required],
+              isValid: false,
+              value: "",
+              touched: false,
+              blur: false,
+            },
+            message: {
+              elementType: "textarea",
+              label: "Your Message*",
+              elementConfig: {
+                type: "text",
+                placeholder: "Lets hear you out",
+              },
+              value: "",
+              isValid: false,
+              touched: false,
+              validations: [required],
+              errorMessage: "",
+            },
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+          setLoading(false);
+          setMessage(error.data.message);
+        });
+    }
   };
 
   let formArray = [];
@@ -137,8 +273,8 @@ const Contact = () => {
       message={form.config.errorMessage}
       blur={form.config.blur}
       onblur={() => handleBlur(form.id)}
-      //   formIsValid={formValid}
-      //   clicked={clicked}
+      formIsValid={formValid}
+      clicked={clicked}
       label={form.config.label}
     />
   ));
@@ -160,6 +296,7 @@ const Contact = () => {
         <div className="contact-main">
           <section className="contact-main-form">
             <form className="form">
+              <Subtitle extraStyle="mb-sm ta">{message || ""}</Subtitle>
               <div className="form-container">{form}</div>
               <Text color="sm-text-light mb-sm">
                 By submitting this form you agree to our Terms and Conditions
@@ -167,7 +304,19 @@ const Contact = () => {
                 and disclose your personal information including to third
                 parties.
               </Text>
-              <Button color="button-purple">Contact Sales</Button>
+              {!loading ? (
+                <Button color="button-purple" onclick={handleClick}>
+                  Contact Sales
+                </Button>
+              ) : (
+                <Button
+                  color="button-purple"
+                  onclick={handleClick}
+                  disabled={true}
+                >
+                  Submitting...
+                </Button>
+              )}
             </form>
           </section>
           <section className="contact-main-support mt-sm">
