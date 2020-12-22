@@ -4,9 +4,15 @@ import TextHeader from "../components/textHeader";
 import Title from "../components/title";
 import Kamala from "../assets/kamala.png";
 import brand from "../assets/brand.png";
-import {LinkButton} from "../components/button";
+import { LinkButton } from "../components/button";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  
   return (
     <div className="about">
       <div className="about-container">

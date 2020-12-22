@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { RiQuestionAnswerLine } from "react-icons/ri";
 import { Button } from "../components/button";
@@ -12,6 +12,9 @@ import Countries from "../constants/countries";
 import axios from "axios";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [contactForm, setContactForm] = useState({

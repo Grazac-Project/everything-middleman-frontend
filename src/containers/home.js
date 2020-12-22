@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LinkButton } from "../components/button";
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";
@@ -14,6 +14,11 @@ import Service from "../components/service";
 import Quote from "../assets/quote.png";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  
   const [step, setStep] = useState(1);
   const [dots, setdots] = useState([
     { id: 1, color: true },

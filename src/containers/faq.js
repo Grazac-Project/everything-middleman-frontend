@@ -3,9 +3,13 @@ import TextHeader from "../components/textHeader";
 import Mask from "../assets/Mask.png";
 import Subtitle from "../components/subtitle";
 import Title from "../components/title";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Faq = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [faqs, setFaqs] = useState([
     {
       id: 1,
