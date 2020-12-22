@@ -3,10 +3,11 @@ import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import Title from "../components/title";
 import Kamala from "../assets/kamala.png";
-import brand from "../assets/brand.png";
 import { LinkButton } from "../components/button";
 import { useEffect } from "react";
-
+import ideation from "../assets/ideation.png";
+import Growth from "../assets/growth.svg";
+import perfect from "../assets/perfect.svg"
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -107,19 +108,23 @@ const About = () => {
             <div className="about-values-images mt-md">
               <div className="about-values-images-container">
                 <div className="about-values-box">
-                  <img src={brand} alt="brand" className="about-values-img" />
+                  <img src={Growth} alt="brand" className="about-values-img" />
                 </div>
                 <Subtitle extraStyle="mt-xsm">Growth</Subtitle>
               </div>
               <div className="about-values-images-container">
                 <div className="about-values-box">
-                  <img src={brand} alt="brand" className="about-values-img" />
+                  <img
+                    src={ideation}
+                    alt="brand"
+                    className="about-values-img"
+                  />
                 </div>
                 <Subtitle extraStyle="mt-xsm">Innovation</Subtitle>
               </div>
               <div className="about-values-images-container">
                 <div className="about-values-box">
-                  <img src={brand} alt="brand" className="about-values-img" />
+                  <img src={perfect} alt="brand" className="about-values-img" />
                 </div>
                 <Subtitle extraStyle="mt-xsm">Excellence</Subtitle>
               </div>
