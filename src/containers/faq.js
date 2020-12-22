@@ -95,7 +95,7 @@ const Faq = () => {
               onChange={changeHandler}
             />
             <a
-              href={`https://wa.me/+2347065426253?text=${search.value}`}
+              href={`https://wa.me/+2349132633784?text=${search.value}`}
               type="submit"
               className="Faq-header-button"
               target="_blank"
