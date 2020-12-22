@@ -24,10 +24,11 @@
     }
 
     &-button {
-      padding: 0.8rem 1.5rem;
+      padding: 0.7rem 2.5rem;
       background: #4b004b;
       border-radius: 5px;
       color: $color-white;
+      text-decoration: none;
       cursor: pointer;
       border: none;
       font-size: 1rem;
@@ -117,7 +118,7 @@
       &-box {
         display: flex;
         flex-direction: column;
-width: 100%;
+        width: 100%;
         &-container {
           transition: all 0.3s;
           background: #ffffff;

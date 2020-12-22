@@ -1210,10 +1210,11 @@ html {
   outline: none;
 }
 .Faq-header-button {
-  padding: 0.8rem 1.5rem;
+  padding: 0.7rem 2.5rem;
   background: #4b004b;
   border-radius: 5px;
   color: #ffffff;
+  text-decoration: none;
   cursor: pointer;
   border: none;
   font-size: 1rem;

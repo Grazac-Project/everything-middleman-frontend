@@ -48,6 +48,23 @@ const Faq = () => {
     },
   ]);
 
+  const [search, setSearch] = useState({
+    value: "",
+    valid: false,
+  });
+
+  const changeHandler = (event) => {
+    if (search.value.trim() !== " ") {
+      setSearch({
+        valid: false,
+      });
+    }
+    setSearch({
+      value: event.target.value,
+      valid: true,
+    });
+  };
+
   const toggleFAQ = (index) => {
     setFaqs(
       faqs.map((faq) => {
@@ -74,10 +91,18 @@ const Faq = () => {
               type="text"
               placeholder="Ask a quesiton"
               className="Faq-header-input"
+              value={search.value}
+              onChange={changeHandler}
             />
-            <button type="submit" className="Faq-header-button">
-              Search
-            </button>
+            <a
+              href={`https://wa.me/+2347065426253?text=${search.value}`}
+              type="submit"
+              className="Faq-header-button"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ask
+            </a>
           </div>
           <Text color="sm-text-white contact-header-text">
             *We are collecting your search keywords to improve out FAQ
