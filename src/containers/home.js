@@ -18,7 +18,6 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  
   const [step, setStep] = useState(1);
   const [dots, setdots] = useState([
     { id: 1, color: true },
@@ -86,7 +85,8 @@ const Home = () => {
                   savings wityhout taking on rish or management overhead
                 </Text>
                 <LinkButton color="button-white">
-                  Learn more <span className="button-span">&rarr;</span>
+                  <span>Learn more</span>{" "}
+                  <span className="button-span">&rarr;</span>
                 </LinkButton>
               </div>
               <div className="home-header-svg">
@@ -175,7 +175,8 @@ const Home = () => {
                     color="button-purple"
                     extraStyle="home-main-about-button"
                   >
-                    Learn more <span className="button-span">&rarr;</span>
+                    <span>Learn more</span>
+                    <span className="button-span">&rarr;</span>
                   </LinkButton>
                 </aside>
               </div>

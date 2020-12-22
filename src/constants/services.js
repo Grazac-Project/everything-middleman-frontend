@@ -4,7 +4,8 @@ import business from "../assets/business.png";
 import corporate from "../assets/corporate.png";
 import ideation from "../assets/ideation.png";
 import management from "../assets/management.png";
-
+import Analysis from "../assets/Analysis.svg";
+import Branding from "../assets/growth.svg";
 const services = [
   {
     id: 1,
@@ -49,7 +50,7 @@ const services = [
   {
     id: 6,
     color: "#BAEAF9",
-    image: management,
+    image: Branding,
     title: "Branding, PR & Communication",
     text:
       "Join Over 40 Million Students From  Around The World Already Learning On Education!",
@@ -65,7 +66,7 @@ const services = [
   {
     id: 8,
     color: "#DAE3FA",
-    image: management,
+    image: Analysis,
     title: "Market Analysis & General Consulting",
     text:
       "Join Over 40 Million Students From  Around The World Already Learning On Education!",

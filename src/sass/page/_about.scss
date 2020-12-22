@@ -147,6 +147,12 @@
       @media screen and (max-width: 450px) {
         display: none;
       }
+
+      &-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     &-img{
@@ -204,4 +210,7 @@
       }
     }
   }
+}
+.special{
+  align-self: center !important;
 }

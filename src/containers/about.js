@@ -12,7 +12,6 @@ const About = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  
   return (
     <div className="about">
       <div className="about-container">
@@ -29,7 +28,7 @@ const About = () => {
                 and excellence, we will deliver transformative outcomes for our
                 clients.
               </Text>
-              <LinkButton color="button-white" extraStyle="mt-md">
+              <LinkButton color="button-white" extraStyle="mt-md special">
                 Read Our Story <span className="button-span">&rarr;</span>
               </LinkButton>
             </div>
@@ -106,14 +105,23 @@ const About = () => {
               savings wityhout taking on rish or management overhead
             </Text>
             <div className="about-values-images mt-md">
-              <div className="about-values-box">
-                <img src={brand} alt="brand" className="about-values-img" />
+              <div className="about-values-images-container">
+                <div className="about-values-box">
+                  <img src={brand} alt="brand" className="about-values-img" />
+                </div>
+                <Subtitle extraStyle="mt-xsm">Growth</Subtitle>
               </div>
-              <div className="about-values-box">
-                <img src={brand} alt="brand" className="about-values-img" />
+              <div className="about-values-images-container">
+                <div className="about-values-box">
+                  <img src={brand} alt="brand" className="about-values-img" />
+                </div>
+                <Subtitle extraStyle="mt-xsm">Innovation</Subtitle>
               </div>
-              <div className="about-values-box">
-                <img src={brand} alt="brand" className="about-values-img" />
+              <div className="about-values-images-container">
+                <div className="about-values-box">
+                  <img src={brand} alt="brand" className="about-values-img" />
+                </div>
+                <Subtitle extraStyle="mt-xsm">Excellence</Subtitle>
               </div>
             </div>
           </div>
