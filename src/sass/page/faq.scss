@@ -117,13 +117,14 @@
       &-box {
         display: flex;
         flex-direction: column;
-
+width: 100%;
         &-container {
           transition: all 0.3s;
           background: #ffffff;
           border: 1px solid #eff2f8;
           border-radius: 10px;
           padding: 1rem 1rem 1rem 1rem;
+          width: 100%;
           cursor: pointer;
           &:not(:last-child) {
             margin-bottom: 1rem;
