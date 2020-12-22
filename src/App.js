@@ -5,18 +5,6 @@ import Contact from "./containers/contact";
 import About from "./containers/about";
 import Faq from "./containers/faq";
 
-// const About = lazy(() => {
-//   return import("./containers/about");
-// });
-
-// const Contact = lazy(() => {
-//   return import("./containers/contact");
-// });
-
-// const Faq = lazy(() => {
-//   return import("./containers/faq");
-// });
-
 function App() {
   return (
     <div className="App">
