@@ -97,8 +97,10 @@
 
       &-box {
         flex-shrink: 0;
-        @include respond(phone) {
+        align-self: start;
+        @media screen and (max-width: 800px) {
           margin-right: 0 !important;
+         align-self: stretch;
         }
       }
 
@@ -277,7 +279,6 @@
         border-radius: 50%;
         cursor: pointer;
         background: rgba(115, 135, 150, 0.5);
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
         &:not(:last-child) {
           margin-right: 1rem;

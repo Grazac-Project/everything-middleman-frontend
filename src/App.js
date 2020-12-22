@@ -1,7 +1,8 @@
 import { Redirect, Route, Switch } from "react-router-dom";
 import Home from "./containers/home";
 import Layout from "./hoc/layout";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
+import { io } from "socket.io-client";
 
 const About = lazy(() => {
   return import("./containers/about");

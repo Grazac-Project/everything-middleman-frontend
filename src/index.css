@@ -575,7 +575,7 @@ html {
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: auto;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100%;
@@ -752,10 +752,12 @@ html {
 }
 .home-main-about-box {
   flex-shrink: 0;
+  align-self: start;
 }
-@media (max-width: 43.75em) {
+@media screen and (max-width: 800px) {
   .home-main-about-box {
     margin-right: 0 !important;
+    align-self: stretch;
   }
 }
 .home-main-about-img {
@@ -924,7 +926,6 @@ html {
   border-radius: 50%;
   cursor: pointer;
   background: rgba(115, 135, 150, 0.5);
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .home-main-customer-dot:not(:last-child) {
   margin-right: 1rem;
