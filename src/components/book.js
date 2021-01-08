@@ -1,6 +1,6 @@
+// @ts-nocheck
 import { WhatsApp, LinkButton } from "./button";
 import Subtitle from "./subtitle";
-// import {WhatsApp} from "./button"
 
 const Book = () => {
   return (

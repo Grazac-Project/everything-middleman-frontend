@@ -43,6 +43,8 @@
     width: 40%;
     display: flex;
     justify-content: space-between;
+
+     
   }
 
   &-links {
@@ -63,4 +65,8 @@
       outline: none;
     }
   }
+}
+
+img{
+  color: #738796
 }

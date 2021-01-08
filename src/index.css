@@ -355,9 +355,13 @@ html {
     align-items: center;
   }
 }
+@media (max-width: 260px) {
+  .book-buttons {
+    flex-direction: column;
+  }
+}
 @media (max-width: 43.75em) {
   .book-buttons > a {
-    flex-basis: 30%;
     text-align: center;
     align-self: center;
   }
@@ -365,6 +369,12 @@ html {
 @media (max-width: 385px) {
   .book-buttons > a {
     flex-basis: 100%;
+  }
+}
+@media (max-width: 260px) {
+  .book-buttons > a {
+    margin-bottom: 2rem;
+    margin-right: 0 !important;
   }
 }
 
@@ -588,6 +598,10 @@ html {
 }
 .footer-link:focus {
   outline: none;
+}
+
+img {
+  color: #738796;
 }
 
 .container {

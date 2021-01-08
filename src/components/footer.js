@@ -1,8 +1,8 @@
 import Logo from "../assets/logo.jpeg";
 import Facebook from "../assets/facebook.png";
-import Google from "../assets/google.png";
 import LinkedIn from "../assets/linkedin.png";
 import Twitter from "../assets/twitter.png";
+import Instagram from "../assets/instagram.svg";
 import Text from "./text";
 import Subtitle from "./subtitle";
 import { FooterLink } from "./link";
@@ -27,20 +27,44 @@ const Footer = () => {
               Build a modern and creative website with crealand
             </Text>
             <div className="footer-socials mt-sm">
-              <a href="/" target="_blank" className="footer-social-link">
-                <img src={Google} alt="google" className="footer-links-img" />
+              <a
+                href="instagram.com/emconsults_"
+                target="_blank"
+                rel="noreferrer"
+                className="footer-social-links"
+              >
+                <img
+                  src={Instagram}
+                  alt="Twitter"
+                  className="footer-links-img"
+                />
               </a>
-              <a href="/" target="_blank" className="footer-socila-links">
+              <a
+                href="twitter.com/emconsults_"
+                target="_blank"
+                rel="noreferrer"
+                className="footer-social-links"
+              >
                 <img src={Twitter} alt="Twitter" className="footer-links-img" />
               </a>
-              <a href="/" target="_blank" className="footer-social-links">
+              <a
+                href="http://linkedin.com/in/everything-middleman-284565201"
+                target="_blank"
+                rel="noreferrer"
+                className="footer-social-links"
+              >
                 <img
                   src={LinkedIn}
                   alt="linkedin"
                   className="footer-links-img"
                 />
               </a>
-              <a href="/" target="_blank" className="footer-social-links">
+              <a
+                href="fb.me/theEMconsults"
+                target="_blank"
+                rel="noreferrer"
+                className="footer-social-links"
+              >
                 <img
                   src={Facebook}
                   alt="Facebook"
