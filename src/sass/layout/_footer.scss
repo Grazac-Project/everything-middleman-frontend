@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   background-color: $color-white;
-
+  margin-bottom: 3rem;
   &-container {
     display: grid;
     grid-template-columns:  300px repeat(4, 1fr);

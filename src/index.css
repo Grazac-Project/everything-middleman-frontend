@@ -259,6 +259,11 @@ html {
   border: 1px solid #eff2f8;
   border-radius: 10px;
   padding-bottom: 1.5rem;
+  transition: all 0.3s ease-in;
+}
+.service:hover {
+  box-shadow: 5px 5px 20px #ccc;
+  transform: scale(1.02);
 }
 @media (max-width: 56.25em) {
   .service:last-child {
@@ -284,7 +289,12 @@ html {
   align-self: center;
   border-radius: 50%;
   width: 100px;
-  height: 144px;
+  height: 150px;
+}
+@media (max-width: 700px) {
+  .service-box {
+    height: 100px;
+  }
 }
 .service-img {
   width: 40%;
@@ -536,6 +546,7 @@ html {
 .footer {
   width: 100%;
   background-color: #ffffff;
+  margin-bottom: 3rem;
 }
 .footer-container {
   display: grid;

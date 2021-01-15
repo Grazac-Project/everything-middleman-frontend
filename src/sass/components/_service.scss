@@ -2,6 +2,12 @@
   border: 1px solid #eff2f8;
   border-radius: 10px;
   padding-bottom: 1.5rem;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    box-shadow: 5px 5px 20px #ccc;
+    transform: scale(1.02);
+  }
 
   &:last-child {
     @include respond(tab-port) {
@@ -24,15 +30,18 @@
     align-items: center;
     justify-content: center;
     align-self: center;
-    // padding: 3.3rem;
     border-radius: 50%;
     width: 100px;
-    height: 144px;
+    height: 150px;
+
+    @media (max-width: 700px) {
+      height: 100px;
+    }
   }
 
   &-img {
     width: 40%;
-   height: auto;
+    height: auto;
   }
 
   &-content {

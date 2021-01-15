@@ -16,9 +16,7 @@ const Service = (props) => {
           <div className="mb-sm">
             <Text color="sm-text-light">{props.text}</Text>
           </div>
-          <div className="service-link">
-            <LinkButton>Learn More</LinkButton>
-          </div>
+         
         </div>
       </div>
     </div>

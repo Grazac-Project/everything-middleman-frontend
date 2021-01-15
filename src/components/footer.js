@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Logo from "../assets/logo.jpeg";
 import Facebook from "../assets/facebook.png";
 import LinkedIn from "../assets/linkedin.png";
