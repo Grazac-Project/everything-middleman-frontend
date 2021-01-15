@@ -1,3 +1,5 @@
+
+// @ts-nocheck
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import Mask from "../assets/Mask.png";

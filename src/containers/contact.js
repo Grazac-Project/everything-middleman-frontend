@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { RiQuestionAnswerLine } from "react-icons/ri";

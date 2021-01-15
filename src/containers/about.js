@@ -57,7 +57,7 @@ const About = () => {
                   <li className="about-statements-item">
                     <Text color="sm-text-light">
                       2. To reposition corporate and medium companies for
-                      sustainable growth
+                      sustainable growth 
                     </Text>
                   </li>
                   <li className="about-statements-item">
