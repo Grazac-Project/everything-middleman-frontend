@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from "react";
 import { LinkButton } from "../components/button";
 import Text from "../components/text";
@@ -59,18 +60,37 @@ const Home = () => {
     },
   ]);
 
-  const handleClick = (index) => {
-    setdots(
-      dots.map((dots) => {
-        if (dots.id === index) {
-          dots.color = true;
-        } else {
-          dots.color = false;
-        }
-        return dots;
-      })
-    );
+  useEffect(() => {
+    handleTimeout(step);
+  }, [step]);
+
+  const handleTimeout = (index) => {
     setStep(index);
+    setTimeout(() => {
+      if (step < 4) setStep(step + 1);
+      else {
+        setStep(1);
+      }
+    }, 6000);
+  };
+
+  const handleClick = (index) => {
+    // setdots(
+    //   dots.map((dots) => {
+    //     if (dots.id === index) {
+    //       dots.color = true;
+    //     } else {
+    //       dots.color = false;
+    //     }
+    //     return dots;
+    //   })
+    // );
+    handleTimeout(index);
+    setStep((prev) => {
+      return (prev = index);
+    });
+    console.log("From index:", index);
+    console.log("From step:", step);
   };
   return (
     <div className="home">
@@ -197,15 +217,22 @@ const Home = () => {
                   </Text>
                 </div>
                 <div className="home-main-services-list mt-md">
-                  {services.map((serv) => (
-                    <Service
-                      src={serv.image}
-                      title={serv.title}
-                      text={serv.text}
-                      key={serv.id}
-                      color={serv.color}
-                    />
-                  ))}
+                  {services.map((serv) => {
+                    const first = serv.text.substring(0, 170);
+                    const more = serv.text.substring(170);
+                    // console.log(more)
+                    return (
+                      <Service
+                        src={serv.image}
+                        title={serv.title}
+                        text={serv.text}
+                        key={serv.id}
+                        color={serv.color}
+                        first={first}
+                        more={more}
+                      />
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -275,7 +302,7 @@ const Home = () => {
                       role="button"
                       className={[
                         "home-main-customer-dot",
-                        dot.color ? "active" : "inactive",
+                        dot.id === step ? "active" : "inactive",
                       ].join(" ")}
                       onClick={() => handleClick(dot.id)}
                     ></span>

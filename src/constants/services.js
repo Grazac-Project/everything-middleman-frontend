@@ -13,15 +13,16 @@ const services = [
     image: management,
     title: "Management Consulting",
     text:
-      "Join Over 40 Million Students From  Around The World Already Learning On Education!",
+      "We actively engage in projects that will enhance your business performance while ultimately creating value. Our clients range from government, non-profit organisations and private equity firms. Our team of dedicated analysts have a knack of solving challenging and strategic problems by preparing case studies that fits into the equation. Why don't you allow our team of intelligent and analytical minds work to help you solve your complex business problems?",
   },
+
   {
     id: 2,
     color: "#FAEDC3",
     image: corporate,
     title: "Corporate Structuring & Growth Consulting",
     text:
-      "Join Over 40 Million Students From  Around The World Already Learning On Education!",
+      "You need to expand, and an organizational structure provides an hierarchy for each job within it. It allows the organization to meet its goals. As a consulting firm, we provide a structure that is often developed to allow each business unit the ability to function without affecting other areas of the organization. This structure is often based on a  specific structure methodology, which is then divided into business units.",
   },
   {
     id: 3,
@@ -29,7 +30,7 @@ const services = [
     image: HR,
     title: "HR Services & Consulting",
     text:
-      "Join Over 40 Million Students From  Around The World Already Learning On Education!",
+      "The heart of any business is the human resource division. It is the central cohesive source of development that is designed to hire and manage people for the employer’s objective and to maximize the efficiency of the overall organization. We can help your business tailor the best HR process from selection, enrollment, training & development, orientations to promoting an overall healthy environment.",
   },
   {
     id: 4,
@@ -37,7 +38,7 @@ const services = [
     image: business,
     title: "Business Development Consulting",
     text:
-      "Join Over 40 Million Students From  Around The World Already Learning On Education!",
+      "We are responsible for helping companies identify business weaknesses and challenges in order to  determine relevant solutions. With these responsibilities, we play a crucial role in any company's growth and success. Our team of experts would help you develop professional business plan, develop and provide assistance in implementing strategies and also ensure  overall project success. ",
   },
   {
     id: 5,
@@ -45,7 +46,7 @@ const services = [
     image: ideation,
     title: "Ideation & VC Services",
     text:
-      "Join Over 40 Million Students From  Around The World Already Learning On Education!",
+      "We're young with a burst of fresh creative energy. We love great ideas and we provide capital for individuals and companies exhibiting high growth potential to scale. We provide valuable information, resources and technical assistance to make such businesses successful. You have any remarkable idea with a potential for growth worth funding? Contact us today. ",
   },
   {
     id: 6,
@@ -53,7 +54,7 @@ const services = [
     image: Branding,
     title: "Branding, PR & Communication",
     text:
-      "Join Over 40 Million Students From  Around The World Already Learning On Education!",
+      "A brand is not what you say it is. It is what the consumers of your products/service declare it is. How you do now influence their judgement? Effective branding of your business will provide the ideal experience for your consumers. After building that experience, public relations is the icing on the cake. It is an effective way to communicate with a target market and attract further investment.",
   },
   {
     id: 7,
@@ -61,7 +62,7 @@ const services = [
     image: brand,
     title: "Brand Positioning, Media & Strategy",
     text:
-      "Join Over 40 Million Students From  Around The World Already Learning On Education!",
+      "A brand is not what you say it is. It is what the consumers of your products/service declare it is. How you do now influence their judgement? Effective branding of your business will provide the ideal experience for your consumers. After building that experience, public relations is the icing on the cake. It is an effective way to communicate with a target market and attract further investment.",
   },
   {
     id: 8,
@@ -69,7 +70,7 @@ const services = [
     image: Analysis,
     title: "Market Analysis & General Consulting",
     text:
-      "Join Over 40 Million Students From  Around The World Already Learning On Education!",
+      "A brand is not what you say it is. It is what the consumers of your products/service declare it is. How you do now influence their judgement? Effective branding of your business will provide the ideal experience for your consumers. After building that experience, public relations is the icing on the cake. It is an effective way to communicate with a target market and attract further investment.",
   },
 ];
 

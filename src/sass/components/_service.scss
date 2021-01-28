@@ -3,7 +3,8 @@
   border-radius: 10px;
   padding-bottom: 1.5rem;
   transition: all 0.3s ease-in;
-
+  height: auto;
+  align-self: start;
   &:hover {
     box-shadow: 5px 5px 20px #ccc;
     transform: scale(1.02);
@@ -22,7 +23,7 @@
     padding: 1rem 0 0 0;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
   }
 
   &-box {
@@ -32,7 +33,7 @@
     align-self: center;
     border-radius: 50%;
     width: 100px;
-    height: 150px;
+    height: 100px;
 
     @media (max-width: 700px) {
       height: 100px;
@@ -44,12 +45,36 @@
     height: auto;
   }
 
+  &-subtitle {
+    text-align: center !important;
+  }
+
   &-content {
-    text-align: center;
+    text-align: justify;
     display: flex;
     flex-basis: 100%;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
   }
+
+  &-read {
+    cursor: pointer;
+  }
+
+  &-less {
+    height: 0;
+    transition: 0.3s all ease-in-out;
+    opacity: 0;
+    display: none;
+  }
+}
+.hide2 {
+  transition: 0.3s all ease-in-out;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  // display: block;
+}
+.hide {
+  display: none;
 }

@@ -132,6 +132,15 @@ html {
     font-size: 2rem;
   }
 }
+.subtitle-smaller {
+  font-size: 0.8rem;
+}
+@media (max-width: 43.75em) {
+  .subtitle-smaller {
+    line-height: 20px;
+    font-size: 1rem;
+  }
+}
 .subtitle-xbig {
   font-size: 2.8125rem;
   line-height: 60px;
@@ -260,6 +269,8 @@ html {
   border-radius: 10px;
   padding-bottom: 1.5rem;
   transition: all 0.3s ease-in;
+  height: auto;
+  align-self: start;
 }
 .service:hover {
   box-shadow: 5px 5px 20px #ccc;
@@ -280,7 +291,7 @@ html {
   padding: 1rem 0 0 0;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto;
 }
 .service-box {
   display: flex;
@@ -289,7 +300,7 @@ html {
   align-self: center;
   border-radius: 50%;
   width: 100px;
-  height: 150px;
+  height: 100px;
 }
 @media (max-width: 700px) {
   .service-box {
@@ -300,13 +311,35 @@ html {
   width: 40%;
   height: auto;
 }
+.service-subtitle {
+  text-align: center !important;
+}
 .service-content {
-  text-align: center;
+  text-align: justify;
   display: flex;
   flex-basis: 100%;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
+}
+.service-read {
+  cursor: pointer;
+}
+.service-less {
+  height: 0;
+  transition: 0.3s all ease-in-out;
+  opacity: 0;
+  display: none;
+}
+
+.hide2 {
+  transition: 0.3s all ease-in-out;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.hide {
+  display: none;
 }
 
 .link:visited, .link:link {
@@ -846,7 +879,7 @@ img {
 }
 .home-main-services-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, 30%);
   column-gap: 30px;
   row-gap: 30px;
   padding-bottom: 2rem;
