@@ -62,7 +62,7 @@
   }
 
   &-less {
-    height: 0;
+    height: 0; 
     transition: 0.3s all ease-in-out;
     opacity: 0;
     display: none;
@@ -73,7 +73,6 @@
   height: auto;
   opacity: 1;
   visibility: visible;
-  // display: block;
 }
 .hide {
   display: none;
