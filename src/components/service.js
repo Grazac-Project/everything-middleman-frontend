@@ -26,7 +26,7 @@ const Service = (props) => {
               >
                 ...Read More
               </span>
-              <span className={["", show ? "hide2" : "service-less"].join(" ")}>
+              <span className={show ? "hide2" : "service-less"}>
                 {props.more}
               </span>
               <span
