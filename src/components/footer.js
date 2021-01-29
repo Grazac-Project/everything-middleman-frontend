@@ -1,5 +1,5 @@
 // @ts-nocheck
-import Logo from "../assets/logo.jpeg";
+import Logo from "../assets/logo.png";
 import Facebook from "../assets/facebook.png";
 import LinkedIn from "../assets/linkedin.png";
 import Twitter from "../assets/twitter.png";
@@ -15,15 +15,13 @@ const Footer = () => {
       <div className="container">
         <div className="footer-container ma">
           <div className="footer-section-1">
-            <div className="footer-img-box">
-              <Link to="/">
-                <img
-                  src={Logo}
-                  alt="everythingmiddleman"
-                  className="footer-img"
-                />
-              </Link>
-            </div>
+            <Link to="/" className="footer-img-box">
+              <img
+                src={Logo}
+                alt="everythingmiddleman"
+                className="footer-img"
+              />
+            </Link>
             <Text color="sm-text-light footer-text mt-sm">
               Build a modern and creative website with crealand
             </Text>

@@ -16,12 +16,10 @@ const About = () => {
   return (
     <div className="about">
       <div className="about-container">
-        <div className="backgroundColor mb-bg">
+        <div className="backgroundColor">
           <div className="container">
             <div className="about-header-container">
-              <div className="mb-sm">
-                <TextHeader>Our Story</TextHeader>
-              </div>
+            
               <Text color="sm-text-white contact-header-text">
                 Everything Middleman is an agile consulting company that focuses
                 on creating successful growth experiences for small, medium and
@@ -29,9 +27,6 @@ const About = () => {
                 and excellence, we will deliver transformative outcomes for our
                 clients.
               </Text>
-              <LinkButton color="button-white" extraStyle="mt-md special">
-                Read Our Story <span className="button-span">&rarr;</span>
-              </LinkButton>
             </div>
           </div>
         </div>
