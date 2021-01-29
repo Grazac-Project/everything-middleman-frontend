@@ -292,8 +292,7 @@ const Contact = () => {
               <TextHeader>Contact Us</TextHeader>
             </div>
             <Text color="sm-text-white contact-header-text">
-              We bring the results while helping you achieve cost and time
-              savings without taking on risk or management overhead
+              Creating incredible growth experiences
             </Text>
           </div>
         </div>

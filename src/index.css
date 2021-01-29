@@ -268,9 +268,12 @@ html {
   border: 1px solid #eff2f8;
   border-radius: 10px;
   padding-bottom: 1.5rem;
-  transition: all 0.3s ease-in;
+  transition: height 0.3s ease-in;
   height: auto;
   align-self: start;
+}
+.service:last-child {
+  grid-column: 3/-1;
 }
 .service:hover {
   box-shadow: 5px 5px 20px #ccc;

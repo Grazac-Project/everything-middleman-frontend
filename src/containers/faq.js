@@ -1,4 +1,3 @@
-
 // @ts-nocheck
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";
@@ -15,37 +14,23 @@ const Faq = () => {
   const [faqs, setFaqs] = useState([
     {
       id: 1,
-      question: " How do I pay for the Essentials or Premium plan?",
+      question: "Are you a PR company?",
       answer:
-        " You can pay with a credit card or via net banking (if you’re in United States). We will renew your subcscipti automaticall at the end of every billling cycle.",
+        "Public relations is part of the services that we offer. We are a full blown consultancy agency that provides technical and professional advice to your business problems. We also have a specialized team that will make sure these solutions are executed. ",
       open: true,
     },
     {
       id: 2,
-      question: " How do I pay for the Essentials or Premium plan?",
+      question: "How can I get consultancy services?",
       answer:
-        " You can pay with a credit card or via net banking (if you’re in United States). We will renew your subcscipti automaticall at the end of every billling cycle.",
+        "You need to book an appointment. Once appointment is confirmed, you would be connected with a consultant. ",
       open: false,
     },
     {
       id: 3,
-      question: " How do I pay for the Essentials or Premium plan?",
+      question: "How can I join the team?",
       answer:
-        " You can pay with a credit card or via net banking (if you’re in United States). We will renew your subcscipti automaticall at the end of every billling cycle.",
-      open: false,
-    },
-    {
-      id: 4,
-      question: " How do I pay for the Essentials or Premium plan?",
-      answer:
-        " You can pay with a credit card or via net banking (if you’re in United States). We will renew your subcscipti automaticall at the end of every billling cycle.",
-      open: false,
-    },
-    {
-      id: 5,
-      question: " How do I pay for the Essentials or Premium plan?",
-      answer:
-        " You can pay with a credit card or via net banking (if you’re in United States). We will renew your subcscipti automaticall at the end of every billling cycle.",
+        "Currently we're not hiring, but we have an opening for an incubator program where we train young professionals to take charge of the future they deserve. Check website for more details. ",
       open: false,
     },
   ]);

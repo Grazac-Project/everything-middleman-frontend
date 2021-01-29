@@ -2,9 +2,13 @@
   border: 1px solid #eff2f8;
   border-radius: 10px;
   padding-bottom: 1.5rem;
-  transition: all 0.3s ease-in;
+  transition: height 0.3s ease-in;
   height: auto;
   align-self: start;
+
+  &:last-child {
+    grid-column: 3 /-1;
+  }
   &:hover {
     box-shadow: 5px 5px 20px #ccc;
     transform: scale(1.02);
@@ -57,14 +61,12 @@
     height: 100%;
   }
 
-  
-
   &-read {
     cursor: pointer;
   }
 
   &-less {
-    height: 0; 
+    height: 0;
     transition: 0.3s all ease-in-out;
     opacity: 0;
     display: none;

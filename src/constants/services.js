@@ -60,9 +60,9 @@ const services = [
     id: 7,
     color: "#C7E5EE",
     image: brand,
-    title: "Brand Positioning, Media & Strategy",
+    title: "SME Solutions",
     text:
-      "A brand is not what you say it is. It is what the consumers of your products/service declare it is. How you do now influence their judgement? Effective branding of your business will provide the ideal experience for your consumers. After building that experience, public relations is the icing on the cake. It is an effective way to communicate with a target market and attract further investment.",
+      "We see opportunities where others see major obstacles, and that is why we are passionate about helping SMEs overcome problems that might hinder growth. From our studies, SMEs are of specific importance to national development, so our management consulting toolkit has been proven to support and nurture different stage businesses into institutionalized, structured and established brands.",
   },
   {
     id: 8,
@@ -70,7 +70,7 @@ const services = [
     image: Analysis,
     title: "Market Analysis & General Consulting",
     text:
-      "A brand is not what you say it is. It is what the consumers of your products/service declare it is. How you do now influence their judgement? Effective branding of your business will provide the ideal experience for your consumers. After building that experience, public relations is the icing on the cake. It is an effective way to communicate with a target market and attract further investment.",
+      "When you're able to start a new enterprise, market research and analysis is very important. As consultants, we help you examine your particular niche, and use the facts to forecast potential outcomes. This will help you understand how products/services of your niche exist with a specific environment. With our market research, we take it step further by not only examining the specific niche but alongside the customers in it with the intent of you understanding your customers diligently. This would in turn allow you make informed decisions. ",
   },
 ];
 
