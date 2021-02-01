@@ -8,7 +8,7 @@ export const LinkButton = ({ color, extraStyle, children }) => {
   );
 };
 
-export const WhatsApp = ({ color, extraStyle }) => {
+export const WhatsApp = ({ color, extraStyle, children }) => {
   return (
     <a
       href="https://wa.me/+2349132633784"
@@ -16,7 +16,7 @@ export const WhatsApp = ({ color, extraStyle }) => {
       target="_blank"
       rel="noreferrer"
     >
-      Book Now
+     {children}
     </a>
   );
 };

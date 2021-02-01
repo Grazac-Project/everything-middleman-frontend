@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { useEffect, useState } from "react";
-import { LinkButton } from "../components/button";
+import { LinkButton, WhatsApp } from "../components/button";
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import LandingSvg from "../assets/landing-svg.png";
@@ -20,11 +20,38 @@ const Home = () => {
   }, []);
 
   const [step, setStep] = useState(1);
-  const [dots, setdots] = useState([
+  const [headerStep, setHeaderStep] = useState(1);
+  const [dots] = useState([
     { id: 1, color: true },
     { id: 2, color: false },
     { id: 3, color: false },
     { id: 4, color: false },
+  ]);
+  const [header] = useState([
+    {
+      id: 1,
+      title: "Creating incredible growth experiences",
+      text:
+        "We bring the results while helping you achieve cost and time savings without taking on rish or management overhead",
+    },
+    {
+      id: 2,
+      title: "Building a house is an interesting process",
+      text:
+        "Building a skyscraper that will survive the test of time is a challenge. Frames and structures must come first, before walls and finishing.",
+    },
+    {
+      id: 3,
+      title: "Growing your company",
+      text:
+        "To grow your company, brand or enterprise, you need to approach it from a house owners perspective.",
+    },
+    {
+      id: 4,
+      title: "At Everything Middle Man",
+      text:
+        " it is our mission to help you build grow house (company) in the most exciting and memorable ways.",
+    },
   ]);
   const [customer] = useState([
     {
@@ -62,7 +89,17 @@ const Home = () => {
 
   useEffect(() => {
     handleTimeout(step);
-  }, [step]);
+  }, [step]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    console.log(headerStep);
+    setTimeout(() => {
+      if (headerStep === 4) setHeaderStep(1);
+      else {
+        setHeaderStep(headerStep + 1);
+      }
+    }, 6000);
+  }, [headerStep]);
 
   const handleTimeout = (index) => {
     setStep(index);
@@ -75,23 +112,12 @@ const Home = () => {
   };
 
   const handleClick = (index) => {
-    // setdots(
-    //   dots.map((dots) => {
-    //     if (dots.id === index) {
-    //       dots.color = true;
-    //     } else {
-    //       dots.color = false;
-    //     }
-    //     return dots;
-    //   })
-    // );
     handleTimeout(index);
     setStep((prev) => {
       return (prev = index);
-    });
-    console.log("From index:", index);
-    console.log("From step:", step);
+    }, 1000);
   };
+
   return (
     <div className="home">
       <div className="home-container">
@@ -99,15 +125,23 @@ const Home = () => {
           <div className="container">
             <div className="home-header-container">
               <div className="home-header-content">
-                <TextHeader>Creating incredible growth experiences</TextHeader>
-                <Text color="sm-text-white" extraStyle="mt-xsm mb-sm">
-                  We bring the results while helping you achieve cost and time
-                  savings wityhout taking on rish or management overhead
-                </Text>
-                <LinkButton color="button-white">
-                  <span>Learn more</span>{" "}
+                {header
+                  .filter((head) => head.id === headerStep)
+                  .map((head) => (
+                    <div
+                      className="animate__animated animate__fadeInRight animate__slower home-header-carousel"
+                      key={head.id}
+                    >
+                      <TextHeader>{head.title}</TextHeader>
+                      <Text color="sm-text-white" extraStyle="mt-xsm mb-sm">
+                        {head.text}
+                      </Text>
+                    </div>
+                  ))}
+                <WhatsApp color="button-white mr-sm book-button">
+                  <span>Talk to us Now</span>{" "}
                   <span className="button-span">&rarr;</span>
-                </LinkButton>
+                </WhatsApp>
               </div>
               <div className="home-header-svg">
                 <img src={LandingSvg} alt="svg" className="home-header-img" />
@@ -211,9 +245,10 @@ const Home = () => {
                     Why you should choose us
                   </Subtitle>
                   <Text color="sm-text-light" extraStyle="mb-sm mt-sm">
-                    EhyaScape is an photography team based on Yogyakarta,
-                    Indonesis. We are a small team with big vision of future. We
-                    believe everything can be momorize with picture.
+                    We are a team of young professionals who can help you
+                    translate your ideas into a sustainable project which will
+                    solve proposed problem and also fit your unique structure
+                    and culture.
                   </Text>
                 </div>
                 <div className="home-main-services-list mt-md">

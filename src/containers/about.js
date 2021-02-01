@@ -3,11 +3,10 @@ import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import Title from "../components/title";
 import Kamala from "../assets/kamala.png";
-import { LinkButton } from "../components/button";
 import { useEffect } from "react";
 import ideation from "../assets/ideation.png";
 import Growth from "../assets/growth.svg";
-import perfect from "../assets/perfect.svg"
+import perfect from "../assets/perfect.svg";
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -19,13 +18,14 @@ const About = () => {
         <div className="backgroundColor">
           <div className="container">
             <div className="about-header-container">
-            
+              <TextHeader>
+                We Will Deliver Transformative Outcomes For Our Clients
+              </TextHeader>
               <Text color="sm-text-white contact-header-text">
                 Everything Middleman is an agile consulting company that focuses
                 on creating successful growth experiences for small, medium and
                 large companies across Africa. Through creativity, innovation
-                and excellence, we will deliver transformative outcomes for our
-                clients.
+                and excellence.
               </Text>
             </div>
           </div>

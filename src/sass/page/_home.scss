@@ -28,16 +28,24 @@
     }
 
     &-content {
+      align-self: center;
       flex-basis: 80%;
       max-width: 60%;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
       @include respond(phone) {
         flex-basis: 100%;
         max-width: 100%;
       }
     }
-
+    &-carousel {
+      margin-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
     &-svg {
       flex-shrink: 2;
       @include respond(phone) {

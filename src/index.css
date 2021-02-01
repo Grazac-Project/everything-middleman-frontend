@@ -272,9 +272,6 @@ html {
   height: auto;
   align-self: start;
 }
-.service:last-child {
-  grid-column: 3/-1;
-}
 .service:hover {
   box-shadow: 5px 5px 20px #ccc;
   transform: scale(1.02);
@@ -769,16 +766,25 @@ img {
   width: 100%;
 }
 .home-header-content {
+  align-self: center;
   flex-basis: 80%;
   max-width: 60%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
 }
 @media (max-width: 43.75em) {
   .home-header-content {
     flex-basis: 100%;
     max-width: 100%;
   }
+}
+.home-header-carousel {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .home-header-svg {
   flex-shrink: 2;

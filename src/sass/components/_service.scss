@@ -6,9 +6,6 @@
   height: auto;
   align-self: start;
 
-  &:last-child {
-    grid-column: 3 /-1;
-  }
   &:hover {
     box-shadow: 5px 5px 20px #ccc;
     transform: scale(1.02);

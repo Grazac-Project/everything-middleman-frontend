@@ -72,6 +72,30 @@ const services = [
     text:
       "When you're able to start a new enterprise, market research and analysis is very important. As consultants, we help you examine your particular niche, and use the facts to forecast potential outcomes. This will help you understand how products/services of your niche exist with a specific environment. With our market research, we take it step further by not only examining the specific niche but alongside the customers in it with the intent of you understanding your customers diligently. This would in turn allow you make informed decisions. ",
   },
+  {
+    id: 9,
+    color: "#DAE3FA",
+    image: Analysis,
+    title: "Digital, Data and Technology",
+    text:
+      "Technology is the bedrock of innovation, commerce and community. We offer technological services and software solutions to manage your business efficiently. No matter the size of your enterprise, a well set technological infrastructure will set you ahead of others. ",
+  },
+  {
+    id: 10,
+    color: "#DAE3FA",
+    image: Analysis,
+    title: "Entertainment and Event Management",
+    text:
+      "There are lot of challenges that is often associated with managing all aspects of an event right from planning, scheduling, execution to post event activities. Most of the time, the difference between success and failure lies in efficiently handling the multitude of mundane tasks, yet important tasks. At Everything Middleman, we help you eliminate that failure margin. From handling your event registration and event marketing, maintaining your expenditure to overall coordination, we provide integrated solutions for your every need. Our focus is on flawless event execution and delivering customer satisfaction.",
+  },
+  {
+    id: 11,
+    color: "#DAE3FA",
+    image: Analysis,
+    title: "Agricultural Consultation.",
+    text:
+      "Agriculture is very lucrative, only with the right expertise. We produce quality technical advice on the use and management of agricultural land. We also provide business and financial strategies. Our aim is to help you balance the commercial viability of agriculture with sustainable development. ",
+  },
 ];
 
 export default services;
