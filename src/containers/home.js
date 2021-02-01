@@ -48,11 +48,14 @@ const Home = () => {
     },
     {
       id: 4,
-      title: "At Everything Middle Man",
+      title: "At Everything MiddleMan",
       text:
         " it is our mission to help you build grow house (company) in the most exciting and memorable ways.",
     },
   ]);
+
+
+
   const [customer] = useState([
     {
       id: 1,
