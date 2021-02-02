@@ -101,7 +101,7 @@ const Home = () => {
       else {
         setHeaderStep(headerStep + 1);
       }
-    }, 6000);
+    }, 10000);
   }, [headerStep]);
 
   const handleTimeout = (index) => {
@@ -258,7 +258,6 @@ const Home = () => {
                   {services.map((serv) => {
                     const first = serv.text.substring(0, 170);
                     const more = serv.text.substring(170);
-                    // console.log(more)
                     return (
                       <Service
                         src={serv.image}

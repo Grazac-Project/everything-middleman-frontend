@@ -4,6 +4,8 @@ import Text from "./text";
 
 const Service = (props) => {
   const [show, setShow] = useState(false);
+
+  
   return (
     <div className="service">
       <div className="service-container ma">
