@@ -96,7 +96,7 @@ const Faq = () => {
           </Text>
         </div>
         <div className="Faq-main mt-bg">
-          <section className="Faq-main-category">
+          {/* <section className="Faq-main-category">
             <div className="container">
               <div>
                 <Subtitle extraStyle="Faq-main-category-subtitle ">
@@ -127,7 +127,7 @@ const Faq = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
           <section className="Faq-main-faq mt-bg">
             <div className="Faq-main-faq-container">
               <Title extraStyle="mb-xsm">FAQ</Title>

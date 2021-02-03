@@ -45,20 +45,29 @@ const About = () => {
                 <ul className="about-statements-list">
                   <li className="about-statements-item">
                     <Text color="sm-text-light ">
-                      1. To nurture small scale businesses from ideas to
-                      execution
+                      <span>1. </span>
+                      <span>
+                        To nurture small scale businesses from ideas to
+                        execution
+                      </span>
                     </Text>
                   </li>
                   <li className="about-statements-item">
                     <Text color="sm-text-light">
-                      2. To reposition corporate and medium companies for
-                      sustainable growth
+                      <span>2. </span>
+                      <span>
+                        To reposition corporate and medium companies for
+                        sustainable growth
+                      </span>
                     </Text>
                   </li>
                   <li className="about-statements-item">
                     <Text color="sm-text-light">
-                      3. To connect businesses of all types with required Human
-                      Resources for effective operation
+                      <span>3. </span>
+                      <span>
+                        To connect businesses of all types with required Human
+                        Resources for effective operation
+                      </span>
                     </Text>
                   </li>
                 </ul>

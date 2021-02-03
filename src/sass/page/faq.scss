@@ -41,70 +41,70 @@
 
   &-main {
     width: 100%;
-    &-category {
-      width: 100%;
-      position: relative;
+    // &-category {
+    //   width: 100%;
+    //   position: relative;
 
-      &-subtitle {
-        text-align: center;
-        margin-bottom: 3rem;
-      }
+    //   &-subtitle {
+    //     text-align: center;
+    //     margin-bottom: 3rem;
+    //   }
 
-      &-plans {
-        display: flex;
-        @include respond(phone) {
-          flex-wrap: wrap;
-          justify-content: space-between;
-        }
-      }
+    //   &-plans {
+    //     display: flex;
+    //     @include respond(phone) {
+    //       flex-wrap: wrap;
+    //       justify-content: space-between;
+    //     }
+    //   }
 
-      &-plan {
-        text-align: center;
-        border: 1px solid #eff2f8;
-        border-radius: 10px;
-        width: auto;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 1rem 0;
-        justify-content: space-between;
+    //   &-plan {
+    //     text-align: center;
+    //     border: 1px solid #eff2f8;
+    //     border-radius: 10px;
+    //     width: auto;
+    //     display: flex;
+    //     align-items: center;
+    //     flex-direction: column;
+    //     padding: 1rem 0;
+    //     justify-content: space-between;
 
-        &:not(:last-child) {
-          margin-right: 2rem;
-        }
+    //     &:not(:last-child) {
+    //       margin-right: 2rem;
+    //     }
 
-        &:first-child {
-          @media (max-width: 550px) {
-            flex-basis: 40vh;
-            margin: 0rem auto 0.5rem auto;
-          }
-        }
-        &:nth-child(2) {
-          @media (max-width: 550px) {
-            flex-basis: 40vh;
-            margin: 0.5rem auto 0.3rem auto;
-          }
-        }
+    //     &:first-child {
+    //       @media (max-width: 550px) {
+    //         flex-basis: 40vh;
+    //         margin: 0rem auto 0.5rem auto;
+    //       }
+    //     }
+    //     &:nth-child(2) {
+    //       @media (max-width: 550px) {
+    //         flex-basis: 40vh;
+    //         margin: 0.5rem auto 0.3rem auto;
+    //       }
+    //     }
 
-        &:last-child {
-          @include respond(phone) {
-            flex-basis: 40vh;
-            margin: 0.5rem auto 5rem auto;
-            width: 50%;
-          }
-        }
-      }
+    //     &:last-child {
+    //       @include respond(phone) {
+    //         flex-basis: 40vh;
+    //         margin: 0.5rem auto 5rem auto;
+    //         width: 50%;
+    //       }
+    //     }
+    //   }
 
-      &-box {
-        width: 34px;
-        background: #e5e5e5;
-        height: 34px;
-      }
-      &-text {
-        width: 80%;
-        margin: auto;
-      }
-    }
+    //   &-box {
+    //     width: 34px;
+    //     background: #e5e5e5;
+    //     height: 34px;
+    //   }
+    //   &-text {
+    //     width: 80%;
+    //     margin: auto;
+    //   }
+    // }
 
     &-faq {
       width: 100%;

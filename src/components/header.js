@@ -7,11 +7,9 @@ const Header = ({ toggle }) => {
   return (
     <header className="header">
       <div className="header-container">
-        {/* <div className="header-logo"> */}
           <Link to="/" className="header-logo">
             <img src={Logo} alt="logo" className="header-img" />
           </Link>
-        {/* </div> */}
         <Navigation />
         <div className="header-toggle" onClick={toggle}>
           <GiHamburgerMenu size="3rem" color="white" title="sidebar toggle" />

@@ -18,7 +18,7 @@
   }
 
   &-logo {
-    flex-basis: 25vh;
+    flex-basis: 20vh;
     margin-right: auto;
   }
 
@@ -31,11 +31,8 @@
     @include respond(phone) {
       align-self: center;
       display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
+     
       z-index: 9999;
-      margin-top: 5px;
     }
   }
 }

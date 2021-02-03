@@ -125,6 +125,7 @@
         flex-direction: column;
         @media (max-width: 800px) {
           margin-top: 2rem;
+          text-align: center;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -139,6 +140,12 @@
       &-text {
         @media screen and (max-width: 800px) {
           text-align: center;
+        }
+      }
+
+      &-button {
+        @media screen and (max-width: 800px) {
+          align-self: center !important;
         }
       }
     }
