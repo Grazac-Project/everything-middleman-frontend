@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import Subtitle from "../components/subtitle";
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";

@@ -27,10 +27,10 @@ const Footer = () => {
             </Text>
             <div className="footer-socials mt-sm">
               <a
-                href="instagram.com/emconsults_"
+                href="https://instagram.com/emconsults_"
                 target="_blank"
                 rel="noreferrer"
-                className="footer-social-links"
+                className="footer-socials-links"
               >
                 <img
                   src={Instagram}
@@ -39,10 +39,10 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="twitter.com/emconsults_"
+                href="https://twitter.com/emconsults_"
                 target="_blank"
                 rel="noreferrer"
-                className="footer-social-links"
+                className="footer-socials-links"
               >
                 <img src={Twitter} alt="Twitter" className="footer-links-img" />
               </a>
@@ -50,7 +50,7 @@ const Footer = () => {
                 href="http://linkedin.com/in/everything-middleman-284565201"
                 target="_blank"
                 rel="noreferrer"
-                className="footer-social-links"
+                className="footer-socials-links"
               >
                 <img
                   src={LinkedIn}
@@ -59,7 +59,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="fb.me/theEMconsults"
+                href="https://fb.me/theEMconsults"
                 target="_blank"
                 rel="noreferrer"
                 className="footer-social-links"
@@ -72,9 +72,21 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="footer-section-2">
+          {/* <div className="footer-section-2">
             <Subtitle size="subtitle-small" extraStyle="mb-sm">
               Product
+            </Subtitle>
+            <div className="footer-links">
+              <FooterLink extraStyle="footer-link">Landing Page</FooterLink>
+              <FooterLink extraStyle="footer-link">Features</FooterLink>
+              <FooterLink extraStyle="footer-link">Documentation</FooterLink>
+              <FooterLink extraStyle="footer-link">Referral Program</FooterLink>
+              <FooterLink extraStyle="footer-link">Pricing</FooterLink>
+            </div>
+          </div>
+          <div className="footer-section-2">
+            <Subtitle size="subtitle-small" extraStyle="mb-sm">
+              Our Services
             </Subtitle>
             <div className="footer-links">
               <FooterLink extraStyle="footer-link">Landing Page</FooterLink>
@@ -107,19 +119,7 @@ const Footer = () => {
               <FooterLink extraStyle="footer-link">Referral Program</FooterLink>
               <FooterLink extraStyle="footer-link">Pricing</FooterLink>
             </div>
-          </div>
-          <div className="footer-section-2">
-            <Subtitle size="subtitle-small" extraStyle="mb-sm">
-              Product
-            </Subtitle>
-            <div className="footer-links">
-              <FooterLink extraStyle="footer-link">Landing Page</FooterLink>
-              <FooterLink extraStyle="footer-link">Features</FooterLink>
-              <FooterLink extraStyle="footer-link">Documentation</FooterLink>
-              <FooterLink extraStyle="footer-link">Referral Program</FooterLink>
-              <FooterLink extraStyle="footer-link">Pricing</FooterLink>
-            </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
