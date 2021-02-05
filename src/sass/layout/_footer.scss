@@ -25,6 +25,10 @@
       align-items: center;
       margin-bottom: 5rem;
     }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
   }
 
   &-img-box {

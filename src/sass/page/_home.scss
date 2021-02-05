@@ -64,29 +64,30 @@
 
       &-container {
         display: grid;
-        grid-template-columns: repeat(5, 15vh);
+        grid-template-columns: repeat(5, 15%);
         justify-content: space-between;
-        align-items: start;
+        // align-items: start;
         column-gap: 20px;
+        row-gap: 50px;
 
-        @include respond(phone) {
-          grid-template-columns: repeat(4, 1fr);
+        @media (max-width: 800px) {
+          grid-template-columns: repeat(3, 1fr);
           row-gap: 50px;
         }
       }
 
       &-list {
-        &-4,
+        // &-4,
         &-5 {
-          @include respond(phone) {
-            display: none;
+          @media (max-width: 800px) {
+            grid-column: 2 / -1;
           }
         }
       }
 
       &-img {
         width: 100%;
-        height: 100%;
+        height: auto;
       }
     }
 
