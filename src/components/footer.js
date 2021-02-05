@@ -23,7 +23,11 @@ const Footer = () => {
               />
             </Link>
             <Text color="sm-text-light footer-text mt-sm">
-              Build a modern and creative website with crealand
+              Build a modern and creative website by{" "}
+              <a href="https://grazac.com.ng" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+                {" "}
+                Grazac
+              </a>
             </Text>
             <div className="footer-socials mt-sm">
               <a

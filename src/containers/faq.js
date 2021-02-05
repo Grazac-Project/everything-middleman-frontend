@@ -189,14 +189,22 @@ const Faq = () => {
                 <div className="Faq-main-question-helplines mt-bg">
                   <div className="Faq-main-question-helpline">
                     <div className="Faq-main-question-img mb-sm"></div>
-                    <Title>+1 (646) 786 - 5060</Title>
+                    <Title>+234 903 688 4493</Title>
                     <Text color="sm-text-light" extraStyle="ta mt-xsm">
                       We are always happy to help
                     </Text>
                   </div>
                   <div className="Faq-main-question-helpline">
                     <div className="Faq-main-question-img mb-sm"></div>
-                    <Title extraStyle="h">support@helpcenter.com</Title>
+                    <a
+                      href="mailto:hello@everythingmiddleman.com"
+                      className="title h"
+                      style={{ textDecoration: "none" }}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      hello@everythingmiddleman.com
+                    </a>
                     <Text color="sm-text-light" extraStyle="ta mt-xsm">
                       Alternative way to get answer faster
                     </Text>

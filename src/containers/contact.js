@@ -333,7 +333,15 @@ const Contact = () => {
                   <Text color="sm-text-light mb-sm">
                     Check out helpful resources, FAQs and developer tools.
                   </Text>
-                  <Title>hello@helpcenter.com</Title>
+                  <a
+                    href="mailto:hello@everythingmiddleman.com"
+                    className="title h"
+                    style={{ textDecoration: "none" }}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    hello@everythingmiddleman.com
+                  </a>
                 </div>
                 <div className="contact-main-support-box">
                   <div className="contact-main-support-box-img">
@@ -343,7 +351,7 @@ const Contact = () => {
                   <Text color="sm-text-light mb-sm">
                     Check out helpful resources, FAQs and developer tools.
                   </Text>
-                  <Title>+1 (646) 786 - 5060</Title>
+                  <Title>+234 903 688 4493</Title>
                 </div>
                 <div className="contact-main-support-box">
                   <div className="contact-main-support-box-img">

@@ -106,21 +106,24 @@
       }
 
       &-box {
-        flex-shrink: 0;
+        // flex-shrink: 2;
         align-self: start;
+        max-width:  500px;
+        
         @media screen and (max-width: 800px) {
           margin-right: 0 !important;
-          align-self: stretch;
+          align-self: center;
         }
       }
 
       &-img {
-        height: 100%;
+        height: auto;
         width: 100%;
         object-fit: cover;
       }
 
       &-content {
+        // flex-shrink: 0;
         align-self: center;
         flex-grow: 1;
         display: flex;
@@ -138,10 +141,17 @@
             text-align: center;
           }
         }
+
+        // & > a{
+        //  @media (max-width: 955px){
+        //    padding: 1rem 2rem !important;
+        //  }
+          
+        // }
       }
       &-text {
         @media screen and (max-width: 800px) {
-          text-align: center;
+          text-align: justify;
         }
       }
 

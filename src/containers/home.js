@@ -4,17 +4,18 @@ import { LinkButton, WhatsApp } from "../components/button";
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import LandingSvg from "../assets/landing-svg.png";
+import Scott from "../assets/scott.jpg";
 import Kamala from "../assets/kamala.png";
 import Title from "../components/title";
 import Subtitle from "../components/subtitle";
 import services from "../constants/services";
 import Service from "../components/service";
 import Quote from "../assets/quote.png";
-import client1 from "../assets/client1.jpeg"
-import client2 from "../assets/client2.jpeg"
-import client3 from "../assets/client3.jpeg"
-import client4 from "../assets/client4.jpeg"
-import client5 from "../assets/client5.jpeg"
+// import client1 from "../assets/client1.jpeg"
+// import client2 from "../assets/client2.jpeg"
+// import client3 from "../assets/client3.jpeg"
+// import client4 from "../assets/client4.jpeg"
+// import client5 from "../assets/client5.jpeg"
 
 const Home = () => {
   useEffect(() => {
@@ -55,8 +56,6 @@ const Home = () => {
         " it is our mission to help you build grow house (company) in the most exciting and memorable ways.",
     },
   ]);
-
-
 
   const [customer] = useState([
     {
@@ -155,7 +154,7 @@ const Home = () => {
           </div>
         </div>
         <div className="home-main">
-          <section className="home-main-partners mb-bg">
+          {/* <section className="home-main-partners mb-bg">
             <div className="container">
               <div className="home-main-partners-container">
                 <div className="home-main-partners-list-1">
@@ -199,13 +198,13 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
           <section className="home-main-about mt-bg mb-bg">
             <div className="container">
               <div className="home-main-about-container">
                 <div className="home-main-about-box mr-sm">
                   <img
-                    src={Kamala}
+                    src={Scott}
                     alt="kamala"
                     className="home-main-about-img"
                   />
