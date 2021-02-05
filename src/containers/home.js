@@ -4,15 +4,17 @@ import { LinkButton, WhatsApp } from "../components/button";
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import LandingSvg from "../assets/landing-svg.png";
-import Behance from "../assets/behance.png";
-import Android from "../assets/android.png";
-import Brandfold from "../assets/brandfolder.png";
 import Kamala from "../assets/kamala.png";
 import Title from "../components/title";
 import Subtitle from "../components/subtitle";
 import services from "../constants/services";
 import Service from "../components/service";
 import Quote from "../assets/quote.png";
+import client1 from "../assets/client1.jpeg"
+import client2 from "../assets/client2.jpeg"
+import client3 from "../assets/client3.jpeg"
+import client4 from "../assets/client4.jpeg"
+import client5 from "../assets/client5.jpeg"
 
 const Home = () => {
   useEffect(() => {
@@ -158,7 +160,7 @@ const Home = () => {
               <div className="home-main-partners-container">
                 <div className="home-main-partners-list-1">
                   <img
-                    src={Behance}
+                    src={client1}
                     alt="behance"
                     className="home-main-partners-img"
                   />
@@ -166,7 +168,7 @@ const Home = () => {
                 <div className="home-main-partners-list-2">
                   {" "}
                   <img
-                    src={Android}
+                    src={client2}
                     alt="behance"
                     className="home-main-partners-img"
                   />
@@ -174,7 +176,7 @@ const Home = () => {
                 <div className="home-main-partners-list-3">
                   {" "}
                   <img
-                    src={Brandfold}
+                    src={client3}
                     alt="behance"
                     className="home-main-partners-img"
                   />
@@ -182,7 +184,7 @@ const Home = () => {
                 <div className="home-main-partners-list-4">
                   {" "}
                   <img
-                    src={Behance}
+                    src={client4}
                     alt="behance"
                     className="home-main-partners-img"
                   />
@@ -190,15 +192,7 @@ const Home = () => {
                 <div className="home-main-partners-list-5">
                   {" "}
                   <img
-                    src={Android}
-                    alt="behance"
-                    className="home-main-partners-img"
-                  />
-                </div>
-                <div className="home-main-partners-list-6">
-                  {" "}
-                  <img
-                    src={Brandfold}
+                    src={client5}
                     alt="behance"
                     className="home-main-partners-img"
                   />

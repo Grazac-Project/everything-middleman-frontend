@@ -5,8 +5,8 @@ import LinkedIn from "../assets/linkedin.png";
 import Twitter from "../assets/twitter.png";
 import Instagram from "../assets/instagram.svg";
 import Text from "./text";
-import Subtitle from "./subtitle";
-import { FooterLink } from "./link";
+// import Subtitle from "./subtitle";
+// import { FooterLink } from "./link";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

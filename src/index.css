@@ -795,8 +795,9 @@ img {
 }
 .home-main-partners-container {
   display: grid;
-  grid-template-columns: repeat(6, 15vh);
-  justify-content: space-around;
+  grid-template-columns: repeat(5, 15vh);
+  justify-content: space-between;
+  align-items: start;
   column-gap: 20px;
 }
 @media (max-width: 43.75em) {
