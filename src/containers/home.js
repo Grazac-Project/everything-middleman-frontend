@@ -11,11 +11,11 @@ import Subtitle from "../components/subtitle";
 import services from "../constants/services";
 import Service from "../components/service";
 import Quote from "../assets/quote.png";
-// import client1 from "../assets/client1.jpeg"
-// import client2 from "../assets/client2.jpeg"
-// import client3 from "../assets/client3.jpeg"
-// import client4 from "../assets/client4.jpeg"
-// import client5 from "../assets/client5.jpeg"
+import client1 from "../assets/client1.jpeg"
+import client2 from "../assets/client2.jpeg"
+import client3 from "../assets/client3.jpeg"
+import client4 from "../assets/client4.jpeg"
+import client5 from "../assets/client5.jpeg"
 
 const Home = () => {
   useEffect(() => {
@@ -133,7 +133,7 @@ const Home = () => {
                   .filter((head) => head.id === headerStep)
                   .map((head) => (
                     <div
-                      className="animate__animated animate__fadeInRight animate__slower home-header-carousel"
+                      className="animate__animated animate__fadeInLeft animate__slower home-header-carousel"
                       key={head.id}
                     >
                       <TextHeader>{head.title}</TextHeader>
@@ -154,7 +154,7 @@ const Home = () => {
           </div>
         </div>
         <div className="home-main">
-          {/* <section className="home-main-partners mb-bg">
+          <section className="home-main-partners mb-bg">
             <div className="container">
               <div className="home-main-partners-container">
                 <div className="home-main-partners-list-1">
@@ -198,7 +198,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </section> */}
+          </section>
           <section className="home-main-about mt-bg mb-bg">
             <div className="container">
               <div className="home-main-about-container">
