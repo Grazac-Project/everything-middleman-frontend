@@ -15,7 +15,7 @@ import client1 from "../assets/client1.jpeg"
 import client2 from "../assets/client2.jpeg"
 import client3 from "../assets/client3.jpeg"
 import client4 from "../assets/client4.jpeg"
-import client5 from "../assets/client5.jpeg"
+import client5 from "../assets/petty.png"
 
 const Home = () => {
   useEffect(() => {
@@ -157,14 +157,14 @@ const Home = () => {
           <section className="home-main-partners mb-bg">
             <div className="container">
               <div className="home-main-partners-container">
-                <div className="home-main-partners-list-1">
+                <div className="home-main-partners-list-1 home-main-partners-list">
                   <img
                     src={client1}
                     alt="behance"
                     className="home-main-partners-img"
                   />
                 </div>
-                <div className="home-main-partners-list-2">
+                <div className="home-main-partners-list-2 home-main-partners-list">
                   {" "}
                   <img
                     src={client2}
@@ -172,7 +172,7 @@ const Home = () => {
                     className="home-main-partners-img"
                   />
                 </div>
-                <div className="home-main-partners-list-3">
+                <div className="home-main-partners-list-3 home-main-partners-list">
                   {" "}
                   <img
                     src={client3}
@@ -180,7 +180,7 @@ const Home = () => {
                     className="home-main-partners-img"
                   />
                 </div>
-                <div className="home-main-partners-list-4">
+                <div className="home-main-partners-list-4 home-main-partners-list">
                   {" "}
                   <img
                     src={client4}
@@ -188,7 +188,7 @@ const Home = () => {
                     className="home-main-partners-img"
                   />
                 </div>
-                <div className="home-main-partners-list-5">
+                <div className="home-main-partners-list-5 home-main-partners-list">
                   {" "}
                   <img
                     src={client5}

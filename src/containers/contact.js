@@ -340,7 +340,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    hello@everythingmiddleman.com
+                    consult@everythingmiddleman.com
                   </a>
                 </div>
                 <div className="contact-main-support-box">
@@ -351,22 +351,21 @@ const Contact = () => {
                   <Text color="sm-text-light mb-sm">
                     Check out helpful resources, FAQs and developer tools.
                   </Text>
-                  <Title>+234 903 688 4493</Title>
+                  <Title>+234 913 263 3784</Title>
                 </div>
                 <div className="contact-main-support-box">
                   <div className="contact-main-support-box-img">
                     <RiQuestionAnswerLine size="32px" color="#ffffff" />
                   </div>
-                  <Subtitle extraStyle="mb-sm">Support </Subtitle>
-                  <Text color="sm-text-light mb-sm">
-                    Check out helpful resources, FAQs and developer tools.
-                  </Text>
-                  <Button
+                  <Subtitle extraStyle="mb-sm">Address </Subtitle>
+                  <Text color="sm-text-light mb-sm">Lekki, Lagos Nigeria</Text>
+                  <Title>+234 913 263 3784</Title>
+                  {/* <Button
                     color="button-purple"
                     extraStyle="contact-main-support-button"
                   >
                     Support Center
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </div>

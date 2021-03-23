@@ -23,7 +23,7 @@ const Footer = () => {
               />
             </Link>
             <Text color="sm-text-light footer-text mt-sm">
-              Build a modern and creative website by{" "}
+              Build a modern and creative website with{" "}
               <a href="https://grazac.com.ng" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
                 {" "}
                 Grazac
