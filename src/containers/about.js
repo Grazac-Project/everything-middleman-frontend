@@ -77,7 +77,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section className="about-gallery mb-bg mt-bg">
+        {/* <section className="about-gallery mb-bg mt-bg">
           <div className="container">
             <div className="about-gallery-container">
               <figure className="about-gallery-list-1">
@@ -97,8 +97,8 @@ const About = () => {
               </figure>
             </div>
           </div>
-        </section>
-        <section className="about-values mb-bg">
+        </section> */}
+        <section className="about-values mb-bg mt-bg">
           <div className="about-values-container">
             <Title extraStyle="about-values-title mb-sm">CORE VALUES</Title>
             <Subtitle

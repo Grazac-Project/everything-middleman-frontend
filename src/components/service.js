@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from "react";
 import Subtitle from "./subtitle";
 import Text from "./text";
@@ -5,12 +6,17 @@ import Text from "./text";
 const Service = (props) => {
   const [show, setShow] = useState(false);
 
-  
   return (
     <div className="service">
       <div className="service-container ma">
         <div className="service-box" style={{ backgroundColor: props.color }}>
-          <img src={props.src} alt="img" className="service-img" />
+          <img
+            src={props.src}
+            alt="img"
+            className="service-img"
+            style={{ filter: `opacity(.5) drop-shadow(0 0 0 ${props.color})` }}
+            // style={{backgroundColor:props.color}}
+          />
         </div>
         <div className="service-content mt-sm">
           <div className="mb-xsm service-subtitle">

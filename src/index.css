@@ -310,6 +310,7 @@ html {
 .service-img {
   width: 40%;
   height: auto;
+  filter: opacity(0.5) drop-shadow(0 0 0 red);
 }
 .service-subtitle {
   text-align: center !important;
@@ -1110,6 +1111,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5rem;
 }
 .about-statements {
   width: 100%;

@@ -6,6 +6,9 @@ import ideation from "../assets/ideation.png";
 import management from "../assets/management.png";
 import Analysis from "../assets/Analysis.svg";
 import Branding from "../assets/growth.svg";
+import agric from "../assets/agric.png";
+import digital from "../assets/digital.jpg";
+import entertain from "../assets/entertain.png";
 const services = [
   {
     id: 1,
@@ -75,7 +78,7 @@ const services = [
   {
     id: 9,
     color: "#DAE3FA",
-    image: Analysis,
+    image: digital,
     title: "Digital, Data and Technology",
     text:
       "Technology is the bedrock of innovation, commerce and community. We offer technological services and software solutions to manage your business efficiently. No matter the size of your enterprise, a well set technological infrastructure will set you ahead of others. ",
@@ -83,7 +86,7 @@ const services = [
   {
     id: 10,
     color: "#DAE3FA",
-    image: Analysis,
+    image: entertain,
     title: "Entertainment and Event Management",
     text:
       "There are lot of challenges that is often associated with managing all aspects of an event right from planning, scheduling, execution to post event activities. Most of the time, the difference between success and failure lies in efficiently handling the multitude of mundane tasks, yet important tasks. At Everything Middleman, we help you eliminate that failure margin. From handling your event registration and event marketing, maintaining your expenditure to overall coordination, we provide integrated solutions for your every need. Our focus is on flawless event execution and delivering customer satisfaction.",
@@ -91,7 +94,7 @@ const services = [
   {
     id: 11,
     color: "#DAE3FA",
-    image: Analysis,
+    image: agric,
     title: "Agricultural Consultation.",
     text:
       "Agriculture is very lucrative, only with the right expertise. We produce quality technical advice on the use and management of agricultural land. We also provide business and financial strategies. Our aim is to help you balance the commercial viability of agriculture with sustainable development. ",

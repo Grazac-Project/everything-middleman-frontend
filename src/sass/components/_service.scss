@@ -44,6 +44,7 @@
   &-img {
     width: 40%;
     height: auto;
+    filter: opacity(.5) drop-shadow(0 0 0 red);
   }
 
   &-subtitle {
