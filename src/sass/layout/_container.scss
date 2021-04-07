@@ -5,7 +5,11 @@
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   position: relative;
-  @include respond(phone) {
-    width: 90%;
+
+  @media screen and (max-width: 800px) {
+    width: 90%; 
+    
   }
+  // @include respond(phone) {
+  // }
 }

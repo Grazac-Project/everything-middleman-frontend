@@ -64,7 +64,7 @@
 
       &-container {
         display: grid;
-        grid-template-columns: repeat(5, 15%);
+        grid-template-columns: repeat(5, 1fr);
         justify-content: space-between;
         // align-items: start;
         column-gap: 20px;

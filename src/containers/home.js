@@ -11,11 +11,11 @@ import Subtitle from "../components/subtitle";
 import services from "../constants/services";
 import Service from "../components/service";
 import Quote from "../assets/quote.png";
-import client1 from "../assets/client1.jpeg"
-import client2 from "../assets/client2.jpeg"
-import client3 from "../assets/client3.jpeg"
-import client4 from "../assets/client4.jpeg"
-import client5 from "../assets/petty.png"
+import client1 from "../assets/okayafrica.svg";
+import client2 from "../assets/OLUWALOGBON.svg";
+import client3 from "../assets/Yabaleft.svg";
+import client4 from "../assets/PettySave.svg";
+import client5 from "../assets/PulseNg.svg";
 
 const Home = () => {
   useEffect(() => {

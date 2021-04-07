@@ -4,11 +4,24 @@ import Subtitle from "../components/subtitle";
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import Title from "../components/title";
-import Kamala from "../assets/kamala.png";
+// import Kamala from "../assets/kamala.png";
 import { useEffect } from "react";
 import ideation from "../assets/ideation.png";
 import Growth from "../assets/growth.svg";
 import perfect from "../assets/perfect.svg";
+
+// IMAGES
+
+import team1 from "../assets/team1.jpg";
+import team2 from "../assets/team2.jpg";
+import team3 from "../assets/team3.jpg";
+import team4 from "../assets/team4.jpg";
+import team5 from "../assets/team5.jpg";
+import team6 from "../assets/team6.jpg";
+import team7 from "../assets/team7.jpg";
+import team8 from "../assets/team8.jpg";
+
+
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -77,9 +90,75 @@ const About = () => {
             </div>
           </div>
         </section>
+        <section className="about-story">
+          <div className="container">
+            <Subtitle size="subtitle-big mb-md">Our Story</Subtitle>
+            <div className="about-story-list">
+              <div className="about-story-item">
+                <div className="about-story-img"></div>
+                <Title size="" extraStyle="mb-xsm">
+                  In the Beginning
+                </Title>
+                <Text extraStyle="mb-xsm" color="sm-text-light">
+                  At some point last year, we discovered a consistent problem
+                  that plagued most startups. Brands will often point to lack of
+                  sales as an ailing issue yet they were faced with lack of
+                  structure, armed with no vision and also struggled with
+                  inefficient employees. All these then amounts to the issue of
+                  profitability.
+                </Text>
+              </div>
+              <div className="about-story-item">
+                <div className="about-story-img"></div>
+                <Title size="subtitle-big" extraStyle="mb-xsm">
+                  From 2019 - 2020
+                </Title>
+                <Text extraStyle="mb-xsm" color="sm-text-light">
+                  From 2019(or is it 2020) till now, we’ve worked with 30+
+                  companies, invigorated with the core idea of creating
+                  successful growth experiences for small, medium and large
+                  companies across Africa. To this end, we became actively
+                  involved in every facet that contributed to the growth of
+                  companies—mapping out innovative ideas, building effective
+                  marketing strategies, hiring top talents and nurturing a
+                  thriving company culture. Within weeks of reworking these
+                  areas to becoming more functional, these companies recorded
+                  staggering growth.
+                </Text>
+              </div>
+              <div className="about-story-item">
+                <div className="about-story-img"></div>
+                <Title size="subtitle-big" extraStyle="mb-xsm">
+                  Solutions
+                </Title>
+                <Text extraStyle="mb-xsm" color="sm-text-light">
+                  As a collective, we had individuals nicked from different
+                  fields, also in the business of moving companies forward.
+                  Together we became enamoured with the sole vision of providing
+                  solutions to the problems of companies and further advancing
+                  them from struggling startups to sustainable brands.
+                </Text>
+              </div>
+              <div className="about-story-item">
+                <div className="about-story-img"></div>
+                <Title size="subtitle-big" extraStyle="mb-xsm">
+                  Game Changing
+                </Title>
+                <Text extraStyle="mb-xsm" color="sm-text-light">
+                  It’s our dream, it’s our plan to infuse our game-changing
+                  strategies into the backend systems of companies. It’s time to
+                  do away with old-fashioned and doubtful ideas. Welcome to a
+                  new world of creativity, innovation and excellence. We believe
+                  through this, we will deliver transformative outcomes for our
+                  clients.
+                </Text>
+              </div>
+            </div>
+          </div>
+        </section>
         {/* <section className="about-gallery mb-bg mt-bg">
           <div className="container">
-            <div className="about-gallery-container">
+          <div className="about-gallery-container">
               <figure className="about-gallery-list-1">
                 <img src={Kamala} alt="kamala" className="about-gallery-img" />
               </figure>
@@ -151,22 +230,28 @@ const About = () => {
             </Text>
             <div className="about-team-gallery">
               <div className="about-team-box">
-                <img src={Kamala} alt="kamala" className="about-team-img" />
+                <img src={team1} alt="kamala" className="about-team-img" />
               </div>
               <div className="about-team-box">
-                <img src={Kamala} alt="kamala" className="about-team-img" />
+                <img src={team2} alt="kamala" className="about-team-img" />
               </div>
               <div className="about-team-box">
-                <img src={Kamala} alt="kamala" className="about-team-img" />
+                <img src={team3} alt="kamala" className="about-team-img" />
               </div>
               <div className="about-team-box">
-                <img src={Kamala} alt="kamala" className="about-team-img" />
+                <img src={team4} alt="kamala" className="about-team-img" />
               </div>
               <div className="about-team-box">
-                <img src={Kamala} alt="kamala" className="about-team-img" />
+                <img src={team5} alt="kamala" className="about-team-img" />
               </div>
               <div className="about-team-box">
-                <img src={Kamala} alt="kamala" className="about-team-img" />
+                <img src={team6} alt="kamala" className="about-team-img" />
+              </div>
+              <div className="about-team-box">
+                <img src={team7} alt="kamala" className="about-team-img" />
+              </div>
+              <div className="about-team-box">
+                <img src={team8} alt="kamala" className="about-team-img" />
               </div>
             </div>
           </div>

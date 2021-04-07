@@ -1,6 +1,6 @@
 const TextHeader = (props) => {
     return (
-        <h1 className="bg-text">{ props.children}</h1>
+        <h1 className="bg-text" style={{marginBottom: "1rem"}}>{ props.children}</h1>
     )
 }
 
