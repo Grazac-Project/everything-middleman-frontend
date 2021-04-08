@@ -264,9 +264,9 @@
     &-gallery {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      // grid-template-rows: repeat(2, max-content);
       column-gap: 1rem;
-      row-gap: 1rem;
+      row-gap: 5rem;
 
       @media screen and (max-width: 450px) {
         display: flex;
@@ -276,6 +276,9 @@
 
     &-box {
       width: 100%;
+      h3{
+        text-align: center;
+      }
     }
 
     &-img {

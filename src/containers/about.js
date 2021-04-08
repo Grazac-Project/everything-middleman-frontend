@@ -21,7 +21,6 @@ import team6 from "../assets/team6.jpg";
 import team7 from "../assets/team7.jpg";
 import team8 from "../assets/team8.jpg";
 
-
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -230,28 +229,43 @@ const About = () => {
             </Text>
             <div className="about-team-gallery">
               <div className="about-team-box">
+                <img src={team6} alt="kamala" className="about-team-img" />
+                <Subtitle extraStyle="mt-xsm">LEAD PARTNER</Subtitle>
+              </div>
+              <div className="about-team-box">
                 <img src={team1} alt="kamala" className="about-team-img" />
+                <Subtitle extraStyle="mt-xsm">SENIOR PARTNER</Subtitle>
               </div>
               <div className="about-team-box">
                 <img src={team2} alt="kamala" className="about-team-img" />
+                <Subtitle extraStyle="mt-xsm">STRATEGY LEAD</Subtitle>
               </div>
               <div className="about-team-box">
                 <img src={team3} alt="kamala" className="about-team-img" />
+                <Subtitle extraStyle="mt-xsm">ADMINISTRATIVE LEAD</Subtitle>
               </div>
               <div className="about-team-box">
                 <img src={team4} alt="kamala" className="about-team-img" />
+                <Subtitle extraStyle="mt-xsm">
+                  COMMUNITY AND MEDIA MANAGER
+                </Subtitle>
               </div>
               <div className="about-team-box">
                 <img src={team5} alt="kamala" className="about-team-img" />
+                <Subtitle extraStyle="mt-xsm">
+                  RESEARCH AND COMMUNICATION LEAD
+                </Subtitle>
               </div>
-              <div className="about-team-box">
-                <img src={team6} alt="kamala" className="about-team-img" />
-              </div>
+
               <div className="about-team-box">
                 <img src={team7} alt="kamala" className="about-team-img" />
+                <Subtitle extraStyle="mt-xsm">HEAD OF MARKETING</Subtitle>
               </div>
               <div className="about-team-box">
                 <img src={team8} alt="kamala" className="about-team-img" />
+                <Subtitle extraStyle="mt-xsm">
+                  COMMUNITY AND MEDIA MANAGER
+                </Subtitle>
               </div>
             </div>
           </div>

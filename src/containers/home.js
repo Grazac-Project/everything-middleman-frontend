@@ -96,7 +96,6 @@ const Home = () => {
   }, [step]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
-    console.log(headerStep);
     setTimeout(() => {
       if (headerStep === 4) setHeaderStep(1);
       else {
