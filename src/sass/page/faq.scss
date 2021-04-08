@@ -191,9 +191,14 @@
       }
 
       &-img {
-        width: 40px;
-        height: 40px;
-        background: #eff2f8;
+        width: 60px;
+        height: 60px;
+        background-color: #4b004b;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }

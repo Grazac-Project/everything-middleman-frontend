@@ -5,6 +5,7 @@ import Mask from "../assets/Mask.png";
 import Subtitle from "../components/subtitle";
 import Title from "../components/title";
 import { useEffect, useState } from "react";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 const Faq = () => {
   useEffect(() => {
@@ -188,14 +189,18 @@ const Faq = () => {
                 </Text>
                 <div className="Faq-main-question-helplines mt-bg">
                   <div className="Faq-main-question-helpline">
-                    <div className="Faq-main-question-img mb-sm"></div>
+                    <div className="Faq-main-question-img mb-sm">
+                      <AiOutlinePhone size="32px" color="#ffffff" />
+                    </div>
                     <Title>+234 903 688 4493</Title>
                     <Text color="sm-text-light" extraStyle="ta mt-xsm">
                       We are always happy to help
                     </Text>
                   </div>
                   <div className="Faq-main-question-helpline">
-                    <div className="Faq-main-question-img mb-sm"></div>
+                    <div className="Faq-main-question-img mb-sm">
+                      <AiOutlineMail size="32px" color="#ffffff" />
+                    </div>
                     <a
                       href="mailto:hello@everythingmiddleman.com"
                       className="title h"

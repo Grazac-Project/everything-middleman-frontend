@@ -16,7 +16,7 @@ const Navigation = () => {
           target="_blank"
           rel="noreferrer"
         >
-          SayHi
+          Contact Us
         </a>
       </ul>
     </nav>

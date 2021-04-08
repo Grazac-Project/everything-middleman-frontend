@@ -5,17 +5,18 @@ import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import LandingSvg from "../assets/landing-svg.png";
 import Scott from "../assets/scott.jpg";
-import Kamala from "../assets/kamala.png";
+import Grazac from "../assets/grazac.png";
 import Title from "../components/title";
 import Subtitle from "../components/subtitle";
 import services from "../constants/services";
 import Service from "../components/service";
-import Quote from "../assets/quote.png";
+// import Quote from "../assets/quote.png";/
 import client1 from "../assets/okayafrica.svg";
 import client2 from "../assets/OLUWALOGBON.svg";
 import client3 from "../assets/Yabaleft.svg";
 import client4 from "../assets/PettySave.svg";
 import client5 from "../assets/PulseNg.svg";
+import zeek from "../assets/ZEEK.svg";
 
 const Home = () => {
   useEffect(() => {
@@ -27,8 +28,6 @@ const Home = () => {
   const [dots] = useState([
     { id: 1, color: true },
     { id: 2, color: false },
-    { id: 3, color: false },
-    { id: 4, color: false },
   ]);
   const [header] = useState([
     {
@@ -61,33 +60,16 @@ const Home = () => {
     {
       id: 1,
       statement:
-        "Everything Middleman is an agile consulting company that focuses on creating successful growth experiences for small,medium and large companies across Africa. Through  creativity, innovation and excellence, we will deliver transformative outcomes for our clients",
-      name: "Kamala ",
-      title: "FIrst Vice President ",
-      pic: Kamala,
+        "Working with Everything Middleman on different projects has been an awesome experience. We can attest to their utmost performance. It's always a joy working with them because of the ease and professionalism they bring into the work.",
+      title: "GRAZAC ",
+      pic: Grazac,
     },
     {
       id: 2,
-      statement: "Everything Middleman is an agile consulting clients",
-      name: " HArrris",
-      title: "FIrst Vice President ",
-      pic: Kamala,
-    },
-    {
-      id: 3,
       statement:
-        "Everything ing successful growth experiences for small,medium and large companies across Africa. Through  creativity, innovation and excellence, we will deliver transformative outcomes for our clients",
-      name: "Kala Hris",
-      title: "FIrst Vice President ",
-      pic: Kamala,
-    },
-    {
-      id: 4,
-      statement:
-        "Everything Middleman is an agile consulting ormative outcomes for our clients",
-      name: "Kamala HArrris",
-      title: "FIrst Vice President ",
-      pic: Kamala,
+        "The service I got from EM Consults was very satisfactory and top-notch! I love the fact that their style of operation is nonconventional. I would recommend her to any person/brand that wants to grow. Thank you.",
+      title: "Zeek Financials",
+      pic: zeek,
     },
   ]);
 
@@ -97,7 +79,7 @@ const Home = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      if (headerStep === 4) setHeaderStep(1);
+      if (headerStep === 2) setHeaderStep(1);
       else {
         setHeaderStep(headerStep + 1);
       }
@@ -107,7 +89,7 @@ const Home = () => {
   const handleTimeout = (index) => {
     setStep(index);
     setTimeout(() => {
-      if (step < 4) setStep(step + 1);
+      if (step < 2) setStep(step + 1);
       else {
         setStep(1);
       }
@@ -153,51 +135,6 @@ const Home = () => {
           </div>
         </div>
         <div className="home-main">
-          <section className="home-main-partners mb-bg">
-            <div className="container">
-              <div className="home-main-partners-container">
-                <div className="home-main-partners-list-1 home-main-partners-list">
-                  <img
-                    src={client1}
-                    alt="behance"
-                    className="home-main-partners-img"
-                  />
-                </div>
-                <div className="home-main-partners-list-2 home-main-partners-list">
-                  {" "}
-                  <img
-                    src={client2}
-                    alt="behance"
-                    className="home-main-partners-img"
-                  />
-                </div>
-                <div className="home-main-partners-list-3 home-main-partners-list">
-                  {" "}
-                  <img
-                    src={client3}
-                    alt="behance"
-                    className="home-main-partners-img"
-                  />
-                </div>
-                <div className="home-main-partners-list-4 home-main-partners-list">
-                  {" "}
-                  <img
-                    src={client4}
-                    alt="behance"
-                    className="home-main-partners-img"
-                  />
-                </div>
-                <div className="home-main-partners-list-5 home-main-partners-list">
-                  {" "}
-                  <img
-                    src={client5}
-                    alt="behance"
-                    className="home-main-partners-img"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
           <section className="home-main-about mt-bg mb-bg">
             <div className="container">
               <div className="home-main-about-container">
@@ -266,6 +203,54 @@ const Home = () => {
               </div>
             </div>
           </section>
+          <section className="home-main-partners mb-bg mt-bg">
+            <div className="container">
+              <h3 class="subtitle mb-sm home-main-customer-subtitle subtitle-big">
+                Brands we have partnered with
+              </h3>
+              <div className="home-main-partners-container">
+                <div className="home-main-partners-list-2 home-main-partners-list">
+                  {" "}
+                  <img
+                    src={client2}
+                    alt="behance"
+                    className="home-main-partners-img"
+                  />
+                </div>
+                <div className="home-main-partners-list-3 home-main-partners-list">
+                  {" "}
+                  <img
+                    src={client3}
+                    alt="behance"
+                    className="home-main-partners-img"
+                  />
+                </div>
+                <div className="home-main-partners-list-1 home-main-partners-list">
+                  <img
+                    src={client1}
+                    alt="behance"
+                    className="home-main-partners-img"
+                  />
+                </div>
+                <div className="home-main-partners-list-4 home-main-partners-list">
+                  {" "}
+                  <img
+                    src={client4}
+                    alt="behance"
+                    className="home-main-partners-img"
+                  />
+                </div>
+                <div className="home-main-partners-list-5 home-main-partners-list">
+                  {" "}
+                  <img
+                    src={client5}
+                    alt="behance"
+                    className="home-main-partners-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
           <section className="home-main-customer mt-bg mb-bg">
             <div className="container">
               <div className="home-main-customer-container">
@@ -296,7 +281,7 @@ const Home = () => {
                             >
                               {item.statement}
                             </Text>
-                            <Text color="sm-text-dark">{item.name}</Text>
+                            {/* <Text color="sm-text-dark">{item.name}</Text> */}
                             <Text color="sm-text-light mb-sm home-main-customer-position">
                               {item.title}
                             </Text>
@@ -307,7 +292,7 @@ const Home = () => {
                               alt="kamala"
                               className="home-main-customer-carousel-img"
                             />
-                            <div className="home-main-customer-carousel-quotes">
+                            {/* <div className="home-main-customer-carousel-quotes">
                               <img
                                 src={Quote}
                                 alt="quote"
@@ -318,7 +303,7 @@ const Home = () => {
                                 alt="quote"
                                 className="home-main-customer-quote"
                               />
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       ))}

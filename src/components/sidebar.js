@@ -33,7 +33,7 @@ const Sidebar = ({ animate, click }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                SayHi
+                Contact Us
               </a>
             </li>
           </ul>

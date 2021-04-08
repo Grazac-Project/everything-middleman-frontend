@@ -225,12 +225,12 @@ const About = () => {
             </Subtitle>
             <Text color="sm-text-light mb-sm" extraStyle="about-values-text">
               We bring the results while helping you achieve cost and time
-              savings wityhout taking on rish or management overhead
+              savings without taking on risk or management overhead
             </Text>
             <div className="about-team-gallery">
               <div className="about-team-box">
                 <img src={team6} alt="kamala" className="about-team-img" />
-                <Subtitle extraStyle="mt-xsm">LEAD PARTNER</Subtitle>
+                <Subtitle>LEAD PARTNER</Subtitle>
               </div>
               <div className="about-team-box">
                 <img src={team1} alt="kamala" className="about-team-img" />

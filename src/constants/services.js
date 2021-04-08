@@ -6,9 +6,9 @@ import ideation from "../assets/ideation.png";
 import management from "../assets/management.png";
 import Analysis from "../assets/Analysis.svg";
 import Branding from "../assets/growth.svg";
-import agric from "../assets/agric.png";
-import digital from "../assets/digital.jpg";
-import entertain from "../assets/entertain.png";
+import agric from "../assets/agric.svg";
+import digital from "../assets/digital.svg";
+import entertain from "../assets/entertain.svg";
 const services = [
   {
     id: 1,
