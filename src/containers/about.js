@@ -5,26 +5,27 @@ import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import Title from "../components/title";
 // import Kamala from "../assets/kamala.png";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import ideation from "../assets/ideation.png";
 import Growth from "../assets/growth.svg";
 import perfect from "../assets/perfect.svg";
 
 // IMAGES
 
-import team1 from "../assets/team1.jpg";
-import team2 from "../assets/team2.jpg";
-import team3 from "../assets/team3.jpg";
-import team4 from "../assets/team4.jpg";
-import team5 from "../assets/team5.jpg";
-import team6 from "../assets/team6.jpg";
-import team7 from "../assets/team7.jpg";
-import team8 from "../assets/team8.jpg";
+import lead from "../assets/lead.JPG";
+import senior from "../assets/senior.jpg";
+import strategy from "../assets/strategy-lead.JPG";
+import communications from "../assets/comm-lead.JPG";
+import admin from "../assets/administrative-lead.JPG";
+// import team2 from "../assets/team2.JPG";
+import media from "../assets/media-mgr.JPG";
+import marketing from "../assets/marketing.JPG";
+import community from "../assets/community-mgr.JPG";
 
 const About = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <div className="about">
@@ -229,42 +230,86 @@ const About = () => {
             </Text>
             <div className="about-team-gallery">
               <div className="about-team-box">
-                <img src={team6} alt="kamala" className="about-team-img" />
-                <Subtitle>LEAD PARTNER</Subtitle>
+                <picture className="about-team-img">
+                  <img src={lead} alt="kamala" className="about-team-img" />
+                </picture>
+                <Text>Mahmoud Damisi</Text>
+                <Subtitle size={"subtitle-smaller"}>Lead Partner</Subtitle>
               </div>
               <div className="about-team-box">
-                <img src={team1} alt="kamala" className="about-team-img" />
-                <Subtitle extraStyle="mt-xsm">SENIOR PARTNER</Subtitle>
-              </div>
-              <div className="about-team-box">
-                <img src={team2} alt="kamala" className="about-team-img" />
-                <Subtitle extraStyle="mt-xsm">STRATEGY LEAD</Subtitle>
-              </div>
-              <div className="about-team-box">
-                <img src={team3} alt="kamala" className="about-team-img" />
-                <Subtitle extraStyle="mt-xsm">ADMINISTRATIVE LEAD</Subtitle>
-              </div>
-              <div className="about-team-box">
-                <img src={team4} alt="kamala" className="about-team-img" />
-                <Subtitle extraStyle="mt-xsm">
-                  COMMUNITY AND MEDIA MANAGER
+                <picture className="about-team-img">
+                  <img src={senior} alt="kamala" className="about-team-img" />
+                </picture>
+                <Text>Akiode Hakeem</Text>
+                <Subtitle size={"subtitle-smaller"} extraStyle="mt-xsm">
+                  Senior Partner
                 </Subtitle>
               </div>
               <div className="about-team-box">
-                <img src={team5} alt="kamala" className="about-team-img" />
-                <Subtitle extraStyle="mt-xsm">
-                  RESEARCH AND COMMUNICATION LEAD
+                <picture className="about-team-img">
+                  <img src={strategy} alt="kamala" className="about-team-img" />
+                </picture>
+                <Text>Elemide Benjamin</Text>
+                <Subtitle size={"subtitle-smaller"} extraStyle="mt-xsm">
+                  Strategy Lead
+                </Subtitle>
+              </div>
+              <div className="about-team-box">
+                <picture className="about-team-img">
+                  <img src={admin} alt="kamala" className="about-team-img" />
+                </picture>
+                <Text>Ammeh Eleojo</Text>
+                <Subtitle size={"subtitle-smaller"} extraStyle="mt-xsm">
+                  Administrative Lead
+                </Subtitle>
+              </div>
+              <div className="about-team-box">
+                <picture className="about-team-img">
+                  <img
+                    src={communications}
+                    alt="kamala"
+                    className="about-team-img"
+                  />
+                </picture>
+                <Text>Olatunde Ajibola</Text>
+                <Subtitle size={"subtitle-smaller"} extraStyle="mt-xsm">
+                  Research and Communications Lead
+                </Subtitle>
+              </div>
+              <div className="about-team-box">
+                <picture className="about-team-img">
+                  <img src={media} alt="kamala" className="about-team-img" />
+                </picture>
+                <Text>Ojo Peter</Text>
+                <Subtitle size={"subtitle-smaller"} extraStyle="mt-xsm">
+                  Content and Operational Manager
                 </Subtitle>
               </div>
 
               <div className="about-team-box">
-                <img src={team7} alt="kamala" className="about-team-img" />
-                <Subtitle extraStyle="mt-xsm">HEAD OF MARKETING</Subtitle>
+                <picture className="about-team-img">
+                  <img
+                    src={marketing}
+                    alt="kamala"
+                    className="about-team-img"
+                  />
+                </picture>
+                <Text> Shittu Fadlullahi</Text>
+                <Subtitle size={"subtitle-smaller"} extraStyle="mt-xsm">
+                  Head Of Marketing
+                </Subtitle>
               </div>
               <div className="about-team-box">
-                <img src={team8} alt="kamala" className="about-team-img" />
-                <Subtitle extraStyle="mt-xsm">
-                  COMMUNITY AND MEDIA MANAGER
+                <picture className="about-team-img">
+                  <img
+                    src={community}
+                    alt="kamala"
+                    className="about-team-img"
+                  />
+                </picture>
+                <Text> Durosimi Ayodeji</Text>
+                <Subtitle size={"subtitle-smaller"} extraStyle="mt-xsm">
+                  Community And Media Manager
                 </Subtitle>
               </div>
             </div>
