@@ -12,7 +12,7 @@ import perfect from "../assets/perfect.svg";
 
 // IMAGES
 
-import lead from "../assets/lead.JPG";
+import lead from "../assets/lead.jpg";
 import senior from "../assets/senior.jpg";
 import strategy from "../assets/strategy-lead.JPG";
 import communications from "../assets/comm-lead.JPG";
