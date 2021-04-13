@@ -17,7 +17,6 @@ import senior from "../assets/senior.jpg";
 import strategy from "../assets/strategy-lead.JPG";
 import communications from "../assets/comm-lead.JPG";
 import admin from "../assets/administrative-lead.JPG";
-// import team2 from "../assets/team2.JPG";
 import media from "../assets/media-mgr.JPG";
 import marketing from "../assets/marketing.JPG";
 import community from "../assets/community-mgr.JPG";
