@@ -11,7 +11,9 @@ const Book = () => {
             Ready to Make Your Moment Memorable ?
           </Subtitle>
           <div className="book-buttons">
-            <WhatsApp color="button-purple mr-sm book-button">Book Now</WhatsApp>
+            <WhatsApp color="button-purple mr-sm book-button">
+              Book Now
+            </WhatsApp>
             <LinkButton color="button-white book-button">Learn More</LinkButton>
           </div>
         </div>

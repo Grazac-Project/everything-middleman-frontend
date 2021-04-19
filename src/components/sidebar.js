@@ -29,11 +29,11 @@ const Sidebar = ({ animate, click }) => {
             <li className="sidebar-item sidebar-item-say" onClick={click}>
               <a
                 className="sidebar-link"
-                href="https://wa.me/+2349132633784"
+                href="mailto:consult@everythingmiddleman.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                Contact Us
+                Hi Us
               </a>
             </li>
           </ul>

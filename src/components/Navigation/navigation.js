@@ -12,11 +12,11 @@ const Navigation = () => {
         <NavigationItem link={"/contact"}>Contact</NavigationItem>
         <a
           className="navigation-link navigation-link-sayhi"
-          href="https://wa.me/+2349132633784"
+          href="mailto:consult@everythingmiddleman.com"
           target="_blank"
           rel="noreferrer"
         >
-          Contact Us
+          Hi us
         </a>
       </ul>
     </nav>

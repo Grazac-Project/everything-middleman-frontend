@@ -83,7 +83,7 @@ const Faq = () => {
               onChange={changeHandler}
             />
             <a
-              href={`https://wa.me/+2349132633784?text=${search.value}`}
+              href={`mailto:consult@everythingmiddleman.com?subject=Enquiry&body=${search.value}`}
               type="submit"
               className="Faq-header-button"
               target="_blank"
