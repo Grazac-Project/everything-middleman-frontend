@@ -26,7 +26,7 @@ const Sidebar = ({ animate, click }) => {
                 Contact
               </Link>
             </li>
-            <li className="sidebar-item sidebar-item-say" onClick={click}>
+            {/* <li className="sidebar-item sidebar-item-say" onClick={click}>
               <a
                 className="sidebar-link"
                 href="mailto:consult@everythingmiddleman.com"
@@ -35,7 +35,7 @@ const Sidebar = ({ animate, click }) => {
               >
                 Hi Us
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

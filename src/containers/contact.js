@@ -11,6 +11,7 @@ import Title from "../components/title";
 import { email, fullname, number, required } from "../helpers/validation";
 import Countries from "../constants/countries";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   useEffect(() => {
@@ -285,6 +286,18 @@ const Contact = () => {
 
   return (
     <div className="contact">
+      <Helmet>
+        <title>Contact - Everything Middleman</title>
+        <meta name="description" content="Contact us" />
+        <meta name="theme-color" content="#4b004b" />
+        <meta property="og:description" content="Contact us"></meta>
+        <meta property="og:title" content="Everything Middleman"></meta>
+        <meta name="twitter:title" content="Everything Middleman"></meta>
+        <meta
+          property="og:url"
+          content="https://www.everythingmiddleman.com/contact"
+        />
+      </Helmet>
       <div className="contact-container">
         <div className="backgroundColor">
           <div className="container">

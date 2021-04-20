@@ -6,6 +6,7 @@ import Subtitle from "../components/subtitle";
 import Title from "../components/title";
 import { useEffect, useState } from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { Helmet } from "react-helmet";
 
 const Faq = () => {
   useEffect(() => {
@@ -68,6 +69,18 @@ const Faq = () => {
 
   return (
     <div className="contact">
+      <Helmet>
+        <title>FAQ - Everything Middleman</title>
+        <meta name="description" content="Frequently Asked Questions" />
+        <meta name="theme-color" content="#4b004b" />
+        <meta property="og:description" content="Frequently Asked Questions"></meta>
+        <meta property="og:title" content="Everything Middleman"></meta>
+        <meta name="twitter:title" content="Everything Middleman"></meta>
+        <meta
+          property="og:url"
+          content="https://www.everythingmiddleman.com/faq"
+        />
+      </Helmet>
       <div className="contact-container">
         <div className="backgroundColor">
           <div className="mb-sm">
@@ -192,7 +205,7 @@ const Faq = () => {
                     <div className="Faq-main-question-img mb-sm">
                       <AiOutlinePhone size="32px" color="#ffffff" />
                     </div>
-                    <Title>+234 903 688 4493</Title>
+                    <a href="tel:+234 903 688 4493" className="title">+234 903 688 4493</a>
                     <Text color="sm-text-light" extraStyle="ta mt-xsm">
                       We are always happy to help
                     </Text>
@@ -202,13 +215,12 @@ const Faq = () => {
                       <AiOutlineMail size="32px" color="#ffffff" />
                     </div>
                     <a
-                      href="mailto:hello@everythingmiddleman.com"
+                      href="mailto:consult@everythingmiddleman"
                       className="title h"
-                      style={{ textDecoration: "none" }}
                       target="_blank"
                       rel="noreferrer"
                     >
-                      hello@everythingmiddleman.com
+                      consult@everythingmiddleman
                     </a>
                     <Text color="sm-text-light" extraStyle="ta mt-xsm">
                       Alternative way to get answer faster

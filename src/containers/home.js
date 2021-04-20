@@ -17,6 +17,7 @@ import client3 from "../assets/Yabaleft.svg";
 import client4 from "../assets/PettySave.svg";
 import client5 from "../assets/PulseNg.svg";
 import zeek from "../assets/ZEEK.svg";
+import {Helmet} from "react-helmet"
 
 const Home = () => {
   useEffect(() => {
@@ -105,6 +106,21 @@ const Home = () => {
 
   return (
     <div className="home">
+      <Helmet>
+        <title>Home - Everything Middleman</title>
+        <meta name="description" content="Welcome To Everything Middleman" />
+        <meta name="theme-color" content="#4b004b" />
+        <meta
+          property="og:description"
+          content="Welcome To Everything Middleman"
+        ></meta>
+        <meta property="og:title" content="Everything Middleman"></meta>
+        <meta name="twitter:title" content="Everything Middleman"></meta>
+        <meta
+          property="og:url"
+          content="https://www.everythingmiddleman.com"
+        />
+      </Helmet>
       <div className="home-container">
         <div className="home-header mb-bg">
           <div className="container">

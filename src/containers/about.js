@@ -1,11 +1,11 @@
 // @ts-nocheck
-
+import { Helmet } from "react-helmet";
 import Subtitle from "../components/subtitle";
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";
 import Title from "../components/title";
 // import Kamala from "../assets/kamala.png";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import ideation from "../assets/ideation.png";
 import Growth from "../assets/growth.svg";
 import perfect from "../assets/perfect.svg";
@@ -14,20 +14,38 @@ import perfect from "../assets/perfect.svg";
 
 import lead from "../assets/lead.jpg";
 import senior from "../assets/senior.jpg";
-import strategy from "../assets/strategy-lead.JPG";
-import communications from "../assets/comm-lead.JPG";
-import admin from "../assets/administrative-lead.JPG";
-import media from "../assets/media-mgr.JPG";
-import marketing from "../assets/marketing.JPG";
-import community from "../assets/community-mgr.JPG";
+// import strategy from "../assets/strategy-lead.JPG";
+// import communications from "../assets/comm-lead.JPG";
+// import admin from "../assets/administrative-lead.JPG";
+// import media from "../assets/media-mgr.JPG";
+// import marketing from "../assets/marketing.JPG";
+// import community from "../assets/community-mgr.JPG";
 
 const About = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="about">
+      <Helmet>
+        <title>About - Everything Middleman</title>
+        <meta
+          name="description"
+          content="We Will Deliver Transformative Outcomes For Our Clients"
+        />
+        <meta name="theme-color" content="#4b004b" />
+        <meta
+          property="og:description"
+          content="We Will Deliver Transformative Outcomes For Our Clients"
+        ></meta>
+        <meta property="og:title" content="Everything Middleman"></meta>
+        <meta name="twitter:title" content="Everything Middleman"></meta>
+        <meta
+          property="og:url"
+          content="https://www.everythingmiddleman.com/about"
+        />
+      </Helmet>
       <div className="about-container">
         <div className="backgroundColor">
           <div className="container">
@@ -229,22 +247,18 @@ const About = () => {
             </Text>
             <div className="about-team-gallery">
               <div className="about-team-box">
-                <picture className="about-team-img">
-                  <img src={lead} alt="kamala" className="about-team-img" />
-                </picture>
+                <img src={lead} alt="kamala" className="about-team-img" />
                 <Text>Mahmoud Damisi</Text>
                 <Subtitle size={"subtitle-smaller"}>Lead Partner</Subtitle>
               </div>
               <div className="about-team-box">
-                <picture className="about-team-img">
-                  <img src={senior} alt="kamala" className="about-team-img" />
-                </picture>
+                <img src={senior} alt="kamala" className="about-team-img" />
                 <Text>Akiode Hakeem</Text>
                 <Subtitle size={"subtitle-smaller"} extraStyle="mt-xsm">
                   Senior Partner
                 </Subtitle>
               </div>
-              <div className="about-team-box">
+              {/* <div className="about-team-box">
                 <picture className="about-team-img">
                   <img src={strategy} alt="kamala" className="about-team-img" />
                 </picture>
@@ -310,7 +324,7 @@ const About = () => {
                 <Subtitle size={"subtitle-smaller"} extraStyle="mt-xsm">
                   Community And Media Manager
                 </Subtitle>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

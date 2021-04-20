@@ -9,15 +9,15 @@ const Navigation = () => {
         </NavigationItem>
         <NavigationItem link={"/about"}>About Us</NavigationItem>
         <NavigationItem link={"/faq"}>FAQ</NavigationItem>
-        <NavigationItem link={"/contact"}>Contact</NavigationItem>
-        <a
+        <NavigationItem link={"/contact"}>Hi us</NavigationItem>
+        {/* <a
           className="navigation-link navigation-link-sayhi"
           href="mailto:consult@everythingmiddleman.com"
           target="_blank"
           rel="noreferrer"
         >
           Hi us
-        </a>
+        </a> */}
       </ul>
     </nav>
   );
