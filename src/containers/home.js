@@ -221,7 +221,7 @@ const Home = () => {
           </section>
           <section className="home-main-partners mb-bg mt-bg">
             <div className="container">
-              <h3 class="subtitle mb-sm home-main-customer-subtitle subtitle-big">
+              <h3 className="subtitle mb-sm home-main-customer-subtitle subtitle-big">
                 Brands we have partnered with
               </h3>
               <div className="home-main-partners-container">

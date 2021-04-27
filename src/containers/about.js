@@ -14,6 +14,9 @@ import perfect from "../assets/perfect.svg";
 
 import lead from "../assets/lead.jpg";
 import senior from "../assets/senior.jpg";
+
+// import lead2 from "../assets/lead.webp";
+// import senior2 from "../assets/senior.webp";
 // import strategy from "../assets/strategy-lead.JPG";
 // import communications from "../assets/comm-lead.JPG";
 // import admin from "../assets/administrative-lead.JPG";
@@ -247,13 +250,27 @@ const About = () => {
             </Text>
             <div className="about-team-gallery">
               <div className="about-team-box">
-                <img src={lead} alt="kamala" className="about-team-img" />
+                <picture className="about-team-img">
+                  {/* <source
+                    srcSet={lead2}
+                    alt="Lead Partner"
+                    type="image/webp"
+                  /> */}
+                  <img src={lead} alt="Lead Partner" type="image/jpg" />
+                </picture>
                 <Text>Mahmoud Damisi</Text>
                 <Subtitle size={"subtitle-smaller"}>Lead Partner</Subtitle>
               </div>
               <div className="about-team-box">
-                <img src={senior} alt="kamala" className="about-team-img" />
-                <Text>Akiode Hakeem</Text>
+                <picture className="about-team-img">
+                  {/* <source
+                    srcSet={senior2}
+                    alt="Lead Partner"
+                    type="image/webp"
+                  /> */}
+                  <img src={senior} alt="Lead Partner" type="image/jpg" />
+                </picture>
+                <Text>Hakeem O. Akiode</Text>
                 <Subtitle size={"subtitle-smaller"} extraStyle="mt-xsm">
                   Senior Partner
                 </Subtitle>
