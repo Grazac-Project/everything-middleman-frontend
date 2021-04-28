@@ -2,13 +2,14 @@
   transition: width 3s ease-in-out;
   background-color: white;
   width: 65%;
-  max-width: 300px;
+  // max-width: 300px;
   position: fixed;
   top: 72px;
   right: 0;
   z-index: 999;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   @media (min-width: 700px) {
     width: 0;
     opacity: 0;
@@ -19,7 +20,7 @@
   }
 
   &-nav {
-    padding: 4rem;
+    padding: 4rem 2rem;
     width: 100%;
     margin: auto;
   }

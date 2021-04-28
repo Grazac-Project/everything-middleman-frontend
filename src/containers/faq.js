@@ -18,7 +18,7 @@ const Faq = () => {
       id: 1,
       question: "Are you a PR company?",
       answer:
-        "Public relations is part of the services that we offer. We are a full blown consultancy agency that provides technical and professional advice to your business problems. We also have a specialized team that will make sure these solutions are executed. ",
+        "Public relations is part of the services that we offer. We are a full-blown consultancy agency that provides technical and professional advice to your business problems. We also have a specialized team that will make sure these solutions are executed. ",
       open: true,
     },
     {
@@ -150,7 +150,7 @@ const Faq = () => {
               </Subtitle>
               <Text extraStyle="mb-xsm ta" color="sm-text-light">
                 We bring the results while helping you achieve cost and time
-                savings wityhout taking on rish or management overhead
+                savings without taking on rish or management overhead
               </Text>
               <div className="Faq-main-faq-box mt-md">
                 {faqs.map((quest) => (
@@ -198,7 +198,7 @@ const Faq = () => {
                 </Subtitle>
                 <Text color="sm-text-light" extraStyle="ta">
                   We bring the results while helping you achieve cost and time
-                  savings wityhout taking on rish or management overhead
+                  savings without taking on rish or management overhead
                 </Text>
                 <div className="Faq-main-question-helplines mt-bg">
                   <div className="Faq-main-question-helpline">

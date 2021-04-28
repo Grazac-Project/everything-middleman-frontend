@@ -208,7 +208,7 @@ const About = () => {
             </Subtitle>
             <Text color="sm-text-light" extraStyle="about-values-text">
               We bring the results while helping you achieve cost and time
-              savings wityhout taking on rish or management overhead
+              savings without taking on risk or management overhead
             </Text>
             <div className="about-values-images mt-md">
               <div className="about-values-images-container">
@@ -250,32 +250,23 @@ const About = () => {
             </Text>
             <div className="about-team-gallery">
               <div className="about-team-box">
-                <picture className="about-team-img">
-                  {/* <source
-                    srcSet={lead2}
-                    alt="Lead Partner"
-                    type="image/webp"
-                  /> */}
+                <div className="about-team-img">
                   <img src={lead} alt="Lead Partner" type="image/jpg" />
-                </picture>
+                </div>
                 <Text>Mahmoud Damisi</Text>
                 <Subtitle size={"subtitle-smaller"}>Lead Partner</Subtitle>
               </div>
               <div className="about-team-box">
-                <picture className="about-team-img">
-                  {/* <source
-                    srcSet={senior2}
-                    alt="Lead Partner"
-                    type="image/webp"
-                  /> */}
+                <div className="about-team-img">
                   <img src={senior} alt="Lead Partner" type="image/jpg" />
-                </picture>
+                </div>
                 <Text>Hakeem O. Akiode</Text>
                 <Subtitle size={"subtitle-smaller"} extraStyle="mt-xsm">
                   Senior Partner
                 </Subtitle>
               </div>
-              {/* <div className="about-team-box">
+            </div>
+            {/* <div className="about-team-box">
                 <picture className="about-team-img">
                   <img src={strategy} alt="kamala" className="about-team-img" />
                 </picture>
@@ -342,7 +333,6 @@ const About = () => {
                   Community And Media Manager
                 </Subtitle>
               </div> */}
-            </div>
           </div>
         </section>
       </div>

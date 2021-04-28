@@ -7,7 +7,6 @@ import Input from "../components/input";
 import Subtitle from "../components/subtitle";
 import Text from "../components/text";
 import TextHeader from "../components/textHeader";
-import Title from "../components/title";
 import { email, fullname, number, required } from "../helpers/validation";
 import Countries from "../constants/countries";
 import axios from "axios";
@@ -364,7 +363,9 @@ const Contact = () => {
                   <Text color="sm-text-light mb-sm">
                     Check out helpful resources, FAQs and developer tools.
                   </Text>
-                  <Title>+234 913 263 3784</Title>
+                  <a href="tel:+234 903 688 4493" className="title">
+                    +234 903 688 4493
+                  </a>
                 </div>
                 <div className="contact-main-support-box">
                   <div className="contact-main-support-box-img">
@@ -372,7 +373,9 @@ const Contact = () => {
                   </div>
                   <Subtitle extraStyle="mb-sm">Address </Subtitle>
                   <Text color="sm-text-light mb-sm">Lekki, Lagos Nigeria</Text>
-                  <Title>+234 913 263 3784</Title>
+                  <a href="tel:+234 903 688 4493" className="title">
+                    +234 903 688 4493
+                  </a>
                   {/* <Button
                     color="button-purple"
                     extraStyle="contact-main-support-button"

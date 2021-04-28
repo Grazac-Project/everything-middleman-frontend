@@ -6,8 +6,12 @@ import Text from "./text";
 const Service = (props) => {
   const [show, setShow] = useState(false);
 
+  const showRest = () => {
+    setShow(!show);
+  };
+
   return (
-    <div className="service">
+    <div className="service" onClick={showRest}>
       <div className="service-container ma">
         <div className="service-box" style={{ backgroundColor: props.color }}>
           <img
@@ -44,7 +48,7 @@ const Service = (props) => {
                   show ? "" : "hide",
                 ].join(" ")}
               >
-                ...Read less
+                Read less
               </span>
             </Text>
           </div>

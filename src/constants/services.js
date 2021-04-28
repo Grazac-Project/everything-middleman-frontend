@@ -16,7 +16,7 @@ const services = [
     image: management,
     title: "Management Consulting",
     text:
-      "We actively engage in projects that will enhance your business performance while ultimately creating value. Our clients range from government, non-profit organisations and private equity firms. Our team of dedicated analysts have a knack of solving challenging and strategic problems by preparing case studies that fits into the equation. Why don't you allow our team of intelligent and analytical minds work to help you solve your complex business problems?",
+      "We actively engage in projects that will enhance your business performance while ultimately creating value. Our clients range from government, non-profit organizations, and private equity firms. Our team of dedicated analysts has a knack for solving challenging and strategic problems by preparing case studies that fit into the equation. Why don't you allow our team of intelligent and analytical minds work to help you solve your complex business problems?.",
   },
 
   {
@@ -25,7 +25,7 @@ const services = [
     image: corporate,
     title: "Corporate Structuring & Growth Consulting",
     text:
-      "You need to expand, and an organizational structure provides an hierarchy for each job within it. It allows the organization to meet its goals. As a consulting firm, we provide a structure that is often developed to allow each business unit the ability to function without affecting other areas of the organization. This structure is often based on a  specific structure methodology, which is then divided into business units.",
+      "You need to expand, and an organizational structure provides a hierarchy for each job within it. It allows the organization to meet its goals. As a consulting firm, we provide a structure that is often developed to allow each business unit the ability to function without affecting other areas of the organization. This structure is often based on a specific structure methodology, which is then divided into business units.",
   },
   {
     id: 3,
@@ -65,7 +65,7 @@ const services = [
     image: brand,
     title: "SME Solutions",
     text:
-      "We see opportunities where others see major obstacles, and that is why we are passionate about helping SMEs overcome problems that might hinder growth. From our studies, SMEs are of specific importance to national development, so our management consulting toolkit has been proven to support and nurture different stage businesses into institutionalized, structured and established brands.",
+      "We see opportunities where others see major obstacles, and that is why we are passionate about helping SMEs overcome problems that might hinder growth. From our studies, SMEs are of specific importance to national development, so our management consulting toolkit has been proven to support and nurture different stage businesses into institutionalized, structured, and established brands.",
   },
   {
     id: 8,
@@ -73,7 +73,7 @@ const services = [
     image: Analysis,
     title: "Market Analysis & General Consulting",
     text:
-      "When you're able to start a new enterprise, market research and analysis is very important. As consultants, we help you examine your particular niche, and use the facts to forecast potential outcomes. This will help you understand how products/services of your niche exist with a specific environment. With our market research, we take it step further by not only examining the specific niche but alongside the customers in it with the intent of you understanding your customers diligently. This would in turn allow you make informed decisions. ",
+      "When you're able to start a new enterprise, market research and analysis are very important. As consultants, we help you examine your particular niche, and use the facts to forecast potential outcomes. This will help you understand how products/services of your niche exist within a specific environment. With our market research, we take it a step further by not only examining the specific niche but alongside the customers in it with the intent of you understanding your customers diligently. This would in turn allow you to make informed decisions.",
   },
   {
     id: 9,
@@ -97,7 +97,7 @@ const services = [
     image: agric,
     title: "Agricultural Consultation.",
     text:
-      "Agriculture is very lucrative, only with the right expertise. We produce quality technical advice on the use and management of agricultural land. We also provide business and financial strategies. Our aim is to help you balance the commercial viability of agriculture with sustainable development. ",
+      "Agriculture is very lucrative, only with the right expertise. We produce quality technical advice on the use and management of agricultural land. We also provide business and financial strategies. We to help you balance the commercial viability of agriculture with sustainable development. ",
   },
 ];
 
