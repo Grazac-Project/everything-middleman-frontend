@@ -1404,6 +1404,12 @@ img {
   height: 100%;
   border-radius: 5px;
 }
+@media (max-width: 920px) {
+  .about-team-img img {
+    width: 100% !important;
+    height: 290px !important;
+  }
+}
 .about-team-img:hover {
   transform: scale(0.9);
 }
