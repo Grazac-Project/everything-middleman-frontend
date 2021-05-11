@@ -73,7 +73,10 @@ const Faq = () => {
         <title>FAQ - Everything Middleman</title>
         <meta name="description" content="Frequently Asked Questions" />
         <meta name="theme-color" content="#4b004b" />
-        <meta property="og:description" content="Frequently Asked Questions"></meta>
+        <meta
+          property="og:description"
+          content="Frequently Asked Questions"
+        ></meta>
         <meta property="og:title" content="Everything Middleman"></meta>
         <meta name="twitter:title" content="Everything Middleman"></meta>
         <meta
@@ -150,17 +153,22 @@ const Faq = () => {
               </Subtitle>
               <Text extraStyle="mb-xsm ta" color="sm-text-light">
                 We bring the results while helping you achieve cost and time
-                savings without taking on rish or management overhead
+                savings without taking on risks or management overhead
               </Text>
               <div className="Faq-main-faq-box mt-md">
                 {faqs.map((quest) => (
-                  <div className="Faq-main-faq-box-container" key={quest.id}>
+                  <div
+                    className="Faq-main-faq-box-container"
+                    key={quest.id}
+                    onClick={() => toggleFAQ(quest.id)}
+                  >
                     <div className="Faq-main-faq-question">
                       <Subtitle>{quest.question}</Subtitle>
                       {quest.open ? (
                         <p
                           className="Faq-main-faq-toggle"
-                          onClick={() => {
+                          onClick={(evt) => {
+                            evt.stopPropagation()
                             toggleFAQ(quest.id);
                           }}
                         >
@@ -169,7 +177,8 @@ const Faq = () => {
                       ) : (
                         <p
                           className="Faq-main-faq-toggle"
-                          onClick={() => {
+                          onClick={(evt) => {
+                            evt.stopPropagation()
                             toggleFAQ(quest.id);
                           }}
                         >
@@ -198,14 +207,16 @@ const Faq = () => {
                 </Subtitle>
                 <Text color="sm-text-light" extraStyle="ta">
                   We bring the results while helping you achieve cost and time
-                  savings without taking on rish or management overhead
+                  savings without taking on risks or management overhead
                 </Text>
                 <div className="Faq-main-question-helplines mt-bg">
                   <div className="Faq-main-question-helpline">
                     <div className="Faq-main-question-img mb-sm">
                       <AiOutlinePhone size="32px" color="#ffffff" />
                     </div>
-                    <a href="tel:+234 903 688 4493" className="title">+234 903 688 4493</a>
+                    <a href="tel:+234 903 688 4493" className="title">
+                      +234 903 688 4493
+                    </a>
                     <Text color="sm-text-light" extraStyle="ta mt-xsm">
                       We are always happy to help
                     </Text>
