@@ -317,6 +317,7 @@ a {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+  cursor: pointer;
 }
 
 .service:hover {
@@ -741,6 +742,10 @@ a {
   color: #999999;
 }
 
+.navigation-link:hover {
+  color: white;
+}
+
 .navigation-link-sayhi {
   font-weight: 600;
   color: #ffffff !important;
@@ -885,13 +890,14 @@ img {
   transition: width 3s ease-in-out;
   background-color: white;
   width: 65%;
-  max-width: 300px;
   position: fixed;
   top: 72px;
   right: 0;
   z-index: 999;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 700px) {
@@ -909,7 +915,7 @@ img {
 }
 
 .sidebar-nav {
-  padding: 4rem;
+  padding: 4rem 2rem;
   width: 100%;
   margin: auto;
 }
@@ -1892,48 +1898,57 @@ img {
 }
 
 .about-team-container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
 .about-team-gallery {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 500px;
-  -webkit-column-gap: 1rem;
-          column-gap: 1rem;
-  row-gap: 8rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 650px) {
   .about-team-gallery {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .about-team-gallery {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 400px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .about-team-box {
-  width: 100%;
-  height: 100%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.about-team-box:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .about-team-box {
+    margin-bottom: 2rem;
+  }
 }
 
 .about-team-box h3 {
@@ -1954,16 +1969,41 @@ img {
 }
 
 .about-team-img {
-  width: 100%;
+  margin: auto;
+  height: 100%;
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+@media screen and (max-width: 900px) {
+  .about-team-img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about-team-img {
+    width: 400px;
+  }
 }
 
 .about-team-img img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
+}
+
+@media (max-width: 920px) {
+  .about-team-img img {
+    width: 100% !important;
+    height: 290px !important;
+  }
+}
+
+.about-team-img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .special {
@@ -1996,9 +2036,9 @@ img {
   margin-right: auto;
   width: 100%;
   height: 100%;
-  padding: 1.6rem;
+  padding: 1rem;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #999999;
 }
 
@@ -2042,6 +2082,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 600px) {
+  .Faq-main-faq-container {
+    width: 90%;
+  }
 }
 
 .Faq-main-faq-box {

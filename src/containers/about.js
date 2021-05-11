@@ -12,8 +12,8 @@ import perfect from "../assets/perfect.svg";
 
 // IMAGES
 
-import lead from "../assets/lead.jpg";
-import senior from "../assets/senior.jpg";
+import lead from "../assets/mahmood.png";
+import senior from "../assets/Hakeem.png";
 
 // import lead2 from "../assets/lead.webp";
 // import senior2 from "../assets/senior.webp";

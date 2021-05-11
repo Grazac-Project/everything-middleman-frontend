@@ -315,6 +315,10 @@
         height: 100%;
         border-radius: 5px;
         // object-fit: cover;
+        @media (max-width: 920px) {
+          width: 100% !important;
+          height: 290px !important;
+        }
       }
 
       &:hover {
