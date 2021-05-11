@@ -236,7 +236,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section className="about-team  mt-bg">
+        {/*<section className="about-team  mt-bg">
           <div className="about-team-container ">
             <Subtitle
               size="subtitle-xbig"
@@ -332,9 +332,9 @@ const About = () => {
                 <Subtitle size={"subtitle-smaller"} extraStyle="mt-xsm">
                   Community And Media Manager
                 </Subtitle>
-              </div> */}
+              </div> *
           </div>
-        </section>
+        </section>*/}
       </div>
     </div>
   );
