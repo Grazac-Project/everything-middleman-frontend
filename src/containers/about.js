@@ -35,7 +35,7 @@ const About = () => {
         <title>About - Everything Middleman</title>
         <meta
           name="description"
-          content="We Will Deliver Transformative Outcomes For Our Clients"
+          content="We Will Deliver Transformative Outcome For Our Clients."
         />
         <meta name="theme-color" content="#4b004b" />
         <meta
@@ -54,7 +54,7 @@ const About = () => {
           <div className="container">
             <div className="about-header-container">
               <TextHeader>
-                We Will Deliver Transformative Outcomes For Our Clients
+                We Will Deliver Transformative Outcome For Our Clients.
               </TextHeader>
               <Text color="sm-text-white contact-header-text">
                 Everything Middleman is an agile consulting company that focuses
@@ -122,9 +122,9 @@ const About = () => {
                 <Text extraStyle="mb-xsm" color="sm-text-light">
                   At some point last year, we discovered a consistent problem
                   that plagued most startups. Brands will often point to lack of
-                  sales as an ailing issue yet they were faced with lack of
+                  sales as an ailing issue yet they were faced with lack a of
                   structure, armed with no vision and also struggled with
-                  inefficient employees. All these then amounts to the issue of
+                  inefficient employees. All these then amount to the issue of
                   profitability.
                 </Text>
               </div>
@@ -134,7 +134,7 @@ const About = () => {
                   From 2019 - 2020
                 </Title>
                 <Text extraStyle="mb-xsm" color="sm-text-light">
-                  From 2019(or is it 2020) till now, we’ve worked with 30+
+                  From 2019 till now, we’ve worked with 30+
                   companies, invigorated with the core idea of creating
                   successful growth experiences for small, medium and large
                   companies across Africa. To this end, we became actively
@@ -162,10 +162,10 @@ const About = () => {
               <div className="about-story-item">
                 <div className="about-story-img"></div>
                 <Title size="subtitle-big" extraStyle="mb-xsm">
-                  Game Changing
+                  Game-changing
                 </Title>
                 <Text extraStyle="mb-xsm" color="sm-text-light">
-                  It’s our dream, it’s our plan to infuse our game-changing
+                  It’s our dream and plan to infuse our game-changing
                   strategies into the backend systems of companies. It’s time to
                   do away with old-fashioned and doubtful ideas. Welcome to a
                   new world of creativity, innovation and excellence. We believe
