@@ -16,7 +16,7 @@
 .sm-text {
   font: {
     weight: normal;
-    family: $font-family-primary;
+    family: 'Oswald', sans-serif;;
     style: normal;
     size: 1rem;
   }
@@ -25,7 +25,7 @@
 
   @include respond(phone) {
     line-height: 25px;
-    font-size: 1.5rem
+    font-size: 1.5rem;
   }
 
   &-white {
@@ -45,9 +45,10 @@
   font: {
     weight: 500;
     size: 14px;
-    family: $font-family-primary;
+    family: "AlternateGothic", "san-serif" !important;
     style: normal;
   }
+  // @include font-face;
   line-height: 21px;
   color: $color-dark-purple;
   letter-spacing: 0.17rem;
@@ -59,7 +60,7 @@
 
 .subtitle {
   font : {
-    family: $font-family-primary;
+    family: 'Oswald', sans-serif !important;
     style: normal;
     weight: 600;
   }
@@ -84,10 +85,9 @@
     }
   }
 
-
-  &-smaller{
-    font-size: .8rem;
-      @include respond(phone) {
+  &-smaller {
+    font-size: 0.8rem;
+    @include respond(phone) {
       line-height: 20px;
       font-size: 1rem;
     }

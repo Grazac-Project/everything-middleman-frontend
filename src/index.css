@@ -74,7 +74,7 @@ a {
 
 .sm-text {
   font-weight: normal;
-  font-family: "Poppins", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-size: 1rem;
   line-height: 33px;
@@ -99,7 +99,7 @@ a {
 .title {
   font-weight: 500;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: "AlternateGothic", "san-serif" !important;
   font-style: normal;
   line-height: 21px;
   color: #4c004b;
@@ -112,7 +112,7 @@ a {
 }
 
 .subtitle {
-  font-family: "Poppins", sans-serif;
+  font-family: "Oswald", sans-serif !important;
   font-style: normal;
   font-weight: 600;
   color: #183b56;

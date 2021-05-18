@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Alternate-Gothic";
+  src: url("../../fonts/AlternateGothic/AlternateGothicATF-Bold.otf")
+    format("otf");
+}
 *,
 *::before,
 *::after {
@@ -1741,7 +1746,11 @@ img {
 .about-gallery-container {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "... one one one two  two  three three" "... one one one two  two three three " "... one one one five five five  ..." "four four four four five five five ..." "four four four four five five five ...";
+      grid-template-areas: "... one one one two  two  three three"
+ "... one one one two  two three three "
+ "... one one one five five five  ..."
+ "four four four four five five five ..."
+ "four four four four five five five ...";
   -ms-grid-columns: (1fr)[8];
       grid-template-columns: repeat(8, 1fr);
   -ms-grid-rows: (10vw)[5];

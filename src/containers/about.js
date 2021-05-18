@@ -54,7 +54,7 @@ const About = () => {
           <div className="container">
             <div className="about-header-container">
               <TextHeader>
-                We Will Deliver Transformative Outcome For Our Clients.
+                We Deliver Transformative Outcome For Our Clients.
               </TextHeader>
               <Text color="sm-text-white contact-header-text">
                 Everything Middleman is an agile consulting company that focuses
