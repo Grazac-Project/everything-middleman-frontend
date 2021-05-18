@@ -35,7 +35,7 @@ const Home = () => {
       id: 1,
       title: "Creating incredible growth experiences",
       text:
-        "We bring the results while helping you achieve cost and time savings without taking on rish or management overhead",
+        "We bring the results while helping you achieve cost and time savings without taking on risks or management overhead",
     },
     {
       id: 2,

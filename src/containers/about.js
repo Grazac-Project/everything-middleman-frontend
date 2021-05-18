@@ -12,8 +12,8 @@ import perfect from "../assets/perfect.svg";
 
 // IMAGES
 
-import lead from "../assets/mahmood.png";
-import senior from "../assets/Hakeem.png";
+//import lead from "../assets/mahmood.png";
+//import senior from "../assets/Hakeem.png";
 
 // import lead2 from "../assets/lead.webp";
 // import senior2 from "../assets/senior.webp";
@@ -122,7 +122,7 @@ const About = () => {
                 <Text extraStyle="mb-xsm" color="sm-text-light">
                   At some point last year, we discovered a consistent problem
                   that plagued most startups. Brands will often point to lack of
-                  sales as an ailing issue yet they were faced with lack a of
+                  sales as an ailing issue yet they were faced with a lack of
                   structure, armed with no vision and also struggled with
                   inefficient employees. All these then amount to the issue of
                   profitability.
@@ -236,7 +236,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section className="about-team  mt-bg">
+        {/*<section className="about-team  mt-bg">
           <div className="about-team-container ">
             <Subtitle
               size="subtitle-xbig"
@@ -332,9 +332,9 @@ const About = () => {
                 <Subtitle size={"subtitle-smaller"} extraStyle="mt-xsm">
                   Community And Media Manager
                 </Subtitle>
-              </div> */}
+              </div> *
           </div>
-        </section>
+        </section>*/}
       </div>
     </div>
   );
