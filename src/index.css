@@ -74,7 +74,6 @@ a {
 
 .sm-text {
   font-weight: normal;
-  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-size: 1rem;
   line-height: 33px;
@@ -99,7 +98,6 @@ a {
 .title {
   font-weight: 500;
   font-size: 14px;
-  font-family: "AlternateGothic", "san-serif" !important;
   font-style: normal;
   line-height: 21px;
   color: #4c004b;

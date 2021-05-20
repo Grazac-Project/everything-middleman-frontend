@@ -16,7 +16,7 @@
 .sm-text {
   font: {
     weight: normal;
-    family: 'Oswald', sans-serif;;
+    // family: 'Oswald', sans-serif;;
     style: normal;
     size: 1rem;
   }
@@ -45,14 +45,14 @@
   font: {
     weight: 500;
     size: 14px;
-    family: "AlternateGothic", "san-serif" !important;
+    // family: "AlternateGothic", "san-serif" !important;
     style: normal;
   }
   // @include font-face;
   line-height: 21px;
   color: $color-dark-purple;
   letter-spacing: 0.17rem;
-
+  
   @include respond(phone) {
     line-height: 11px;
   }
