@@ -16,7 +16,6 @@
 .sm-text {
   font: {
     weight: normal;
-    // family: 'Oswald', sans-serif;;
     style: normal;
     size: 1rem;
   }
@@ -52,7 +51,7 @@
   line-height: 21px;
   color: $color-dark-purple;
   letter-spacing: 0.17rem;
-  
+
   @include respond(phone) {
     line-height: 11px;
   }
@@ -60,7 +59,7 @@
 
 .subtitle {
   font : {
-    family: 'Oswald', sans-serif !important;
+    family: "Oswald", sans-serif !important;
     style: normal;
     weight: 600;
   }

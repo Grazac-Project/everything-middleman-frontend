@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.db7ac691.chunk.css",
+    "main.js": "/static/js/main.06621e04.chunk.js",
+    "main.js.map": "/static/js/main.06621e04.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e35498e5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e35498e5.js.map",
+    "static/js/2.dba66210.chunk.js": "/static/js/2.dba66210.chunk.js",
+    "static/js/2.dba66210.chunk.js.map": "/static/js/2.dba66210.chunk.js.map",
+    "static/js/3.0335f6f0.chunk.js": "/static/js/3.0335f6f0.chunk.js",
+    "static/js/3.0335f6f0.chunk.js.map": "/static/js/3.0335f6f0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.db7ac691.chunk.css.map": "/static/css/main.db7ac691.chunk.css.map",
+    "static/js/2.dba66210.chunk.js.LICENSE.txt": "/static/js/2.dba66210.chunk.js.LICENSE.txt",
+    "static/media/Analysis.aea136e2.svg": "/static/media/Analysis.aea136e2.svg",
+    "static/media/OLUWALOGBON.aff43db8.svg": "/static/media/OLUWALOGBON.aff43db8.svg",
+    "static/media/PettySave.c1dd0947.svg": "/static/media/PettySave.c1dd0947.svg",
+    "static/media/PulseNg.1e3780cd.svg": "/static/media/PulseNg.1e3780cd.svg",
+    "static/media/Yabaleft.d64a2e0b.svg": "/static/media/Yabaleft.d64a2e0b.svg",
+    "static/media/ZEEK.29e34f24.svg": "/static/media/ZEEK.29e34f24.svg",
+    "static/media/agric.0cf14d3c.svg": "/static/media/agric.0cf14d3c.svg",
+    "static/media/digital.4cfdd542.svg": "/static/media/digital.4cfdd542.svg",
+    "static/media/entertain.19bac75c.svg": "/static/media/entertain.19bac75c.svg",
+    "static/media/grazac.aba35df9.png": "/static/media/grazac.aba35df9.png",
+    "static/media/growth.afcaf566.svg": "/static/media/growth.afcaf566.svg",
+    "static/media/instagram.38e5a0f5.svg": "/static/media/instagram.38e5a0f5.svg",
+    "static/media/landing-svg.c0520813.png": "/static/media/landing-svg.c0520813.png",
+    "static/media/logo.1790dfc6.png": "/static/media/logo.1790dfc6.png",
+    "static/media/logo.da008db9.jpeg": "/static/media/logo.da008db9.jpeg",
+    "static/media/okayafrica.51a95d68.svg": "/static/media/okayafrica.51a95d68.svg",
+    "static/media/perfect.62de0d2e.svg": "/static/media/perfect.62de0d2e.svg",
+    "static/media/scott.a9bdd94e.jpg": "/static/media/scott.a9bdd94e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e35498e5.js",
+    "static/js/2.dba66210.chunk.js",
+    "static/css/main.db7ac691.chunk.css",
+    "static/js/main.06621e04.chunk.js"
+  ]
+}
