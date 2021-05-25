@@ -23,11 +23,11 @@ const Footer = () => {
               />
             </Link>
             <Text color="sm-text-light footer-text mt-sm">
-              Build a modern and creative website with{" "}
-              <a href="https://grazac.com.ng" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+            ©️ 2021 Everything Middleman, All rights reserved.{" "}
+              {/* <a href="https://grazac.com.ng" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
                 {" "}
                 Grazac
-              </a>
+              </a> */}
             </Text>
             <div className="footer-socials mt-sm">
               <a
