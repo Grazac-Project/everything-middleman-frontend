@@ -309,7 +309,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-main">
-          <section className="contact-main-form">
+          {/* <section className="contact-main-form">
             <form className="form">
               <Subtitle extraStyle="mb-sm ta">{message || ""}</Subtitle>
               <div className="form-container">{form}</div>
@@ -333,7 +333,7 @@ const Contact = () => {
                 </Button>
               )}
             </form>
-          </section>
+          </section> */}
           <section className="contact-main-support mt-sm">
             <div className="container">
               <div className="contact-main-support-container ">
@@ -343,7 +343,7 @@ const Contact = () => {
                   </div>
                   <Subtitle extraStyle="mb-sm">Email Us</Subtitle>
                   <Text color="sm-text-light mb-sm">
-                    Check out helpful resources, FAQs and developer tools.
+                    Email us for enquiries and consultations.
                   </Text>
                   <a
                     href="mailto:hello@everythingmiddleman.com"
@@ -361,7 +361,7 @@ const Contact = () => {
                   </div>
                   <Subtitle extraStyle="mb-sm">Call Us</Subtitle>
                   <Text color="sm-text-light mb-sm">
-                    Check out helpful resources, FAQs and developer tools.
+                    Call us for enquiries and consultations
                   </Text>
                   <a href="tel:+234 903 688 4493" className="title">
                     +234 903 688 4493
